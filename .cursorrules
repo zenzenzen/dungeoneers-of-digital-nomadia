@@ -297,6 +297,7 @@ Spell Save DC = 8 + Proficiency + Spellcasting Stat Modifier
 
 When creating ANY game content, verify:
 
+**Game Mechanics**
 - [ ] All bonuses reference one of the 6 core stats
 - [ ] Damage specifies type AND associated stat modifier
 - [ ] Skills map to exactly one ability
@@ -306,6 +307,14 @@ When creating ANY game content, verify:
 - [ ] Attack actions specify: target (CR), roll (d20 + stat + prof), damage (dice + stat mod + type)
 - [ ] Defensive abilities specify: trigger, duration, stat (if any)
 - [ ] Humor is maintained but mechanics are clear
+
+**Database Readiness** *(See DATABASE & BACKEND DESIGN GUIDELINES section)*
+- [ ] Unique `id` assigned as FIRST column (format: `[type]_[snake_case_name]`)
+- [ ] All references use `id` values, not display names
+- [ ] Enum fields use only defined enum values from the ENUM TABLES
+- [ ] Numeric fields properly typed (no text in number fields)
+- [ ] Complex fields (bonuses, attacks) follow structured format
+- [ ] Metadata included: `version`, `tags`, `is_active`
 
 ---
 
@@ -350,5 +359,341 @@ Digital Nomad,d8,DEX,Dex/Int,"WiFi Sense (+WIS to locate signals), Tax Evasion (
 
 ---
 
+## DATABASE & BACKEND DESIGN GUIDELINES
+
+> All content should be designed with future video game / mobile app database integration in mind.
+
+### REQUIRED: Unique Identifiers (Primary Keys)
+
+Every content entry MUST include a unique `id` field as the **first column** in CSV files:
+
+```csv
+id,name,type,...
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,Headgear,...
+spell_gaslight,Gaslight,Enchantment,...
+class_influencer,Influencer,d8,...
+monster_linkedin_lunatic,LinkedIn Lunatic,Humanoid,...
+```
+
+#### ID Naming Convention
+```
+[entity_type]_[snake_case_name]
+
+Examples:
+  item_hoodie_anonymity
+  spell_cancel_culture
+  class_crypto_bro
+  monster_reply_guy
+  npc_barista_oracle
+  skill_wifi_dowsing
+  feat_main_character
+  background_trust_fund
+  quest_great_wifi_hunt
+```
+
+- **Lowercase only**, underscores for spaces
+- **Prefix** with entity type for cross-table clarity
+- **Unique across entire game** - no two entities share an ID
+- **Immutable** - once assigned, never change (breaks foreign keys)
+
+---
+
+### FOREIGN KEY REFERENCES
+
+When content references other content, use the `id` field, NOT the display name:
+
+```csv
+# CORRECT - Using IDs for relationships
+id,name,required_class,prerequisite_feat
+feat_advanced_gatekeeping,Advanced Gatekeeping,class_influencer,feat_basic_gatekeeping
+
+# WRONG - Using display names (fragile, not normalized)
+name,required_class,prerequisite_feat
+Advanced Gatekeeping,Influencer,Basic Gatekeeping
+```
+
+#### Common Foreign Key Relationships
+
+| Source Entity | Foreign Key Field | Target Entity |
+|---------------|-------------------|---------------|
+| Character | `class_id`, `background_id`, `race_id` | Classes, Backgrounds, Races |
+| Spell | `class_ids` (array) | Classes |
+| Item | `required_class_id` | Classes |
+| Feat | `prerequisite_feat_ids` (array) | Feats |
+| Quest | `location_id`, `npc_ids` (array) | Locations, NPCs |
+| Encounter | `monster_ids` (array), `location_id` | Monsters, Locations |
+| NPC | `class_id`, `background_id` | Classes, Backgrounds |
+
+---
+
+### ENUM TABLES (Lookup Values)
+
+Categorical fields MUST use standardized enum values. These will become lookup tables in the database.
+
+#### `enum_stat`
+```
+STR, DEX, CON, INT, WIS, CHA
+```
+
+#### `enum_damage_type`
+```
+psychic, sonic, reputation, necrotic, cringe, poison, bludgeoning, slashing, piercing, radiant, force
+```
+
+#### `enum_rarity`
+```
+common, uncommon, rare, very_rare, legendary, artifact
+```
+
+#### `enum_item_type`
+```
+headgear, eyewear, armor, footwear, accessory, weapon, wondrous_item, potion, wand, container
+```
+
+#### `enum_size`
+```
+tiny, small, medium, large, huge, gargantuan
+```
+
+#### `enum_creature_type`
+```
+humanoid, beast, monstrosity, undead, fiend, celestial, construct, elemental, fey, dragon, aberration, ooze, plant
+```
+
+#### `enum_spell_school`
+```
+abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, transmutation
+```
+
+#### `enum_condition`
+```
+triggered, cancelled, shadowbanned, burnout, cringed, confused, charmed, exhaustion, blinded, deafened, frightened, grappled, incapacitated, invisible, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious
+```
+
+#### `enum_currency`
+```
+cp, sp, gp, btc, exposure, therapy_hours
+```
+
+#### `enum_action_type`
+```
+action, bonus_action, reaction, free_action, movement
+```
+
+When adding content, use ONLY values from these enums. If a new value is needed, add it to this list first.
+
+---
+
+### STRUCTURED DATA FIELDS (JSON-Ready)
+
+Complex fields should be structured for easy JSON parsing. Use consistent formats:
+
+#### Stat Block Format
+```csv
+# Store as JSON object in database
+abilities,"{""str"": 10, ""dex"": 14, ""con"": 12, ""int"": 16, ""wis"": 13, ""cha"": 18}"
+
+# In CSV, use pipe-delimited shorthand that can be parsed:
+abilities,"STR:10|DEX:14|CON:12|INT:16|WIS:13|CHA:18"
+```
+
+#### Bonus/Effect Format
+```csv
+# Structured bonus format (parseable to JSON)
+bonuses,"stat_bonus:WIS:+2|save_bonus:WIS:sonic:+2|advantage:concentration"
+
+# Parses to:
+{
+  "stat_bonuses": [{"stat": "WIS", "value": 2}],
+  "save_bonuses": [{"stat": "WIS", "context": "sonic", "value": 2}],
+  "advantages": ["concentration"]
+}
+```
+
+#### Attack Format
+```csv
+# Structured attack format
+attacks,"name:Gaslight|type:spell|stat:CHA|damage:1d8|damage_type:psychic|range:30|effect:confused"
+
+# Multiple attacks separated by semicolon:
+attacks,"name:Gaslight|...; name:Clap Back|..."
+```
+
+#### Cost Format
+```csv
+# Standardized cost format (always use lowest denomination or structured)
+cost_cp,350
+# OR
+cost,"{""gp"": 3, ""sp"": 5}"
+# OR CSV shorthand:
+cost,"3gp5sp"
+```
+
+---
+
+### NUMERIC FIELDS
+
+Always use proper data types for numeric values:
+
+| Field Type | Format | Example |
+|------------|--------|---------|
+| Dice | String pattern `NdX` or `NdX+M` | `2d6`, `1d8+3` |
+| Stat Score | Integer 1-30 | `14` |
+| Modifier | Signed Integer | `-2`, `+3` |
+| Level | Integer 0-20 | `5` |
+| CR | Decimal or Fraction | `0.25`, `0.5`, `1`, `17` |
+| Distance | Integer (feet) | `30`, `60` |
+| Duration | String pattern | `1 minute`, `1 hour`, `instantaneous`, `concentration, up to 1 minute` |
+| Cost | Integer (copper) or structured | `350` or `3gp5sp` |
+| Weight | Decimal (lbs) | `2.5` |
+
+---
+
+### ARRAY FIELDS
+
+For fields that contain multiple values, use consistent delimiters:
+
+```csv
+# Semicolon for arrays of simple values
+classes,"class_influencer;class_crypto_bro;class_digital_nomad"
+skills,"skill_content_creation;skill_wifi_dowsing"
+
+# Semicolon for arrays of complex objects (each object uses pipes internally)
+attacks,"name:Gaslight|damage:1d8+CHA|type:psychic; name:Ratio|damage:2d6|type:reputation"
+```
+
+---
+
+### COMPUTED FIELDS (Backend Logic)
+
+Mark fields that should be computed at runtime rather than stored:
+
+| Field | Formula | Notes |
+|-------|---------|-------|
+| `modifier` | `floor((score - 10) / 2)` | Computed from stat score |
+| `proficiency_bonus` | Level-based lookup | `+2` at levels 1-4, etc. |
+| `spell_save_dc` | `8 + proficiency + stat_mod` | Computed per caster |
+| `chill_max` | `hit_die_avg + (CON_mod × level)` | Computed per character |
+| `cringe_resistance` | `10 + WIS_mod + CHA_mod + armor` | Computed per character |
+
+In CSV, you can include these for reference but prefix with `_computed_`:
+```csv
+id,name,stat_wis,stat_cha,_computed_cr_base
+char_001,Test Character,14,16,15
+```
+
+---
+
+### VERSIONING & METADATA
+
+Include metadata fields for content management:
+
+```csv
+# Recommended metadata columns (at end of CSV)
+...,version,created_at,updated_at,tags,is_active
+
+# Example
+item_hoodie,...,1.0,2024-01-15,2024-03-20,"stealth;urban;clothing",true
+```
+
+- `version` - Semantic version for balance changes
+- `created_at` / `updated_at` - ISO 8601 timestamps
+- `tags` - Searchable keywords (semicolon-delimited)
+- `is_active` - Boolean for soft-delete/deprecation
+
+---
+
+### LOCALIZATION-READY TEXT
+
+Separate display text from mechanical data:
+
+```csv
+# Good: Mechanical fields separate from flavor
+id,name_key,type,damage_dice,damage_type,flavor_key
+spell_gaslight,SPELL_GASLIGHT_NAME,enchantment,1d8,psychic,SPELL_GASLIGHT_DESC
+
+# Localization file (separate):
+SPELL_GASLIGHT_NAME=Gaslight
+SPELL_GASLIGHT_DESC=Are you sure that happened? Make the target doubt their own memory.
+```
+
+For MVP, name and description can remain inline, but avoid embedding flavor in mechanical fields.
+
+---
+
+### INDEX-WORTHY FIELDS
+
+These fields should be indexed in the database for fast queries:
+
+| Entity | Index Fields |
+|--------|--------------|
+| All | `id` (primary key), `name`, `is_active` |
+| Items | `type`, `rarity`, `cost_cp` |
+| Spells | `level`, `school`, `class_ids` |
+| Monsters | `challenge_rating`, `creature_type`, `size` |
+| NPCs | `location_id`, `class_id` |
+| Quests | `location_id`, `min_level`, `is_main_quest` |
+| Skills | `ability` (stat) |
+| Classes | `primary_stat`, `hit_die` |
+
+---
+
+### CSV COLUMN ORDER STANDARD
+
+For consistency and database import reliability, use this column order:
+
+```
+1. id (PRIMARY KEY)
+2. name (display name)
+3. type/category fields
+4. core mechanical fields (stats, dice, costs)
+5. reference fields (foreign keys)
+6. text/description fields
+7. structured complex fields (bonuses, attacks)
+8. metadata fields (version, timestamps, tags)
+```
+
+---
+
+### DATA VALIDATION RULES
+
+Before adding content, validate:
+
+- [ ] `id` is unique across the entire entity type
+- [ ] `id` follows naming convention: `[type]_[snake_case]`
+- [ ] All foreign keys reference existing `id` values
+- [ ] Enum fields use only defined enum values
+- [ ] Numeric fields contain valid numbers (no text in damage dice)
+- [ ] Array fields use correct delimiter (semicolon)
+- [ ] Complex fields use correct structure format
+- [ ] No display names used where IDs should be
+
+---
+
+### EXAMPLE: DATABASE-READY ITEM ENTRY
+
+```csv
+id,name,type,rarity,cost_cp,weight_lb,description,bonuses,required_stat,required_value,attunement,version,tags,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,headgear,rare,300,0.5,"Blocks out the haters. Advantage on Concentration checks.","save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration",WIS,12,false,1.0,"audio;defensive;focus",true
+```
+
+### EXAMPLE: DATABASE-READY SPELL ENTRY
+
+```csv
+id,name,level,school,casting_time,range_ft,components,duration,class_ids,damage_dice,damage_type,save_stat,effect_on_save,description,version,tags,is_active
+spell_gaslight,Gaslight,2,enchantment,action,30,"V",1 minute,"class_influencer;class_girlboss",1d8,psychic,WIS,half,"Make the target doubt their own perception. On failed save: target is Confused.",1.0,"debuff;control;psychic",true
+```
+
+### EXAMPLE: DATABASE-READY MONSTER ENTRY
+
+```csv
+id,name,creature_type,size,cr,stat_str,stat_dex,stat_con,stat_int,stat_wis,stat_cha,armor_class,hit_dice,speed_ft,speed_fly_ft,attacks,special_traits,condition_immunities,damage_resistances,damage_immunities,languages,version,tags,is_active
+monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,8d8+16,30,0,"name:Humble Brag|stat:CHA|damage:2d6+4|type:psychic;name:Thought Leadership|stat:INT|damage:1d8+3|type:cringe","Agree to Disagree (reaction: redirect attack to nearby ally);Always Be Closing (bonus action: CHA save DC 14 or charmed)","charmed","psychic","","Common;Corporate",1.0,"social;humanoid;annoying",true
+```
+
+---
+
 *Remember: If a bonus doesn't clearly tie to STR, DEX, CON, INT, WIS, or CHA, it doesn't belong in the game.*
+
+*Remember: If content doesn't have a unique `id`, it can't exist in a database.*
 
