@@ -1,0 +1,8 @@
+name,type,weight,cost,description,uses
+Iron Key,Mundane,0.1 lb,1 sp,Opens a specific lock,Single lock
+Ancient Tome,Book,3 lb,50 gp,Weathered book with arcane symbols,Research; lore
+Crystal Orb,Decorative,2 lb,20 gp,Clear glass orb that catches light,Decoration; arcane focus
+Mysterious Map,Document,0.1 lb,Varies,Old parchment with cryptic markings,Quest item; navigation
+Silver Locket,Jewelry,0.1 lb,5 gp,Contains a small portrait,Sentimental; sellable
+Mysterious Cube,Artifact,1 lb,Unknown,Black cube covered in runes that hums softly,Unknown purpose; quest item
+

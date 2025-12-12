@@ -1,0 +1,5 @@
+name,level,school,casting_time,range,components,duration,classes,description
+Fireball,3,Evocation,1 action,150 feet,"V, S, M (a tiny ball of bat guano and sulfur)",Instantaneous,Sorcerer; Wizard,A bright streak flashes to a point you choose and blossoms into an explosion of flame (8d6 fire damage)
+Cure Wounds,1,Evocation,1 action,Touch,V; S,Instantaneous,Bard; Cleric; Druid; Paladin; Ranger,Heal a creature you touch for 1d8 + spellcasting modifier HP
+Magic Missile,1,Evocation,1 action,120 feet,V; S,Instantaneous,Sorcerer; Wizard,Create three darts of magical force that automatically hit (1d4+1 force damage each)
+

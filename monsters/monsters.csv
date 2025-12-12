@@ -1,0 +1,70 @@
+name,type,size,armor_class,hit_points,speed,challenge_rating,abilities,attacks,special_traits
+The Karen,Humanoid,Medium,16,45 (6d8+18),30 ft,3,"Str 10, Dex 12, Con 16, Int 12, Wis 8, Cha 18","Screech (3d6 sonic); Summon Manager (Summons CR 1 ally)",Entitlement Aura (Advantage on Intimidation)
+The Mansplainer,Humanoid,Medium,12,32 (5d8+10),30 ft,2,"Str 12, Dex 10, Con 14, Int 16, Wis 8, Cha 10","Actually... (Reaction, disadv on target's check); Bore (1d6 psychic)",Condescension (Immune to logic)
+The Reply Guy,Humanoid,Medium,11,22 (4d8+4),30 ft,1,"Str 8, Dex 14, Con 12, Int 10, Wis 10, Cha 8","Notification Spam (1d4 psychic per hit, multiattack); Well Actually (1d6 psychic)",Persistent (Cannot be ignored)
+The Energy Vampire,Undead,Medium,13,50 (8d8+14),25 ft,4,"Str 10, Dex 10, Con 14, Int 14, Wis 12, Cha 16","Drain Will (2d8 necrotic + fatigue); Boring Story (Stun)",Aura of Tedium (10ft radius, speed halved)
+The Gatekeeper,Humanoid,Medium,18,60 (8d8+24),20 ft,5,"Str 16, Dex 10, Con 16, Int 14, Wis 12, Cha 10","Block Path (Wall of Force); Quiz (2d6 psychic)",You Shall Not Pass (Advantage on grappling)
+The One-Upper,Humanoid,Medium,14,38 (6d8+12),30 ft,3,"Str 14, Dex 14, Con 14, Int 10, Wis 8, Cha 14","Better Story (1d8 psychic); Me Too (Reaction, match damage)",Ego Shield (AC +2 vs lower level targets)
+The Ghoster,Undead,Medium,15,27 (5d8+5),40 ft,2,"Str 10, Dex 18, Con 10, Int 12, Wis 14, Cha 16","Disappear (Invisibility); Silence (No response)",Ethereal Jaunt
+The Clout Chaser,Humanoid,Medium,12,25 (5d8+5),35 ft,2,"Str 10, Dex 16, Con 10, Int 10, Wis 8, Cha 16","Selfie (Blindness); Name Drop (1d6 psychic)",Attention Seeker (Advantage on attacks if watched)
+The Toxic Ex,Fiend,Medium,15,55 (8d8+19),30 ft,4,"Str 14, Dex 14, Con 14, Int 12, Wis 10, Cha 18","Gaslight (Charm); Guilt Trip (2d8 psychic)",Emotional Baggage (Difficult terrain 15ft)
+The Micro-Manager,Aberration,Small,14,40 (9d6+9),25 ft,3,"Str 8, Dex 14, Con 12, Int 18, Wis 14, Cha 8","Hover (Fly speed); Nitpick (1d4 psychic, 3 attacks)",Omnipresence (Cannot hide from)
+The LinkedIn Lunatic,Construct,Medium,16,45 (7d8+14),30 ft,3,"Str 14, Dex 10, Con 14, Int 12, Wis 8, Cha 16","Hustle (Multiattack); Synergy (Buff allies)",Toxic Positivity (Immune to psychic)
+The Crypto Bro,Humanoid,Medium,12,30 (6d8+6),30 ft,2,"Str 10, Dex 12, Con 12, Int 10, Wis 6, Cha 14","Shill (Confusion); HODL (AC +5 for 1 round)",Ponzi Scheme (On death, explodes for 0 dmg)
+The Trust Fund Baby,Humanoid,Medium,10,20 (4d8+4),30 ft,1,"Str 8, Dex 10, Con 12, Int 10, Wis 8, Cha 14","My Father Will Hear of This (Summon Lawyer); Throw Money (Distraction)",Safety Net (Reroll 1s)
+The Pick-Me,Humanoid,Medium,13,28 (5d8+6),30 ft,2,"Str 10, Dex 14, Con 12, Int 10, Wis 10, Cha 14","Not Like Other Girls (Advantage vs own gender); Validation Seek (Heal self)",Desperation
+The Nice Guy,Humanoid,Medium,12,35 (6d8+8),30 ft,2,"Str 12, Dex 10, Con 12, Int 10, Wis 8, Cha 12","Fedora Tip (Charm); Rage Quit (Advantage on attacks if rejected)",Entitlement
+The MLM Hun,Fiend,Medium,14,42 (7d8+11),30 ft,3,"Str 10, Dex 14, Con 12, Int 10, Wis 8, Cha 18","Hey Girl (Charm); Essential Oil (Poison)",Pyramid Structure (Summons minions)
+The Gym Bro,Humanoid,Medium,16,50 (8d8+16),40 ft,4,"Str 18, Dex 12, Con 16, Int 6, Wis 8, Cha 12","Do You Even Lift (2d8 bludgeoning); Protein Fart (Poison cloud)",Gains (Regenerate 5 HP)
+The Vegan Crusader,Humanoid,Medium,12,25 (5d8+5),30 ft,2,"Str 10, Dex 12, Con 12, Int 12, Wis 14, Cha 10","Guilt Trip (2d6 psychic); Moral High Ground (Fly speed)",Plant Based (Vulnerable to fire)
+The Conspiracy Theorist,Humanoid,Medium,11,30 (6d8+6),30 ft,2,"Str 10, Dex 10, Con 12, Int 8, Wis 6, Cha 14","Red Pill (Confusion); Tinfoil Hat (Immune to psychic)",Paranoia (Advantage on Perception)
+The Boomer,Humanoid,Medium,10,20 (4d8+4),20 ft,1,"Str 10, Dex 8, Con 10, Int 10, Wis 8, Cha 10","Back In My Day (Stun); Technology Fail (AoE tech disable)",Lead Poisoning (Resistance to poison)
+The Zoomer,Humanoid,Medium,14,25 (5d8+5),35 ft,2,"Str 10, Dex 16, Con 12, Int 12, Wis 10, Cha 14","Ok Boomer (2d8 psychic); Yeet (Throw object)",Cringe (Immune to embarrassment)
+The Tech Support Scammer,Humanoid,Medium,12,22 (4d8+4),30 ft,1,"Str 8, Dex 12, Con 10, Int 14, Wis 10, Cha 14","Virus Alert (Frighten); Refund (Steal gold)",Remote Access (Range 120ft)
+The Airbnb Host,Humanoid,Medium,13,35 (6d8+8),30 ft,3,"Str 10, Dex 12, Con 12, Int 12, Wis 12, Cha 14","Cleaning Fee (Steal gold); Bad Review (Curse)",Superhost (Lair actions)
+The Landlord,Fiend,Medium,15,60 (9d8+20),30 ft,5,"Str 14, Dex 10, Con 16, Int 14, Wis 12, Cha 10","Rent Hike (Drain HP); Eviction (Banishment)",Passive Income (Regenerate gold)
+The Middle Manager,Devil,Medium,14,45 (7d8+14),30 ft,3,"Str 12, Dex 10, Con 14, Int 12, Wis 10, Cha 14","Circle Back (Time loop); Synergy (Buff minions)",Bureaucracy (Slow aura)
+The HR Rep,Construct,Medium,16,50 (8d8+16),30 ft,4,"Str 10, Dex 10, Con 16, Int 14, Wis 14, Cha 12","Performance Review (Debuff); Termination (Power Word Kill - Lite)",Policy (Lawful Neutral)
+The Unpaid Intern,Humanoid,Medium,10,10 (2d8+2),30 ft,0,"Str 8, Dex 10, Con 10, Int 10, Wis 10, Cha 10","Coffee Run (Haste); Cry (Distraction)",Expendable
+The Slack Slacker,Humanoid,Medium,12,20 (4d8+4),30 ft,1,"Str 8, Dex 14, Con 10, Int 12, Wis 10, Cha 12","Away Message (Invisibility); GIF Response (Confusion)",Remote Work (Cannot be found)
+The Meeting Holder,Aberration,Medium,14,55 (8d8+19),0 ft,4,"Str 10, Dex 10, Con 16, Int 14, Wis 12, Cha 14","Schedule (Paralyze); Overtime (Exhaustion)",Time Vampire
+The Buzzword Bot,Construct,Medium,15,40 (6d8+13),30 ft,3,"Str 14, Dex 10, Con 14, Int 8, Wis 8, Cha 10","Paradigm Shift (Teleport); Low Hanging Fruit (1d6 bludgeoning)",Automated
+The Influencer Boyfriend,Humanoid,Medium,14,30 (5d8+8),30 ft,2,"Str 14, Dex 14, Con 14, Int 8, Wis 10, Cha 10","Camera Hold (Grapple); Angle Find (Advantage)",Simp
+The Mommy Blogger,Humanoid,Medium,13,35 (6d8+8),30 ft,3,"Str 10, Dex 12, Con 12, Int 12, Wis 10, Cha 16","Overshare (Psychic dmg); Wine Mom (Poison)",Judgment
+The Political Arguer,Humanoid,Medium,12,28 (5d8+6),30 ft,2,"Str 10, Dex 10, Con 14, Int 12, Wis 8, Cha 12","Straw Man (Summon construct); Ad Hominem (1d6 psychic)",Polarized
+The Grammar Nazi,Humanoid,Medium,12,25 (5d8+5),30 ft,2,"Str 8, Dex 12, Con 10, Int 16, Wis 10, Cha 8","Correction (Counterspell); Red Pen (1d4 slashing)",Pedantic
+The Spoiler,Humanoid,Medium,11,20 (4d8+2),30 ft,1,"Str 10, Dex 12, Con 10, Int 12, Wis 8, Cha 10","Ruined Ending (Psychic dmg); Leak (Divination)",Troll
+The Backseat Gamer,Humanoid,Medium,12,22 (4d8+4),30 ft,1,"Str 8, Dex 14, Con 12, Int 14, Wis 10, Cha 8","Advice (Disadvantage); Controller Grab (Grapple)",Annoying
+The Foodie,Humanoid,Medium,12,30 (5d8+8),30 ft,2,"Str 10, Dex 10, Con 16, Int 12, Wis 12, Cha 12","Photo First (Stun); Critique (1d6 psychic)",Gluttony
+The Craft Beer Snob,Humanoid,Medium,13,32 (5d8+10),30 ft,2,"Str 12, Dex 10, Con 14, Int 12, Wis 10, Cha 10","Hops Breath (Poison); IBU Check (Analysis)",Pretentious
+The Vinyl Purist,Humanoid,Medium,11,25 (5d8+5),30 ft,1,"Str 8, Dex 12, Con 10, Int 14, Wis 12, Cha 10","Warm Sound (Sleep); Scratch (1d4 sonic)",Analog
+The Festival Wook,Humanoid,Medium,12,40 (6d8+13),30 ft,3,"Str 12, Dex 14, Con 18, Int 6, Wis 14, Cha 12","Ground Score (Find item); K-Hole (Banishment)",Chemical Resistance
+The Trustafarian,Humanoid,Medium,11,28 (5d8+6),30 ft,2,"Str 10, Dex 12, Con 12, Int 10, Wis 8, Cha 14","Dreadlock Whip (1d4 slashing); Cultural Appropriation (Psychic dmg)",Fake Poor
+The Digital Nomad (Evil),Humanoid,Medium,14,35 (6d8+8),30 ft,3,"Str 10, Dex 16, Con 12, Int 14, Wis 12, Cha 14","Wifi Hog (Slow); Gentrify (Territory control)",Passport Privilege
+The Expat Bubble,Ooze,Large,10,60 (8d10+16),20 ft,4,"Str 14, Dex 6, Con 16, Int 10, Wis 8, Cha 10","Engulf (Absorb); Ignorance (Immune to local language)",Insular
+The Begpacker,Humanoid,Medium,11,20 (4d8+2),30 ft,1,"Str 10, Dex 12, Con 12, Int 8, Wis 8, Cha 12","Hug (Grapple); Spare Change (Steal gold)",Shameless
+The Hostel Snorer,Humanoid,Medium,10,30 (4d8+12),0 ft,1,"Str 14, Dex 8, Con 16, Int 6, Wis 8, Cha 8","Snore (AoE Sleep/Exhaustion); Toss and Turn (1d4 bludgeoning)",Unconscious
+The Drunk Australian,Humanoid,Medium,14,45 (6d8+18),30 ft,3,"Str 16, Dex 12, Con 18, Int 8, Wis 8, Cha 14","Shoey (Poison/Heal); Brawl (Multiattack)",Legend
+The Spiritual Tourist,Humanoid,Medium,11,25 (5d8+5),30 ft,2,"Str 8, Dex 12, Con 10, Int 10, Wis 14, Cha 14","Namaste (Charm); Chakra Align (Heal)",Appropriation
+The Yoga Cultist,Humanoid,Medium,15,40 (7d8+9),40 ft,3,"Str 12, Dex 18, Con 12, Int 10, Wis 16, Cha 14","Contortion (Dodge); Omm (Sonic dmg)",Flexible
+The Tantric Healer,Humanoid,Medium,12,30 (5d8+8),30 ft,2,"Str 10, Dex 14, Con 12, Int 10, Wis 10, Cha 16","Touch (Charm/Frighten); Breathwork (Wind)",Creepy
+The Sexpat,Fiend,Medium,13,40 (7d8+9),30 ft,3,"Str 12, Dex 10, Con 12, Int 8, Wis 6, Cha 14","Creepy Compliment (2d6 + CHA psychic, WIS save or Frightened); Bar Approach (CHA save or Grappled)",Predatory Gaze (Disadvantage on CHA saves within 10ft)
+The Visa Runner,Humanoid,Medium,15,35 (6d8+8),40 ft,3,"Str 10, Dex 18, Con 12, Int 14, Wis 12, Cha 10","Border Dash (Teleport 60ft); Overstay (Immune to Banishment for 1d4 rounds)",Slippery (+5 to escape grapples)
+The Temple Tantrum Tourist,Humanoid,Medium,12,28 (5d8+6),30 ft,2,"Str 14, Dex 8, Con 14, Int 6, Wis 6, Cha 12","Loud Complaint (2d6 + CON sonic AoE); Inappropriate Photo (WIS save or Stunned)",Cultural Ignorance (Immune to Shame)
+The Haggler From Hell,Humanoid,Medium,14,32 (5d8+10),30 ft,2,"Str 10, Dex 12, Con 14, Int 14, Wis 10, Cha 16","Lowball Offer (1d8 + CHA psychic); Walkaway Bluff (CHA contest or target reduces price)",Relentless Negotiator (Advantage on Persuasion for prices)
+The Retirement Visa Boomer,Humanoid,Medium,11,45 (6d8+18),20 ft,3,"Str 10, Dex 8, Con 18, Int 10, Wis 8, Cha 14","Back Home Story (2d8 + CHA psychic, WIS save or Bored); Pension Flex (Summon 1d4 cheaper drinks)",Complain About Changes (Difficult terrain 15ft from nostalgia)
+The English Teacher With No Qualifications,Humanoid,Medium,11,25 (5d8+5),30 ft,1,"Str 10, Dex 12, Con 10, Int 8, Wis 8, Cha 14","Fake Credential (Deception +6); Hungover Lesson (1d6 + CHA psychic to students)",Gap Year Extended (Cannot be removed from location)
+The Bali Yogi,Humanoid,Medium,14,30 (5d8+8),35 ft,2,"Str 10, Dex 16, Con 12, Int 8, Wis 14, Cha 14","Unsolicited Advice (1d8 + WIS psychic); Sunrise Photo (CHA save or Charmed)",Found Themselves (Immune to Identity Crisis)
+The Khao San Road Warrior,Humanoid,Medium,13,38 (6d8+11),30 ft,2,"Str 14, Dex 14, Con 14, Int 8, Wis 8, Cha 12","Bucket Challenge (CON save DC 14 or Poisoned); Chang Singlet Intimidation (1d6 + STR)",Party Animal (Advantage on CON saves vs alcohol)
+The Entitled Resort Guest,Humanoid,Medium,16,42 (6d8+15),25 ft,3,"Str 10, Dex 10, Con 16, Int 12, Wis 8, Cha 16","Summon Manager (CR 1 ally); Tripadvisor Threat (3d6 + CHA reputation damage)",All-Inclusive Aura (Demands free things within 30ft)
+The Scooter Without License Guy,Humanoid,Medium,12,22 (4d8+4),50 ft (scooter),1,"Str 10, Dex 14, Con 10, Int 8, Wis 6, Cha 10","Reckless Driving (2d6 + DEX bludgeoning, DEX save); Horn Spam (1d4 sonic)",No Insurance (On defeat, creates legal complications)
+The Instagram Husband,Humanoid,Medium,13,28 (5d8+6),30 ft,2,"Str 14, Dex 12, Con 12, Int 8, Wis 10, Cha 8","Camera Hold Forever (Grapple + Restrain); Find The Light (Advantage on perception for photos)",Simp Shield (+2 CR when protecting Influencer)
+The Full Moon Party Casualty,Undead,Medium,10,35 (5d8+13),25 ft,2,"Str 12, Dex 8, Con 18, Int 4, Wis 6, Cha 8","Vomit Spray (2d6 + CON poison, 15ft cone); Incoherent Rambling (WIS save or Confused)",Blackout (Cannot remember attacks against it)
+The Cheap Charlie,Humanoid,Medium,12,30 (5d8+8),30 ft,2,"Str 10, Dex 14, Con 12, Int 14, Wis 10, Cha 8","Split Bill Argument (1d8 + INT psychic); Tip Refusal (Steals 1d6 GP)",Frugal Beyond Reason (Resistance to Gold Loss)
+The Colonizer Mindset,Aberration,Large,15,55 (8d10+11),30 ft,4,"Str 14, Dex 10, Con 12, Int 14, Wis 6, Cha 16","Explain Your Culture To You (3d6 + INT psychic); Civilizing Mission (WIS save or Charmed to agree)",White Savior Complex (Heals when 'helping')
+The Photo Without Permission Tourist,Humanoid,Medium,11,20 (4d8+2),35 ft,1,"Str 8, Dex 16, Con 10, Int 8, Wis 6, Cha 10","Flash Photography (DEX save or Blinded); Candid Shot (Steals likeness)",Oblivious (Cannot read social cues)
+The Loud American,Humanoid,Medium,13,40 (6d8+13),30 ft,3,"Str 14, Dex 10, Con 16, Int 10, Wis 8, Cha 14","Volume Eleven (3d6 + CON sonic, 30ft radius); Where's The AC (Complain aura, -2 to all checks nearby)",Main Character Energy (Cannot be Ignored)
+The Weeb Pilgrim,Humanoid,Medium,12,28 (5d8+6),30 ft,2,"Str 8, Dex 14, Con 12, Int 14, Wis 8, Cha 10","Anime Reference (1d8 + INT psychic to non-weebs); Broken Japanese (WIS save or Cringe damage)",Otaku Knowledge (Advantage on INT checks about Japan, Disadvantage on everything else in Japan)
+The K-Pop Stan Invader,Humanoid,Medium,14,32 (5d8+10),35 ft,2,"Str 8, Dex 16, Con 14, Int 10, Wis 8, Cha 14","Fancam Attack (2d6 + CHA psychic); Stan Twitter Rage (Advantage on attacks if idol insulted)",Parasocial Bond (Immune to Charm from non-idols)
+The Shanghai Finance Bro,Humanoid,Medium,15,38 (6d8+11),30 ft,3,"Str 12, Dex 12, Con 12, Int 16, Wis 8, Cha 16","Salary Flex (2d8 + CHA psychic); Business Card Throw (1d4 + DEX slashing, ranged 30ft)",Expat Package (Regenerates 1d10 GP per round)
+The Chaotic Hostel Roommate,Humanoid,Medium,11,25 (5d8+5),30 ft,1,"Str 10, Dex 14, Con 12, Int 8, Wis 6, Cha 12","3AM Return (Prevents Long Rest); Plastic Bag Rustling (1d4 + DEX sonic)",No Boundaries (Ignores personal space, +2 to Grapple)

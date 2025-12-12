@@ -1,0 +1,5 @@
+name,skill_proficiencies,tool_proficiencies,languages,equipment,feature,description
+Soldier,Athletics; Intimidation,One type of gaming set; Vehicles (land),None,"Rank insignia, trophy, dice/cards, common clothes, belt pouch with 10 gp",Military Rank,You have a military rank from your career as a soldier
+Sage,Arcana; History,None,Two of your choice,"Bottle of black ink, quill, small knife, letter from dead colleague, common clothes, belt pouch with 10 gp",Researcher,You know how to obtain information from libraries and sages
+Criminal,Deception; Stealth,One type of gaming set; Thieves' tools,None,"Crowbar, dark common clothes with hood, belt pouch with 15 gp",Criminal Contact,You have a reliable contact in the criminal underworld
+

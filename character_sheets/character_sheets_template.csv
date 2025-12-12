@@ -1,0 +1,5 @@
+character_name,player_name,race,class,level,background,alignment,strength,dexterity,constitution,intelligence,wisdom,charisma,armor_class,hit_points,speed,proficiency_bonus,special_abilities,equipment_summary,backstory_summary
+Thorin Stonehammer,Player1,Dwarf,Fighter,5,Soldier,Lawful Good,16,12,16,10,14,8,18,45,25 ft,+3,"Action Surge, Second Wind, Extra Attack","Plate armor, +1 Warhammer, Shield, Adventurer's pack",Former guard captain seeking redemption
+Lyra Nightshade,Player2,Half-Elf,Rogue,4,Criminal,Chaotic Neutral,10,18,12,14,13,16,15,28,30 ft,+2,"Sneak Attack (2d6), Cunning Action, Expertise","Leather armor, Shortsword, Shortbow, Thieves' tools",Street thief turned adventurer
+Aldrin Starweaver,Player3,Human,Wizard,6,Sage,Neutral Good,8,14,14,18,12,10,12,32,30 ft,+3,"Spellcasting, Arcane Recovery, Evocation Wizard","Robe, Spellbook, Staff, Component pouch",Scholar researching ancient magic
+

@@ -1,0 +1,6 @@
+name,type,level_range,quest_giver,location,objective,reward,status,notes
+The Lost Heirloom,Side Quest,1-3,Merchant Gareth,Silverwood to Abandoned Manor,Retrieve a stolen family ring from bandits,100 gp + Ring of Mind Shielding,Active,Bandits hideout 2 miles south; 5 bandits led by Scarface Jack
+Dragon's Demand,Main Quest,10-15,Council of Silverwood,Dragontooth Mountains,Negotiate or defeat the red dragon threatening the city,5000 gp + Magic Item,Not Started,Dragon is ancient and intelligent; may be reasoned with
+The Cursed Village,Side Quest,5-7,Brother Aldric,Millhaven Village,Lift the curse afflicting the village,500 gp + Blessing,In Progress,Curse traced to nearby ruins; undead rising at night
+Mystery of the Fey,Investigation,3-6,Captain of the Guard,Whispering Woods,Discover why fey creatures are raiding travelers,300 gp + Fey favor,Active,Archfey involved; requires diplomacy
+

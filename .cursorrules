@@ -1,0 +1,354 @@
+# Dungeoneers of Digital Nomadia - Project Rules
+
+> A satirical tabletop RPG where digital nomads battle through social combat, WiFi dead zones, and coworking space drama. Violence is replaced by vibes.
+
+---
+
+## THE SIX CORE STATS
+
+All bonuses, penalties, skills, and combat effects **MUST** reference these classical stats:
+
+| Stat | Abbr | Governs | Combat Role |
+|------|------|---------|-------------|
+| **Strength** | STR | Physical force, intimidation presence, hustle endurance | Powering through, grappling (blocking exits), forcing social compliance |
+| **Dexterity** | DEX | Reflexes, typing speed, dodging questions, stealth | Initiative tiebreaker, AC contribution, sneak attacks, evasion |
+| **Constitution** | CON | Stamina, burnout resistance, jet lag immunity, caffeine tolerance | Max Chill (HP), resisting Exhaustion/Burnout, long meeting survival |
+| **Intelligence** | INT | Logic, fact-checking, coding, research, lore recall | Gatekeep damage, debunking misinformation, tech attacks |
+| **Wisdom** | WIS | Intuition, reading vibes, self-awareness, boundary setting | Cringe Resistance (AC), spotting manipulation, resisting gaslighting |
+| **Charisma** | CHA | Social magnetism, clout, content quality, influence | Vibe Check (initiative), most attack rolls, Gaslight/Girlboss damage |
+
+### Stat Modifier Table
+| Score | Modifier |
+|-------|----------|
+| 1     | -5       |
+| 2-3   | -4       |
+| 4-5   | -3       |
+| 6-7   | -2       |
+| 8-9   | -1       |
+| 10-11 | +0       |
+| 12-13 | +1       |
+| 14-15 | +2       |
+| 16-17 | +3       |
+| 18-19 | +4       |
+| 20    | +5       |
+
+---
+
+## COMBAT STATS
+
+### Chill (Hit Points)
+- **Formula**: `Hit Die Average + CON modifier per level`
+- **At 0 Chill**: Character is **Triggered** and must leave the scene
+- **Restoration**: Self-Care (Short Rest) restores `1d8 + CON mod`; Therapy (Long Rest) restores full
+
+### Cringe Resistance (Armor Class)
+- **Base Formula**: `10 + WIS modifier + CHA modifier`
+- **With Outfit**: `Base CR + Outfit Bonus`
+- **Minimum CR**: 10 (even with negative modifiers)
+
+### Vibe Check (Initiative)
+- **Formula**: `d20 + CHA modifier`
+- **Ties**: Broken by DEX modifier, then d20 roll-off
+
+---
+
+## BONUS/PENALTY NOTATION STANDARD
+
+When creating content, ALL bonuses MUST use this format:
+
+### Direct Stat Bonuses
+```
++N [STAT]        → +2 CHA, -1 WIS, +3 INT
++N [STAT] Mod    → Adds to stat modifier calculations
++N [STAT] Saves  → Bonus to saving throws for that stat
+```
+
+### Combat Bonuses
+```
++N Attack        → Bonus to attack rolls (specify: all, melee, ranged, spell)
++N Damage        → Bonus damage (specify type: psychic, sonic, reputation, etc.)
++N CR            → Bonus to Cringe Resistance (AC equivalent)
++N Chill         → Bonus to max Chill (HP equivalent)
++N Vibe Check    → Bonus to initiative
+```
+
+### Skill Bonuses
+```
++N [Skill]       → +2 Stealth, +3 Performance
++N [Skill] (Context) → +2 Intimidation (Online), +3 Persuasion (Flirting)
+```
+
+### Conditional Bonuses
+```
+Advantage on [Check/Save/Attack] (Condition)
+Disadvantage on [Check/Save/Attack] (Condition)
+Immunity to [Condition/Damage Type]
+Resistance to [Damage Type]    → Half damage
+Vulnerability to [Damage Type] → Double damage
+```
+
+---
+
+## DAMAGE TYPES
+
+| Damage Type | Associated Stat | Description |
+|-------------|-----------------|-------------|
+| **Psychic** | CHA or INT | Mental/emotional damage (main damage type) |
+| **Sonic** | CON | Loud, annoying, grating attacks |
+| **Reputation** | CHA | Damage to social standing (harder to heal) |
+| **Necrotic** | CON | Energy drain, will-sapping tedium |
+| **Cringe** | WIS | Secondhand embarrassment damage |
+| **Poison** | CON | Bad vibes, toxic energy, actual poison |
+| **Bludgeoning** | STR | Physical (rare in social combat) |
+
+### Damage Expressions
+```
+NdX + [STAT] mod [Type] damage
+Examples:
+  1d8 + CHA psychic damage
+  2d6 reputation damage
+  1d4 + INT cringe damage
+```
+
+---
+
+## EQUIPMENT BONUS RULES
+
+### Headgear
+- Primary: WIS or INT bonuses
+- Secondary: Concentration, Perception
+- Example: `Noise Cancelling Headphones: +2 WIS Saves vs Sonic/Distraction`
+
+### Eyewear  
+- Primary: WIS or INT bonuses
+- Secondary: Perception, Investigation
+- Example: `Blue Light Glasses: +1 Perception (Screens), +1 INT Saves vs Digital`
+
+### Armor/Clothing
+- Primary: CR bonus, CHA or DEX bonuses
+- Secondary: Stealth, social skill bonuses
+- Example: `Hoodie of Anonymity: +2 CR (Urban), +2 Stealth`
+
+### Footwear
+- Primary: DEX or STR bonuses
+- Secondary: Speed, Intimidation, Athletics
+- Example: `Doc Martens: +2 Intimidation, +1 STR Saves`
+
+### Accessories
+- Primary: Any stat (context-dependent)
+- Secondary: Specific skill or situational
+- Example: `Smart Watch: +2 Perception, -2 WIS (Anxiety)`
+
+### Weapons
+- Primary: Attack and damage bonuses
+- Secondary: Range, special effects
+- Must specify: Damage dice, damage type, attack stat (STR, DEX, or CHA)
+- Example: `Mechanical Keyboard: 1d6 + STR bludgeoning + 1d4 sonic, Melee`
+
+### Wondrous Items
+- Can provide any effect, but must be stat-anchored
+- Example: `Weighted Blanket: Restores Max Chill on Short Rest (requires CON 12+)`
+
+---
+
+## CLASS DESIGN RULES
+
+### Required Fields
+```csv
+name,hit_die,primary_stat,saves,features
+```
+
+### Hit Die by Role
+| Role | Hit Die | Primary Stat |
+|------|---------|--------------|
+| Tank/Frontline | d10-d12 | STR or CON |
+| Striker/DPS | d8 | DEX or CHA |
+| Controller/Support | d6-d8 | INT or WIS |
+| Face/Social | d8 | CHA |
+
+### Feature Naming Convention
+All class features should be re-flavored from classic TTRPG abilities with digital nomad theming:
+- `Original Ability (Themed Name)`
+- Example: `Action Surge (Hustle)`, `Sneak Attack (Hidden Fees)`, `Divine Smite (Code Review)`
+
+### Saves Format
+```
+[Primary Stat]/[Secondary Stat]
+Examples: Cha/Dex, Int/Wis, Str/Con
+```
+
+---
+
+## SKILL DESIGN RULES
+
+### Required Fields
+```csv
+name,ability,description,example_use
+```
+
+### Skill-to-Stat Mapping
+Every skill MUST be tied to exactly ONE ability:
+
+| Ability | Skills |
+|---------|--------|
+| **STR** | Gentrification, forcing physical compliance, intimidation through presence |
+| **DEX** | Ghosting, Latte Art, Touch Typing, Selfie Taking, Parallel Parking, evasive maneuvers |
+| **CON** | Doomscrolling, Power Napping, endurance-based tasks, meeting survival |
+| **INT** | Cryptocurrency Lore, Subletting, Tech Troubleshooting, IKEA Assembly, algorithm analysis |
+| **WIS** | WiFi Dowsing, Trend Analysis, Manifesting, Vibe Checking, intuition-based perception |
+| **CHA** | Content Creation, Slack Etiquette, Humblebragging, Therapy Speak, social manipulation |
+
+### Special Skills
+- **Persuasion** → Subset of CHA (Barista Negotiation, Mansplaining)
+- **Deception** → Subset of CHA (Corporate Speak, Gaslighting)
+- **Performance** → Subset of CHA (Virtue Signaling, Trolling)
+- **Intimidation** → Can be STR or CHA (Gatekeeping)
+- **Investigation** → Subset of INT (Thrifting, Doxxing)
+- **Insight** → Subset of WIS (Vibe Checking)
+- **Medicine** → Subset of WIS (Crystal Healing, Self-Diagnosis)
+
+---
+
+## MONSTER/NPC DESIGN RULES
+
+### Required Fields
+```csv
+name,type,size,armor_class,hit_points,speed,challenge_rating,abilities,attacks,special_traits
+```
+
+### Abilities Format
+```
+Str N, Dex N, Con N, Int N, Wis N, Cha N
+```
+
+### Attack Format
+```
+Attack Name (Damage Expression); Attack Name (Effect)
+Examples:
+  Screech (3d6 + CHA sonic)
+  Gaslight (WIS save or Charmed)
+  Nitpick (1d4 + INT psychic, 3 attacks)
+```
+
+### Special Traits Must Include
+- Stat reference if providing a bonus
+- Save DC formula: `8 + proficiency + [STAT] mod`
+- Duration if temporary effect
+
+---
+
+## SPELL DESIGN RULES
+
+### Required Fields
+```csv
+name,level,school,casting_time,range,components,duration,description
+```
+
+### Spell Damage Scaling
+| Level | Damage Dice | Effect Strength |
+|-------|-------------|-----------------|
+| Cantrip | 1d6-1d10 | Minor |
+| 1-2 | 1d8-2d6 | Moderate |
+| 3-4 | 3d6-4d8 | Strong |
+| 5-6 | 5d8-8d6 | Very Strong |
+| 7-9 | 10d6+ | Devastating |
+
+### Save DCs
+```
+Spell Save DC = 8 + Proficiency + Spellcasting Stat Modifier
+```
+
+### Chill Restoration Spells
+- Level 1: 1d8 + spellcasting mod
+- Level 2: 2d8 + spellcasting mod
+- Etc.
+
+---
+
+## CONDITIONS REFERENCE
+
+| Condition | Effect | Caused By | Cured By |
+|-----------|--------|-----------|----------|
+| **Triggered** | Incapacitated, must leave scene | 0 Chill | Short Rest + venting |
+| **Cancelled** | Disadvantage all CHA checks, NPCs won't interact | Failed Cancel attack | Time (3 days) or Dispel Haters |
+| **Shadowbanned** | Can speak but not acknowledged | Shadowban spell | Greater Restoration |
+| **Burnout** | Half speed, disadvantage all checks | Overwork, exhaustion stacks | Long Rest + vacation |
+| **Cringed** | -2 CR for 1 minute | Failed Performance, embarrassment | End of encounter or CHA save |
+| **Confused** | Disadvantage on next action | Critical Gaslight | WIS save at end of turn |
+| **Charmed** | Won't attack charmer, advantage on CHA checks vs target | Love Bomb, various | WIS save, damage |
+| **Exhaustion** | Stacking penalties (1-6 levels) | Overwork, caffeine crash | Long Rest removes 1 level |
+
+---
+
+## CURRENCY
+
+| Currency | Value | Notes |
+|----------|-------|-------|
+| **Gold Piece (GP)** | Standard | 1 GP = 10 SP = 100 CP |
+| **Silver Piece (SP)** | 1/10 GP | Common transactions |
+| **Copper Piece (CP)** | 1/100 GP | Small purchases |
+| **Bitcoin (BTC)** | Volatile | Roll d100 daily: value = roll × 10 GP |
+| **Exposure** | Worthless | Cannot be used for actual purchases |
+| **Therapy Hours** | Special | Earned through roleplay, spent on Chill restoration |
+
+---
+
+## CONTENT CREATION CHECKLIST
+
+When creating ANY game content, verify:
+
+- [ ] All bonuses reference one of the 6 core stats
+- [ ] Damage specifies type AND associated stat modifier
+- [ ] Skills map to exactly one ability
+- [ ] Equipment bonuses are reasonable for rarity (+1 common, +2 uncommon, +3 rare, +4 very rare, +5 legendary)
+- [ ] Class features specify which stat they key off
+- [ ] Conditions have clear triggers and recovery methods
+- [ ] Attack actions specify: target (CR), roll (d20 + stat + prof), damage (dice + stat mod + type)
+- [ ] Defensive abilities specify: trigger, duration, stat (if any)
+- [ ] Humor is maintained but mechanics are clear
+
+---
+
+## EXAMPLE: COMPLETE ITEM ENTRY
+
+```csv
+name,type,rarity,cost,description,bonuses
+Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"Blocks out haters. Advantage on Concentration checks. +2 to WIS Saves vs Sonic and Verbal attacks.","+2 WIS Saves (Sonic/Verbal), Advantage Concentration"
+```
+
+## EXAMPLE: COMPLETE ATTACK ACTION
+
+```
+### Gaslight (Deception vs CR)
+- **Roll**: d20 + CHA modifier + Proficiency (if proficient in Deception)
+- **Target**: Enemy's Cringe Resistance
+- **Damage**: 1d8 + CHA modifier psychic damage
+- **Critical**: Target is Confused (disadvantage on next action)
+- **Flavor**: "Are you sure you said that? I think you're remembering it wrong."
+```
+
+## EXAMPLE: COMPLETE CLASS ENTRY
+
+```csv
+name,hit_die,primary_stat,saves,features
+Digital Nomad,d8,DEX,Dex/Int,"WiFi Sense (+WIS to locate signals), Tax Evasion (DEX save to avoid fiscal consequences), Favored Terrain: Cafe (+2 to all checks in coffee shops)"
+```
+
+---
+
+## TONE GUIDELINES
+
+1. **Combat is conversation** - All "attacks" are verbal/social. Describe them as witty exchanges, awkward silences, or devastating clapbacks.
+
+2. **Stats are real** - Even though the theme is humorous, the mechanical bonuses must be consistent and usable.
+
+3. **Modern mundane is magical** - Reframe everyday objects as magical items with clear stat benefits.
+
+4. **Parody with precision** - Mock startup culture, influencer life, and digital nomad tropes, but keep the game playable.
+
+5. **Everyone is a valid target** - Karen, Crypto Bros, Yoga Teachers, LinkedIn Lunatics - satirize across the spectrum.
+
+---
+
+*Remember: If a bonus doesn't clearly tie to STR, DEX, CON, INT, WIS, or CHA, it doesn't belong in the game.*
+

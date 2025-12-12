@@ -1,0 +1,6 @@
+name,type,difficulty,level_range,location,enemies,environmental_hazards,treasure,description
+Goblin Ambush,Combat,Easy,1-2,Forest Road,4 Goblins + 1 Goblin Boss,None,45 gp; 2 healing potions; crude map,Goblins leap from bushes demanding toll
+Trapped Hallway,Trap,Medium,3-5,Ancient Dungeon,None,"Pressure plates trigger poison darts (DC 15 Dex save, 2d6 poison damage)",None,Long corridor with suspicious floor tiles
+Bandit Negotiation,Social,Medium,2-4,Mountain Pass,6 Bandits,Steep cliffs on both sides,200 gp; stolen goods,Bandits blocking the road; may negotiate or fight
+Collapsing Bridge,Environmental,Hard,Any,River Crossing,2 River Trolls,Bridge unstable (DC 12 Acrobatics or fall 30ft into rapids),Troll treasure: 300 gp; gems,Ancient bridge creaks ominously as trolls defend it
+

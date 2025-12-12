@@ -1,0 +1,5 @@
+name,type,damage,damage_type,range,weight,cost,properties,description
+Longsword,Martial Melee,1d8,Slashing,5 ft,3 lb,15 gp,Versatile (1d10),A standard knightly sword
+Shortbow,Martial Ranged,1d6,Piercing,80/320 ft,2 lb,25 gp,Ammunition,A compact ranged weapon
+Dagger,Simple Melee,1d4,Piercing,20/60 ft,1 lb,2 gp,"Finesse, Light, Thrown",A small blade good for stealth
+

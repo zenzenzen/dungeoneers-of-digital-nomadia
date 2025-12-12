@@ -1,0 +1,5 @@
+name,type,armor_class,strength_requirement,stealth_disadvantage,weight,cost,description
+Leather Armor,Light,11 + Dex modifier,None,No,10 lb,10 gp,Boiled leather breastplate and shoulder protectors
+Chain Mail,Heavy,16,Str 13,Yes,55 lb,75 gp,Made of interlocking metal rings
+Shield,Shield,+2,None,No,6 lb,10 gp,Wooden or metal protection carried in one hand
+

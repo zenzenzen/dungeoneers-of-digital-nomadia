@@ -1,0 +1,5 @@
+name,type,size,armor_class,hit_points,speed,challenge_rating,abilities,attacks,special_traits
+Goblin,Humanoid,Small,15,7 (2d6),30 ft,1/4,"Str 8, Dex 14, Con 10, Int 10, Wis 8, Cha 8","Scimitar (+4, 1d6+2 slashing); Shortbow (+4, 1d6+2 piercing)",Nimble Escape
+Dragon (Adult Red),Dragon,Huge,19,256 (19d12+133),40 ft (fly 80 ft),17,"Str 27, Dex 10, Con 25, Int 16, Wis 13, Cha 21","Bite (+14, 2d10+8); Claw (+14, 2d6+8); Fire Breath (recharge 5-6, 63 fire damage)",Legendary Resistance (3/day); Frightful Presence
+Skeleton,Undead,Medium,13,13 (2d8+4),30 ft,1/4,"Str 10, Dex 14, Con 15, Int 6, Wis 8, Cha 5","Shortsword (+4, 1d6+2 piercing); Shortbow (+4, 1d6+2 piercing)",Vulnerable to bludgeoning damage
+

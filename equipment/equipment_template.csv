@@ -1,0 +1,7 @@
+name,type,weight,cost,description,properties
+Rope (Hempen),Adventuring Gear,10 lb,1 gp,50 feet of sturdy rope,Can support 3000 lbs
+Torch,Adventuring Gear,1 lb,1 cp,Burns for 1 hour providing bright light in 20 ft radius,Light source; can be used as improvised weapon (1 fire damage)
+Backpack,Container,5 lb,2 gp,Holds 1 cubic foot / 30 lbs of gear,Storage
+Thieves' Tools,Tool,1 lb,25 gp,Kit for picking locks and disarming traps,Proficiency required for use
+Healing Kit,Kit,3 lb,5 gp,10 uses for stabilizing dying creatures,No healing; stabilizes with Medicine check
+

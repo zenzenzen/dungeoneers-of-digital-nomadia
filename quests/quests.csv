@@ -1,0 +1,31 @@
+name,type,level_range,quest_giver,location,objective,reward,status,notes
+The Lost WiFi Password,Side Quest,1-2,Barista Kyle,The Overpriced Avocado Toast Cafe,Find the password hidden in the cafe's decor,10 gp + Free Coffee,Active,Password is 'buy_more_coffee'
+The Visa Run,Main Quest,3-5,Embassy Official,Border Crossing,Cross the border and return within 24 hours,50 gp + Valid Visa,Not Started,Queues are 4 hours long
+The Glitch in the Matrix,Investigation,4-6,The Oracle (Reddit Mod),Online,Debug the server causing reality lag,100 gp + Admin Privileges,Active,Requires 'Coding' spell
+The Influencer's Meltdown,Side Quest,2-4,Influencer Tiffany,The Rooftop Bar,Recover Tiffany's lost phone before she loses followers,20 gp + Shoutout,Not Started,Phone is in the bathroom
+The Startup Pitch,Main Quest,5-8,Venture Capitalist Chad,The Startup Incubator,Secure funding for your 'Uber for Dogs' app,5000 gp (Seed Round),Not Started,Requires high Charisma
+The Airbnb Horror Story,Investigation,3-5,Disgruntled Guest,The Airbnb That Looked Better In Photos,Exorcise the ghost of the previous tenant,50 gp + Refund,Active,Ghost is just a racoon
+The Digital Detox,Side Quest,1-10,Yoga Teacher Luna,Retreat Center,Survive 3 days without technology,Wisdom +2,Not Started,Hardest quest in the game
+The Crypto Crash,Event,5-10,Crypto Bro Kevin,The Blockchain,Save your portfolio from going to zero,1 BTC,Active,Market is volatile
+The Karen Uprising,Combat,4-6,Store Manager,The Gentrified Neighborhood,Defend the store from a horde of Karens,30 gp + Store Discount,Not Started,They want to speak to the manager
+The Lost Luggage,Side Quest,1-3,Airline Rep,Airport,Find your bag in the labyrinth of lost and found,10 gp + Clean Clothes,Active,Bag contains your only hoodie
+The Tinder Date from Hell,Social,2-4,Your Mom,The Coffee Shop,Survive a date with someone your mom set you up with,XP + Therapy,Not Started,Date is a vampire (energy vampire)
+The Networking Event,Social,3-6,Recruiter Dan,The Tech Conference,Collect 10 business cards,20 gp + Job Offer,Active,Must use 'LinkedIn' skill
+The Sourdough Starter,Fetch Quest,1-2,Hipster Baker,The Farmer's Market,Retrieve the ancient yeast culture,5 gp + Fresh Bread,Not Started,Yeast is guarded by a cat
+The Gentle Gentrification,Moral Dilemma,4-7,Local Resident,The Old Neighborhood,Decide whether to open a coffee shop or a community center,Karma,Active,Coffee shop pays better
+The Cancel Culture Mob,Survival,6-8,Publicist,Twitter,Survive being cancelled for 24 hours,Reputation Restore,Not Started,Don't tweet
+The Unpaid Intern,Side Quest,1-2,CEO,Corporate HQ,Do menial tasks for 'exposure',0 gp + Exposure,Active,It's a trap
+The Hackathon,Challenge,3-5,DevOps Dave,The Coworking Space,Build a working app in 48 hours,100 gp + Hackathon Shirt,Not Started,Con save vs Exhaustion
+The Pyramid Scheme,Investigation,2-4,Friend from High School,Facebook,Uncover the truth about the essential oils,Karma + Unfriended,Active,It's definitely a scam
+The Ghosted Client,Mystery,3-5,Freelancer Jane,Upwork,Find out why the client stopped replying,Payment Release,Not Started,Client was AI
+The Viral Video,Challenge,4-6,TikTok Star,The Street,Film a video that gets 1M views,Sponsorship Deal,Active,Requires 'Dance' skill
+The Noise Complaint,Side Quest,1-3,Neighbor,Apartment Complex,Stop the party upstairs,Sleep,Not Started,Party is a cult
+The Tax Audit,Boss Battle,8-10,IRS Agent,The Office,Defeat the Auditor using receipts,Financial Freedom,Not Started,Use 'Tax Evasion' skill
+The Burnout,Personal Quest,5-10,Therapist,The Clinic,Recover from burnout,Sanity Restore,Active,Takes 3 months
+The Nomad's Curse,Main Quest,1-20,The World,Global,Find a place that feels like home,Inner Peace,Not Started,Endgame content
+The Perfect Flat White,Fetch Quest,1-3,Coffee Snob,The Cafe,Find the legendary beans,10 gp + Coffee Grinder,Active,Beans are in Colombia
+The Scammer's Call,Social,2-4,Grandma,Phone,Stop grandma from sending gift cards to the IRS,Inheritance,Not Started,Scammer is in a call center
+The Lost Charger,Fetch Quest,1-2,You,The Coworking Space,Find your charger before your laptop dies,Productivity,Active,Time limit: 10 mins
+The Podcast Guest,Social,3-5,Podcaster,Studio,Be a guest on a podcast and sound smart,Clout,Not Started,Don't say 'um'
+The 5-Star Review,Side Quest,2-4,Restaurant Owner,The Bistro,Convince a Karen to leave a good review,Free Meal,Active,Impossible difficulty
+The Exit Strategy,Main Quest,10-15,Founder,The Boardroom,Sell your company and retire,10000 gp,Not Started,The ultimate goal

@@ -1,0 +1,5 @@
+name,hit_die,primary_ability,saving_throws,armor_proficiency,weapon_proficiency,skills_available,special_features
+Fighter,1d10,Strength or Dexterity,Strength & Constitution,All armor and shields,Simple & martial weapons,"Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Survival",Fighting Style; Second Wind; Action Surge
+Wizard,1d6,Intelligence,Intelligence & Wisdom,None,"Daggers, darts, slings, quarterstaffs, light crossbows","Arcana, History, Insight, Investigation, Medicine, Religion",Spellcasting; Arcane Recovery; Arcane Tradition
+Rogue,1d8,Dexterity,Dexterity & Intelligence,Light armor,"Simple weapons, hand crossbows, longswords, rapiers, shortswords","Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, Stealth",Sneak Attack; Thieves' Cant; Cunning Action; Expertise
+

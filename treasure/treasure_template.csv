@@ -1,0 +1,7 @@
+name,type,value,weight,location,description,special_properties
+Dragon Hoard,Currency + Items,50000 gp total,Varies,Dragon's Lair,"Massive pile of gold coins, gems, and magic items",Contains 3d4 magic items of various rarities
+Ancient Chest,Container,1200 gp,50 lb,Hidden Chamber,"Locked chest (DC 18) containing gold and jewelry",Trapped with poison needle (DC 16 Dex save)
+Goblin Stash,Currency,45 gp,3 lb,Goblin Cave,Small bag of mixed coins,None
+Wizard's Cache,Magic Items,Unknown,10 lb,Secret Room,"3 spell scrolls, 1 wand, arcane components",Scrolls: Fireball; Lightning Bolt; Fly
+Gemstone Collection,Valuables,800 gp,2 lb,Noble's Safe,"4 rubies, 2 sapphires, 1 large emerald",Can be sold or used as spell components
+

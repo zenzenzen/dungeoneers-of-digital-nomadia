@@ -1,0 +1,5 @@
+name,size,speed,ability_score_increases,traits,languages,darkvision,description
+Human,Medium,30 ft,+1 to all abilities,Versatile,Common + 1 choice,No,Adaptable and ambitious people
+Elf,Medium,30 ft,Dex +2,Keen Senses; Fey Ancestry; Trance,Common + Elvish,60 ft,Graceful and long-lived magical beings
+Dwarf,Medium,25 ft,Con +2,Darkvision; Dwarven Resilience; Stonecunning,Common + Dwarvish,60 ft,Bold and hardy mountain dwellers
+
