@@ -1,52 +1,52 @@
-name,type,rarity,cost,description,bonuses
-Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"Blocks out the haters. Advantage on Concentration checks.","+2 WIS Saves (Sonic/Verbal), Advantage on Concentration"
-Hoodie of Anonymity,Armor,Uncommon,8 sp,"A plain black hoodie. You blend into any urban environment.","+2 CR (Urban), +2 DEX (Stealth)"
-Ergonomic Laptop Stand,Accessory,Common,4 sp,"Prevents posture damage during long work sessions.","+1 CON Saves (Exhaustion), Immunity to Back Pain condition"
-Blue Light Glasses,Eyewear,Common,2 sp,"Protects eyes from screen glare. See through digital illusions.","+1 WIS (Perception - Screens), +1 INT Saves (Digital)"
-Mechanical Keyboard of Clacking,Weapon,Rare,1 gp 5 sp,"Deals damage through pure sensory assault. Annoying to everyone nearby.","1d6 + STR bludgeoning + 1d4 CON sonic, Melee"
-Hydroflask of Hydration,Wondrous Item,Uncommon,4 sp 50 cp,"Holds infinite water (or iced coffee). Stay hydrated, stay chill.","Restore 1d4 + CON mod Chill (3 uses/long rest)"
-Power Bank of Infinite Charge,Wondrous Item,Legendary,5000 BTC,"Never run out of battery again. A nomad's holy grail.","Immunity to Power Loss condition, +3 INT (Tech checks)"
-Vintage Film Camera,Accessory,Rare,5 gp,"Takes photos that look better than reality. Instant aesthetic.","+3 CHA (Performance - Photography), Advantage on CHA (Artistic)"
-Yoga Mat of Grounding,Wondrous Item,Uncommon,6 sp,"Center yourself. The mat provides unexpected stability.","Advantage on WIS Saves (after 10 min meditation)"
-Ironic T-Shirt,Armor,Common,2 sp 50 cp,"A shirt with a vague slogan. Says nothing, implies everything.","+1 CR, +1 CHA"
-Hydroflask of VSCO,Wondrous Item,Common,4 sp,"And I oop. Can be used as an improvised weapon.","1d4 + STR bludgeoning, Restore 1 Chill (1/short rest)"
-Fidget Spinner of Focus,Accessory,Common,50 cp,"Reduces anxiety through repetitive motion.","+1 WIS (Concentration checks), +1 WIS Saves (Anxiety)"
-Vape Pen of Cloudkill,Wand,Rare,5 sp,"Cast Cloudkill once per day. Mango flavored poison cloud.","Cast Cloudkill (1/long rest), CHA-based spell DC"
-Avocado of Everlasting Toast,Wondrous Item,Uncommon,1 sp 50 cp,"Regenerates every morning. Millennials can't resist it.","Restore 1d4 + WIS mod Chill (1/long rest)"
-Beanie of Hipsterdom,Headgear,Common,2 sp 50 cp,"Makes you look like you listen to bands no one's heard of.","+1 CR, +1 CHA (Performance - Music)"
-Flannel Shirt of Lumbersexuality,Armor,Common,4 sp,"Look rugged without doing manual labor. Peak aesthetic.","+1 CR, +1 CON, +1 STR (Appearance only)"
-Doc Martens of Stomping,Footwear,Uncommon,1 gp 5 sp,"Heavy boots that command respect with every step.","+2 CHA (Intimidation), +1 STR Saves"
-Tote Bag of Holding,Wondrous Item,Uncommon,2 sp,"A canvas bag with impossible capacity. Very sustainable.","Capacity 500 lbs, +1 WIS (Organization)"
-Reusable Straw of Virtue,Accessory,Common,1 sp,"You are saving the turtles. Let everyone know.","+1 CHA (Persuasion - Environmental), +1 WIS Saves (Guilt)"
-Mason Jar of Aesthetics,Container,Common,50 cp,"Everything tastes better in a jar. It's science.","+1 INT (Crafting - Food/Drinks), +1 CHA (Presentation)"
-Ring Light of Vanity,Wondrous Item,Uncommon,3 sp,"Perfect lighting anywhere. Your best angle, always.","Advantage on CHA checks (On Camera), +2 CHA (Selfies)"
-Selfie Stick of Reach,Weapon,Common,1 sp 50 cp,"A quarterstaff for the modern age. Extended reach.","1d6 + DEX bludgeoning, Reach 10ft, Finesse"
-Portable Charger of Life,Wondrous Item,Uncommon,3 sp,"Emergency power for desperate times.","Restore 1 charge to tech item, +1 INT (Tech checks)"
-Bluetooth Speaker of Annoyance,Wondrous Item,Common,5 sp,"Plays music loudly in public. Assert dominance.","1d4 + CHA sonic (15ft radius), Disadvantage on DEX (Stealth)"
-Smart Watch of Anxiety,Accessory,Rare,4 gp,"Notifies you of everything. Knowledge at a cost.","+2 WIS (Perception), -2 WIS Saves (Stress), +1 DEX (Reaction)"
-Fitbit of Shaming,Accessory,Uncommon,1 gp,"Vibrates judgmentally if you haven't moved.","+1 STR (Athletics), +1 CON Saves (Sedentary)"
-Peloton of Penance,Wondrous Item,Very Rare,20 gp,"Stationary bike of suffering. Cleanses the soul.","Remove 1 Exhaustion level (1 hour use), +2 CON"
-Yoga Pants of Comfort,Armor,Common,9 sp,"Counts as unarmored. Maximum flexibility.","+1 CR, +1 DEX, Unarmored"
-Weighted Blanket of Security,Wondrous Item,Rare,1 gp 5 sp,"Like a hug that doesn't judge you.","Restore max Chill on Short Rest (requires CON 12+)"
-Essential Oils of Placebo,Potion,Common,1 sp 50 cp,"Cures minor ailments through belief. Maybe.","WIS Save DC 10: Success = cure 1 condition, Fail = nothing"
-Himalayan Salt Lamp of Vibes,Wondrous Item,Uncommon,2 sp 50 cp,"Cleanses the energy in any room. Allegedly.","+1 to Chill restoration in 30ft radius, +1 WIS (Ambiance)"
-Succulent of Neglect,Wondrous Item,Common,1 sp,"Thrives on being ignored. A kindred spirit.","1/day: Reroll one failed WIS save"
-Monstera of Wealth,Wondrous Item,Rare,1 gp,"The plant that indicates you've made it.","+2 CHA (in your home), +1 WIS (Status Recognition)"
-Chemex of Snobbery,Wondrous Item,Uncommon,5 sp,"Makes pour-over coffee. You'll explain the process.","+2 INT (Crafting - Coffee), +1 CHA (Condescension)"
-Aeropress of Travel,Wondrous Item,Common,3 sp,"Portable coffee anywhere. A nomad essential.","Restore 1d4 + INT mod Chill (1/short rest)"
-Moka Pot of Patience,Wondrous Item,Common,2 sp,"Takes forever but worth it. Teaches mindfulness.","+1 WIS, +1 CON Saves (Impatience)"
-French Press of Grit,Wondrous Item,Common,1 sp 50 cp,"Coffee with texture. Builds character.","+1 CON, +1 STR Saves (Morning)"
-Cold Brew of Jitters,Potion,Common,50 cp,"Concentrated caffeine. Handle with care.","Haste for 1 minute, then 1 level Exhaustion"
-Oat Milk of Superiority,Potion,Common,60 cp,"Dairy free. Environmentally conscious. Slightly smug.","+1 CON Saves, +1 CHA (Dietary Conversations)"
-Almond Milk of Sustainability,Potion,Common,50 cp,"Uses too much water. A guilty pleasure.","-1 WIS Saves (Environmental Guilt), +1 CON"
-Standing Desk Converter,Wondrous Item,Uncommon,2 gp,"Transform any surface into a standing workspace.","+1 CON, +1 DEX Saves (Sedentary), -1 STR (Leg fatigue)"
-Ergonomic Mouse of Carpal Prevention,Accessory,Common,8 sp,"Protects your wrist. Your livelihood depends on it.","+1 DEX (Fine Motor), Immunity to Carpal Tunnel condition"
-Pomodoro Timer of Productivity,Wondrous Item,Common,3 sp,"25 minutes of focus. 5 minutes of despair.","+2 INT (Concentration - Work), -1 WIS (Time Anxiety)"
-Bullet Journal of Organization,Wondrous Item,Uncommon,1 gp,"More time decorating it than using it.","+2 INT (Planning), +1 WIS (Memory), -1 DEX (Time spent)"
-Noise Machine of White,Wondrous Item,Common,5 sp,"Drowns out distractions. Or conversations you're avoiding.","+1 WIS Saves (Distraction), +1 CON (Sleep Quality)"
-Kindle of Infinite Books,Wondrous Item,Uncommon,1 gp 5 sp,"A library in your pocket. You'll definitely read them all.","+2 INT (Research), +1 WIS (Reading), -1 CHA (Eye Contact)"
-AirPods of Ignoring,Headgear,Uncommon,2 gp,"The universal signal for 'don't talk to me'.","+2 WIS Saves (Unwanted Conversation), +1 DEX (Pretending Not to Hear)"
-Moleskine of Pretension,Wondrous Item,Common,8 sp,"The notebook of serious thinkers. Or people who want to look like them.","+1 INT, +1 CHA (Intellectual Settings)"
-Passport Holder of Organization,Accessory,Common,3 sp,"Keeps your documents safe. Shows you travel.","+1 DEX (Document Retrieval), +1 CHA (Travel Conversations)"
-Universal Adapter of Compatibility,Wondrous Item,Uncommon,1 gp,"Works in any country. A true citizen of nowhere.","+2 INT (Tech - International), Immunity to Power Incompatibility"
-Packing Cubes of Efficiency,Container,Common,5 sp,"Marie Kondo your luggage. Does it spark joy?","+2 INT (Organization), +1 WIS (Minimalism)"
+id,name,type,rarity,cost_cp,cost_btc,weight_lb,attunement,description,bonuses,tags,version,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,headgear,rare,300,0,0.5,false,"Blocks out the haters. Advantage on Concentration checks.","save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration","audio;defensive;focus",1.0,true
+item_hoodie_anonymity,Hoodie of Anonymity,armor,uncommon,80,0,1.0,false,"A plain black hoodie. You blend into any urban environment.","cr_bonus:urban:+2;skill_bonus:DEX:stealth:+2","stealth;urban;clothing",1.0,true
+item_ergonomic_laptop_stand,Ergonomic Laptop Stand,accessory,common,40,0,2.0,false,"Prevents posture damage during long work sessions.","save_bonus:CON:exhaustion:+1;immunity:back_pain","ergonomic;work;health",1.0,true
+item_blue_light_glasses,Blue Light Glasses,eyewear,common,20,0,0.1,false,"Protects eyes from screen glare. See through digital illusions.","skill_bonus:WIS:perception:screens:+1;save_bonus:INT:digital:+1","eyewear;tech;defensive",1.0,true
+item_mechanical_keyboard,Mechanical Keyboard of Clacking,weapon,rare,150,0,1.5,false,"Deals damage through pure sensory assault. Annoying to everyone nearby.","damage:1d6:STR:bludgeoning;damage:1d4:CON:sonic;range:melee","weapon;tech;sonic",1.0,true
+item_hydroflask_hydration,Hydroflask of Hydration,wondrous_item,uncommon,45,0,0.5,false,"Holds infinite water (or iced coffee). Stay hydrated, stay chill.","restore_chill:1d4+CON:3:long_rest","consumable;healing;hydration",1.0,true
+item_power_bank_infinite,Power Bank of Infinite Charge,wondrous_item,legendary,0,5000,0.3,true,"Never run out of battery again. A nomad's holy grail.","immunity:power_loss;skill_bonus:INT:tech:+3","tech;legendary;utility",1.0,true
+item_vintage_film_camera,Vintage Film Camera,accessory,rare,500,0,1.0,false,"Takes photos that look better than reality. Instant aesthetic.","skill_bonus:CHA:performance:photography:+3;advantage:CHA:artistic","photography;aesthetic;artistic",1.0,true
+item_yoga_mat_grounding,Yoga Mat of Grounding,wondrous_item,uncommon,60,0,2.0,false,"Center yourself. The mat provides unexpected stability.","advantage:WIS:saves:after_meditation","wellness;meditation;defensive",1.0,true
+item_ironic_tshirt,Ironic T-Shirt,armor,common,25,0,0.3,false,"A shirt with a vague slogan. Says nothing, implies everything.","cr_bonus:+1;stat_bonus:CHA:+1","clothing;aesthetic;social",1.0,true
+item_hydroflask_vsco,Hydroflask of VSCO,wondrous_item,common,40,0,0.5,false,"And I oop. Can be used as an improvised weapon.","damage:1d4:STR:bludgeoning;restore_chill:1:1:short_rest","consumable;weapon;meme",1.0,true
+item_fidget_spinner,Fidget Spinner of Focus,accessory,common,5,0,0.1,false,"Reduces anxiety through repetitive motion.","skill_bonus:WIS:concentration:+1;save_bonus:WIS:anxiety:+1","focus;anxiety;utility",1.0,true
+item_vape_pen_cloudkill,Vape Pen of Cloudkill,wand,rare,50,0,0.1,true,"Cast Cloudkill once per day. Mango flavored poison cloud.","cast_spell:cloudkill:1:long_rest;spell_stat:CHA","spell;poison;offensive",1.0,true
+item_avocado_everlasting,Avocado of Everlasting Toast,wondrous_item,uncommon,15,0,0.2,false,"Regenerates every morning. Millennials can't resist it.","restore_chill:1d4+WIS:1:long_rest","consumable;healing;meme",1.0,true
+item_beanie_hipsterdom,Beanie of Hipsterdom,headgear,common,25,0,0.2,false,"Makes you look like you listen to bands no one's heard of.","cr_bonus:+1;skill_bonus:CHA:performance:music:+1","clothing;aesthetic;music",1.0,true
+item_flannel_lumbersexuality,Flannel Shirt of Lumbersexuality,armor,common,40,0,0.5,false,"Look rugged without doing manual labor. Peak aesthetic.","cr_bonus:+1;stat_bonus:CON:+1;skill_bonus:STR:appearance:+1","clothing;aesthetic;rugged",1.0,true
+item_doc_martens,Doc Martens of Stomping,footwear,uncommon,150,0,3.0,false,"Heavy boots that command respect with every step.","skill_bonus:CHA:intimidation:+2;save_bonus:STR:+1","footwear;intimidation;combat",1.0,true
+item_tote_bag_holding,Tote Bag of Holding,wondrous_item,uncommon,20,0,0.5,false,"A canvas bag with impossible capacity. Very sustainable.","capacity:500;skill_bonus:WIS:organization:+1","storage;sustainable;utility",1.0,true
+item_reusable_straw,Reusable Straw of Virtue,accessory,common,10,0,0.1,false,"You are saving the turtles. Let everyone know.","skill_bonus:CHA:persuasion:environmental:+1;save_bonus:WIS:guilt:+1","sustainable;social;virtue",1.0,true
+item_mason_jar,Mason Jar of Aesthetics,container,common,5,0,0.5,false,"Everything tastes better in a jar. It's science.","skill_bonus:INT:crafting:food:+1;skill_bonus:CHA:presentation:+1","container;aesthetic;crafting",1.0,true
+item_ring_light,Ring Light of Vanity,wondrous_item,uncommon,30,0,1.0,false,"Perfect lighting anywhere. Your best angle, always.","advantage:CHA:on_camera;skill_bonus:CHA:selfies:+2","photography;social;aesthetic",1.0,true
+item_selfie_stick,Selfie Stick of Reach,weapon,common,15,0,0.5,false,"A quarterstaff for the modern age. Extended reach.","damage:1d6:DEX:bludgeoning;range:10;property:finesse","weapon;photography;reach",1.0,true
+item_portable_charger,Portable Charger of Life,wondrous_item,uncommon,30,0,0.3,false,"Emergency power for desperate times.","restore_charge:1;skill_bonus:INT:tech:+1","tech;utility;emergency",1.0,true
+item_bluetooth_speaker,Bluetooth Speaker of Annoyance,wondrous_item,common,50,0,0.5,false,"Plays music loudly in public. Assert dominance.","damage:1d4:CHA:sonic:aoe:15;disadvantage:DEX:stealth","audio;offensive;social",1.0,true
+item_smart_watch,Smart Watch of Anxiety,accessory,rare,400,0,0.1,true,"Notifies you of everything. Knowledge at a cost.","skill_bonus:WIS:perception:+2;save_penalty:WIS:stress:-2;skill_bonus:DEX:reaction:+1","tech;perception;cursed",1.0,true
+item_fitbit_shaming,Fitbit of Shaming,accessory,uncommon,100,0,0.1,false,"Vibrates judgmentally if you haven't moved.","skill_bonus:STR:athletics:+1;save_bonus:CON:sedentary:+1","tech;fitness;wellness",1.0,true
+item_peloton_penance,Peloton of Penance,wondrous_item,very_rare,2000,0,100.0,true,"Stationary bike of suffering. Cleanses the soul.","remove_exhaustion:1:1_hour;stat_bonus:CON:+2","fitness;wellness;exhaustion",1.0,true
+item_yoga_pants,Yoga Pants of Comfort,armor,common,90,0,0.3,false,"Counts as unarmored. Maximum flexibility.","cr_bonus:+1;stat_bonus:DEX:+1;property:unarmored","clothing;comfort;athletic",1.0,true
+item_weighted_blanket,Weighted Blanket of Security,wondrous_item,rare,150,0,15.0,false,"Like a hug that doesn't judge you.","restore_max_chill:short_rest;requires:CON:12","comfort;healing;rest",1.0,true
+item_essential_oils,Essential Oils of Placebo,potion,common,15,0,0.1,false,"Cures minor ailments through belief. Maybe.","save_check:WIS:10:cure_condition:1:nothing","consumable;healing;wellness",1.0,true
+item_himalayan_salt_lamp,Himalayan Salt Lamp of Vibes,wondrous_item,uncommon,25,0,5.0,false,"Cleanses the energy in any room. Allegedly.","aura:chill_restore:+1:30;skill_bonus:WIS:ambiance:+1","ambiance;wellness;aura",1.0,true
+item_succulent,Succulent of Neglect,wondrous_item,common,10,0,0.5,false,"Thrives on being ignored. A kindred spirit.","reroll:WIS:save:1:day","plant;defensive;utility",1.0,true
+item_monstera,Monstera of Wealth,wondrous_item,rare,100,0,10.0,false,"The plant that indicates you've made it.","skill_bonus:CHA:home:+2;skill_bonus:WIS:status:+1","plant;status;social",1.0,true
+item_chemex,Chemex of Snobbery,wondrous_item,uncommon,50,0,1.0,false,"Makes pour-over coffee. You'll explain the process.","skill_bonus:INT:crafting:coffee:+2;skill_bonus:CHA:condescension:+1","coffee;crafting;social",1.0,true
+item_aeropress,Aeropress of Travel,wondrous_item,common,30,0,0.5,false,"Portable coffee anywhere. A nomad essential.","restore_chill:1d4+INT:1:short_rest","coffee;consumable;travel",1.0,true
+item_moka_pot,Moka Pot of Patience,wondrous_item,common,20,0,1.0,false,"Takes forever but worth it. Teaches mindfulness.","stat_bonus:WIS:+1;save_bonus:CON:impatience:+1","coffee;wellness;patience",1.0,true
+item_french_press,French Press of Grit,wondrous_item,common,15,0,1.0,false,"Coffee with texture. Builds character.","stat_bonus:CON:+1;save_bonus:STR:morning:+1","coffee;consumable;morning",1.0,true
+item_cold_brew,Cold Brew of Jitters,potion,common,5,0,0.5,false,"Concentrated caffeine. Handle with care.","effect:haste:1_minute;effect:exhaustion:1:after","consumable;coffee;buff",1.0,true
+item_oat_milk,Oat Milk of Superiority,potion,common,6,0,0.5,false,"Dairy free. Environmentally conscious. Slightly smug.","save_bonus:CON:+1;skill_bonus:CHA:dietary:+1","consumable;dairy_free;social",1.0,true
+item_almond_milk,Almond Milk of Sustainability,potion,common,5,0,0.5,false,"Uses too much water. A guilty pleasure.","save_penalty:WIS:environmental_guilt:-1;stat_bonus:CON:+1","consumable;dairy_free;cursed",1.0,true
+item_standing_desk,Standing Desk Converter,wondrous_item,uncommon,200,0,15.0,false,"Transform any surface into a standing workspace.","stat_bonus:CON:+1;save_bonus:DEX:sedentary:+1;save_penalty:STR:leg_fatigue:-1","ergonomic;work;furniture",1.0,true
+item_ergonomic_mouse,Ergonomic Mouse of Carpal Prevention,accessory,common,80,0,0.2,false,"Protects your wrist. Your livelihood depends on it.","skill_bonus:DEX:fine_motor:+1;immunity:carpal_tunnel","ergonomic;tech;health",1.0,true
+item_pomodoro_timer,Pomodoro Timer of Productivity,wondrous_item,common,30,0,0.2,false,"25 minutes of focus. 5 minutes of despair.","skill_bonus:INT:concentration:work:+2;save_penalty:WIS:time_anxiety:-1","productivity;focus;work",1.0,true
+item_bullet_journal,Bullet Journal of Organization,wondrous_item,uncommon,100,0,0.5,false,"More time decorating it than using it.","skill_bonus:INT:planning:+2;skill_bonus:WIS:memory:+1;skill_penalty:DEX:time_spent:-1","productivity;planning;aesthetic",1.0,true
+item_noise_machine,Noise Machine of White,wondrous_item,common,50,0,0.5,false,"Drowns out distractions. Or conversations you're avoiding.","save_bonus:WIS:distraction:+1;skill_bonus:CON:sleep:+1","audio;rest;focus",1.0,true
+item_kindle,Kindle of Infinite Books,wondrous_item,uncommon,150,0,0.4,false,"A library in your pocket. You'll definitely read them all.","skill_bonus:INT:research:+2;skill_bonus:WIS:reading:+1;skill_penalty:CHA:eye_contact:-1","tech;reading;knowledge",1.0,true
+item_airpods,AirPods of Ignoring,headgear,uncommon,200,0,0.1,false,"The universal signal for 'don't talk to me'.","save_bonus:WIS:unwanted_conversation:+2;skill_bonus:DEX:pretending_not_to_hear:+1","audio;social;defensive",1.0,true
+item_moleskine,Moleskine of Pretension,wondrous_item,common,80,0,0.3,false,"The notebook of serious thinkers. Or people who want to look like them.","stat_bonus:INT:+1;skill_bonus:CHA:intellectual:+1","writing;aesthetic;social",1.0,true
+item_passport_holder,Passport Holder of Organization,accessory,common,30,0,0.1,false,"Keeps your documents safe. Shows you travel.","skill_bonus:DEX:document_retrieval:+1;skill_bonus:CHA:travel:+1","travel;organization;social",1.0,true
+item_universal_adapter,Universal Adapter of Compatibility,wondrous_item,uncommon,100,0,0.3,false,"Works in any country. A true citizen of nowhere.","skill_bonus:INT:tech:international:+2;immunity:power_incompatibility","travel;tech;utility",1.0,true
+item_packing_cubes,Packing Cubes of Efficiency,container,common,50,0,0.2,false,"Marie Kondo your luggage. Does it spark joy?","skill_bonus:INT:organization:+2;skill_bonus:WIS:minimalism:+1","travel;organization;storage",1.0,true
