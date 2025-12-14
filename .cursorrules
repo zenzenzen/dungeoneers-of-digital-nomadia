@@ -277,6 +277,16 @@ Spell Save DC = 8 + Proficiency + Spellcasting Stat Modifier
 | **Confused** | Disadvantage on next action | Critical Gaslight | WIS save at end of turn |
 | **Charmed** | Won't attack charmer, advantage on CHA checks vs target | Love Bomb, various | WIS save, damage |
 | **Exhaustion** | Stacking penalties (1-6 levels) | Overwork, caffeine crash | Long Rest removes 1 level |
+| **FOMO** | Must move toward any social gathering; disadvantage on WIS saves | Missing an event, seeing others having fun | Attending the event or WIS save DC 15 |
+| **Ghosted** | Cannot target the creature who Ghosted you; -2 CHA for 1 hour | Failed relationship check, being left on read | New social interaction or CHA save DC 12 |
+| **Ratio'd** | Disadvantage on CHA checks; enemies have advantage on attacks vs you | Public humiliation, bad take | 24 hours or landing a critical Clap Back |
+| **Imposter Syndrome** | Cannot use proficiency bonus on INT checks despite being proficient | Success, praise, promotion | Failing spectacularly (proves you're human) or WIS save DC 14 |
+| **Main Character Syndrome** | Must act first each round; cannot take Help action; -4 to Perception (others) | Viral success, too much validation | Witnessing someone else succeed or WIS save DC 16 |
+| **Doomscrolled** | Speed halved, -2 INT, cannot take reactions | 1+ hour on feeds, algorithmic rabbit hole | CON save DC 13 or touching grass (going outside) |
+| **Parasocial** | Charmed by a creature that doesn't know you exist; spend actions trying to interact | Following an influencer, celebrity encounter | WIS save DC 14 when ignored, or blocking them |
+| **Blue Light Poisoned** | Disadvantage on Perception; -1 to all attack rolls | 8+ hours screen time, no breaks | Short Rest without devices, eye drops |
+| **Touch Grass Deficient** | Disadvantage on DEX checks and saves; -2 to CON saves vs exhaustion | Extended indoor time, too online | 1 hour outdoors or CON save DC 12 |
+| **Read Receipted** | Cannot hide or use Stealth; anxiety gives -2 to concentration | Message seen but not replied to | Receiving a response or 1 hour passing |
 
 ---
 
@@ -353,7 +363,7 @@ Digital Nomad,d8,DEX,Dex/Int,"WiFi Sense (+WIS to locate signals), Tax Evasion (
 
 3. **Modern mundane is magical** - Reframe everyday objects as magical items with clear stat benefits.
 
-4. **Parody with precision** - Mock startup culture, influencer life, and digital nomad tropes, but keep the game playable.
+4. **Parody with precision** - Mock startup culture, influencer life, traveling stereotypes, millenial+gen z anxieties, and digital nomad tropes, but keep the game playable.
 
 5. **Everyone is a valid target** - Karen, Crypto Bros, Yoga Teachers, LinkedIn Lunatics - satirize across the spectrum.
 
@@ -600,6 +610,70 @@ item_hoodie,...,1.0,2024-01-15,2024-03-20,"stealth;urban;clothing",true
 - `created_at` / `updated_at` - ISO 8601 timestamps
 - `tags` - Searchable keywords (semicolon-delimited)
 - `is_active` - Boolean for soft-delete/deprecation
+
+---
+
+### FLAVOR TEXT REQUIREMENTS
+
+> Every entity deserves a snarky one-liner. Flavor text is the soul of satire.
+
+**EVERY database entity MUST include a `flavor_text` field** containing a humorous byline, quote, or quip that captures the satirical essence of the item/class/monster/etc.
+
+#### Flavor Text Rules
+
+1. **Preserve existing flavor** - When converting items to database-ready format, NEVER delete or lose existing flavor text from descriptions. Extract it to the dedicated `flavor_text` field.
+
+2. **Add if missing** - If an entity lacks flavor text, you MUST create one before considering the entry complete.
+
+3. **Keep it punchy** - Ideal length: 1-2 sentences. Should work as a tooltip, loading screen tip, or item card caption.
+
+4. **Match the tone** - Satirize digital nomad culture, startup life, influencer delusions, or millennial/gen-z anxieties. Everyone is a target.
+
+5. **Italicize in display** - Flavor text should render in *italics* when displayed in-game.
+
+#### Flavor Text Formats
+
+```csv
+# Standalone byline (author optional)
+flavor_text,"They said 'just be yourself.' So I became insufferable." — LinkedIn Lunatic
+
+# Fake review/testimonial
+flavor_text,"★★★★★ 'Changed my life. Well, my Instagram aesthetic.' — Verified Purchaser"
+
+# Sardonic observation
+flavor_text,"For when you need to look busy without actually being productive."
+
+# In-universe quote
+flavor_text,"'WiFi is a human right.' — The Barista Oath, Article 1"
+
+# Self-aware item description
+flavor_text,"It's giving 'I peaked in a group project.'"
+```
+
+#### Flavor Text by Entity Type
+
+| Entity | Flavor Style | Example |
+|--------|--------------|---------|
+| **Items** | Sarcastic product description or fake review | "Finally, a way to ignore people with style." |
+| **Classes** | Exaggerated class fantasy or self-deprecating tagline | "You didn't choose the hustle. The hustle chose you. (Because you're broke.)" |
+| **Monsters** | Ominous but absurd warning | "Approach with caution. They WILL tell you about their podcast." |
+| **Spells** | Mystic-sounding nonsense or brutally honest effect | "Channel the ancient power of being Really Fucking Annoying." |
+| **Feats** | Achievement unlocked energy | "Congratulations, you've weaponized your personality." |
+| **Backgrounds** | Origin story parody | "You didn't fail out—you 'pivoted to entrepreneurship.'" |
+| **NPCs** | Character-revealing quip | "Will overshare their entire life story for a flat white." |
+| **Conditions** | Sardonic symptom description | "Symptoms include: checking your phone 47 times, crying, and spite-posting." |
+
+#### When Converting to Database Format
+
+**BEFORE (description with embedded flavor):**
+```csv
+description,"Noise-cancelling headphones that block out haters. They said 'just be yourself' so you became unreachable. +2 WIS Saves vs Sonic attacks."
+```
+
+**AFTER (separated into mechanical + flavor):**
+```csv
+description,"+2 WIS Saves vs Sonic and Verbal attacks. Advantage on Concentration checks.",flavor_text,"They said 'just be yourself' so you became unreachable."
+```
 
 ---
 
