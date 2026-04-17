@@ -1,7 +1,7 @@
 # Encounters in Digital Nomadia
 
 ## The Tinder Date from Hell
-**Enemy**: **Delusional Date** (CR 3)
+**Enemy**: **The Trauma Dumper** (CR 3)
 **Setting**: A dimly lit bar or coffee shop.
 **Description**: You matched with them 2 hours ago. They look nothing like their photos and have already mentioned their ex 5 times.
 **Tactics**:
@@ -12,7 +12,7 @@
 -   A blocked number.
 
 ## The Mansplaining Tech Bro
-**Enemy**: **Tech Bro** (CR 2)
+**Enemy**: **The Mansplainer** (CR 2)
 **Setting**: Coworking space or tech conference.
 **Description**: Wearing a Patagonia vest and holding a craft beer. He assumes you don't know what "The Cloud" is.
 **Tactics**:
@@ -23,7 +23,7 @@
 -   Stickers for a failed startup.
 
 ## The Karen in the Wild
-**Enemy**: **Karen** (CR 5)
+**Enemy**: **The Karen** (CR 3)
 **Setting**: Retail store or HOA meeting.
 **Description**: She wants to speak to the manager. Now.
 **Tactics**:
@@ -34,18 +34,18 @@
 -   Oversized sunglasses.
 
 ## The MLM Recruiter
-**Enemy**: **Boss Babe** (CR 3)
+**Enemy**: **The MLM Hun** (CR 3)
 **Setting**: Facebook Messenger or a high school reunion.
 **Description**: "Hey hun! Long time no see! I have an amazing business opportunity for you."
 **Tactics**:
--   **Pyramid Scheme**: (Action) Grapples you. You take 1d6 Gold damage per turn until you escape.
+-   **Pyramid Scheme**: (Action) Grapples you. You lose 1d6 cash per turn until you escape. If you're broke, take 1d6 Reputation damage instead.
 -   **Toxic Positivity**: (Passive) Immune to negative emotions (Psychic damage).
 **Loot**:
 -   Box of unsold essential oils.
 -   Pink Cadillac key (fake).
 
 ## The Crypto Scammer
-**Enemy**: **Rug Puller** (CR 4)
+**Enemy**: **The Crypto Bro** (CR 2)
 **Setting**: Twitter DMs or a Telegram group.
 **Description**: Profile picture is an ape. Promises 1000x returns.
 **Tactics**:
@@ -56,7 +56,7 @@
 -   Paper hands.
 
 ## The Influencer in the Wild
-**Enemy**: **TikToker** (CR 2)
+**Enemy**: **The Clout Chaser** (CR 2)
 **Setting**: A scenic viewpoint or busy street.
 **Description**: Dancing in front of a ring light, blocking traffic.
 **Tactics**:
@@ -67,7 +67,7 @@
 -   Portable charger.
 
 ## The Aggressive Busker
-**Enemy**: **Soundcloud Rapper** (CR 1)
+**Enemy**: **The Speakerphone Screamer** (CR 1, busker variant)
 **Setting**: Subway station or city square.
 **Description**: Handing out mixtapes that nobody wants.
 **Tactics**:
@@ -78,7 +78,7 @@
 -   Loose change.
 
 ## The Lost Tourist
-**Enemy**: **Boomer Tourist** (CR 1/2)
+**Enemy**: **The Boomer** (CR 1)
 **Setting**: Standing in the middle of the bike lane looking at a paper map.
 **Description**: Wearing socks with sandals and a fanny pack.
 **Tactics**:

@@ -60,3 +60,9 @@ armor_gap_year_uniform,Gap Year Uniform,light,common,1,200,1.0,,,false,0,"Tie-dy
 armor_luxury_resort_casual,Luxury Resort Casual,light,uncommon,2,1500,1.0,CHA,12,false,0,"Linen everything. Subtle designer. Island chic.","cr_bonus:+2;stat_bonus:CHA:+3;skill_bonus:Persuasion:+2;advantage:CHA:upscale_resorts",1.0,"clothing;luxury;resort;linen;island",true
 armor_motorbike_bangkok,Motorbike Armor (Bangkok),light,uncommon,2,200,1.0,DEX,12,false,0,"Shorts, flip flops, no helmet. Standard Bangkok riding gear.","cr_bonus:+2;stat_bonus:DEX:+2;vulnerability:crash_damage;skill_bonus:Vehicle:+2",1.0,"clothing;thailand;bangkok;motorbike;dangerous",true
 
+
+
+
+
+
+

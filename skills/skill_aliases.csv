@@ -1,0 +1,170 @@
+alias,skill_id,source,confidence,notes
+Active Listening,skill_therapy_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Aesthetic Curation,skill_filter_selection,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Algorithm Analysis,skill_algorithm_manipulation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Ancient Systems,skill_history,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Appraisal,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Argument Construction,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Asynchronous Communication,skill_slack_etiquette,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Athletic Discipline,skill_athletics,background_or_gear,0.95,"Manual correction: maps to Athletics, not Gatekeeping."
+Athletics,skill_athletics,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Authority Presence,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Authority Projection,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Automation Design,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Boundary Setting,skill_therapy_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Brand Building,skill_content_creation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Business Translation,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Celebrity Knowledge,skill_clout_chasing,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Character Development,skill_content_creation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Child Development,skill_insight,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Citation Finding,skill_history,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Citation Mastery,skill_history,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+City Navigation,skill_public_transit_navigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Classroom Management,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Client Management,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Code Review,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Coding,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Cold Calling,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Community Surveillance,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Competition Mindset,skill_humblebragging,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Complaint Articulation,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Conflict Resolution,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Content Creation,skill_content_creation,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Content Strategy,skill_content_creation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Conversation Skills,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Corporate Survival,skill_survival,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Costume Creation,skill_filter_selection,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Crisis Management,skill_corporate_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Crisis Response,skill_corporate_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Crisis Tracking,skill_doomscrolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Cryptocurrency Lore,skill_cryptocurrency_lore,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Crystal Healing,skill_crystal_healing,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Current Events,skill_doomscrolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Curriculum Design,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Customer Management,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Customer Service,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Data Visualization,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Debugging,skill_tech_troubleshooting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Deception,skill_deception,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Digital Tool Mastery,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Discipline Enforcement,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Doomscrolling,skill_doomscrolling,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Driving Skill,skill_vehicle_handling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Early Rising,skill_power_napping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Emotional Processing,skill_therapy_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Entitlement Assertion,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Estate Management,skill_subletting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Event Planning,skill_content_creation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Fact Checking,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Fashion Analysis,skill_trend_analysis,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Fermentation Science,skill_sourdough_baking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+First Comment Strategy,skill_trolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Flavor Analysis,skill_barista_negotiation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Food Pairing,skill_barista_negotiation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Foraging,skill_survival,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Forum Moderation,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Framework Creation,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Gaming,skill_trolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Gentrification,skill_gentrification,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Ghosting,skill_ghosting,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Goal Setting,skill_manifesting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Guest Psychology,skill_vibe_checking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Guest Relations,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Hardening,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Heavy Lifting,skill_athletics,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+History,skill_history,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Humblebragging,skill_humblebragging,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Humor Writing,skill_trolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+IKEA Assembly,skill_ikea_assembly,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Information Verification,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Infrastructure Knowledge,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Insider Trading,skill_cryptocurrency_lore,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Insight,skill_insight,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Intimidation,skill_intimidation,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Inventory Management,skill_thrifting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Keyword Research,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Laboratory Safety,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Latte Art,skill_latte_art,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Leadership Performance,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Logical Analysis,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Logistics,skill_survival,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Manifesting,skill_manifesting,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Mansplaining,skill_mansplaining,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Market Analysis,skill_trend_analysis,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Market Pricing,skill_thrifting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Meditation,skill_manifesting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Meme Analysis,skill_trend_analysis,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Music Knowledge,skill_history,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Natural Living,skill_nature,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Negotiation,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Network Analysis,skill_investigation,background_or_gear,0.7,Manual correction: treated as pattern analysis rather than pure persuasion.
+Networking,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Notification Monitoring,skill_doomscrolling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Overwork Recognition,skill_therapy_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Patience Mastery,skill_insight,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Pattern Recognition,skill_vibe_checking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Performance,skill_performance,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Performance Motivation,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Persistence,skill_ghosting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Persuasion,skill_persuasion,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Pipeline Architecture,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Platform Presence,skill_algorithm_manipulation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Power Napping,skill_power_napping,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Problem Solving,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Process Design,skill_corporate_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Process Navigation,skill_bureaucracy,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Property Management,skill_subletting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Property Valuation,skill_thrifting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Recovery Planning,skill_therapy_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Relationship Building,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Research Methods,skill_investigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Retreat Facilitation,skill_manifesting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Rhetoric Construction,skill_deception,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Risk Assessment,skill_vibe_checking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Rule Enforcement,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Rule Writing,skill_gatekeeping,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Schedule Flexibility,skill_tax_evasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Scope Negotiation,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Self-Direction,skill_inbox_zero,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Selfie Taking,skill_selfie_taking,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Site Architecture,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Slack Etiquette,skill_slack_etiquette,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Social Skills (Learning),skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Speed Crafting,skill_ikea_assembly,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Stakeholder Management,skill_corporate_speak,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Statistical Analysis,skill_trend_analysis,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Stealth,skill_stealth,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Streaming Performance,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Subletting,skill_subletting,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Survival,skill_survival,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+System Analysis,skill_trend_analysis,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Team Building,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Team Leadership,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Technical Translation,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Technology Understanding,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Therapy Speak,skill_therapy_speak,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Thought Leadership,skill_humblebragging,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Threat Assessment,skill_vibe_checking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Thrifting,skill_thrifting,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Time Management,skill_inbox_zero,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Time Optimization,skill_inbox_zero,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Tool Acquisition,skill_thrifting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Touch Typing,skill_touch_typing,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Trend Analysis,skill_trend_analysis,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+Troubleshooting,skill_tech_troubleshooting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Typography,skill_filter_selection,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Vehicle,skill_vehicle_handling,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Visual Design,skill_filter_selection,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Visual Presentation,skill_filter_selection,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Voice Control,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Voice Mimicry,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+Wellness Marketing,skill_manifesting,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+WiFi Dowsing,skill_wifi_dowsing,background_or_gear,1.0,Auto-mapped alias for legacy content normalization.
+carrying,skill_athletics,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+first_impressions,skill_performance,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+food_selection,skill_barista_negotiation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+idol_detection,skill_vibe_checking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+local_knowledge,skill_public_transit_navigation,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+negotiations,skill_persuasion,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+photography,skill_selfie_taking,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.
+tech_work,skill_technology,background_or_gear,0.8,Auto-mapped alias for legacy content normalization.

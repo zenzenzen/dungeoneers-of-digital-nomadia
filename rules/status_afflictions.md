@@ -26,6 +26,8 @@
 | **Stunned** | Cannot take actions or reactions; auto-fail STR/DEX saves; attacks against have Advantage | Usually 1 round | Boring Story (Energy Vampire); Photo First (Foodie); Stunning Strike: Namaste (Yoga Teacher); Mass Unfollow; Schedule (Meeting Holder); Overshare spell | End of duration; specific class features |
 | **Incapacitated** | Cannot take actions or reactions | Varies | Trauma Dump spell (on failed save); reaching 0 Chill | Recovery; spell ending |
 | **Bored** | -2 to all checks; must make WIS save to pay attention | 1 minute | Back Home Story (Retirement Visa Boomer); Meeting That Could Have Been An Email; Energy Vampire attacks | WIS save DC 12; engaging stimulus |
+| **Distracted** | -2 on attack rolls and focus-based checks; cannot take opportunity attacks | 1 round to 1 minute | Speakerphone Blast; push notifications; crowded chaotic scenes | Regaining focus; end of effect; Mute |
+| **Panic** | Must use move action to create distance from trigger; drops Concentration; Disadvantage on INT and CHA checks | 1d4 rounds or until calmed | Wifi collapse; immigration scares; sudden public humiliation; VPN failure during work | Reassurance; leaving danger; successful WIS save DC 14 |
 
 ### Social & Reputation Conditions
 
@@ -36,6 +38,8 @@
 | **Shamed** | -4 to CHA; Disadvantage on social initiative | 1 hour | Body Shame (Beach Body Elemental fail); public humiliation | Self-affirmation (WIS check DC 14); supportive ally |
 | **Judged** | Target knows your flaw; -2 CHA with them specifically | Permanent until addressed | Various NPC interactions (Yuki the Barista, Jason the Taipei Hipster) | Addressing the perceived flaw; proving yourself |
 | **Ghosted** | Cannot contact specific person; they are immune to your communications | Permanent | Hard Ghost spell; severe social transgression | Time (1d4 weeks minimum); mutual friend intervention |
+| **Doubt** | -2 Insight and WIS saves vs the source; cannot grant morale bonuses to allies | 1 minute | Yellow Flag escalation; subtle manipulation; rumor campaigns | Fact Check; reassurance from ally; successful WIS save DC 13 |
+| **Uncomfortable** | Disadvantage on CHA checks with the source; cannot initiate flirt, pitch, or close-contact actions | 1 minute | Oversharing; public intimacy violations; speakerphone details nobody asked for | Leaving range; owning the awkwardness; successful CON or CHA save DC 12 |
 
 ### Physical & Physiological Conditions
 
@@ -77,6 +81,10 @@
 | **Difficult Terrain (Emotional)** | Movement costs double in area | While effect persists | Emotional Baggage (Toxic Ex); Complain About Changes (Retirement Visa Boomer); nostalgia zones | Leaving area; resolving emotional source |
 | **Cannot Be Ignored** | Must acknowledge target; cannot use ignore-based defenses | 1 minute | Persistence (Reply Guy); Main Character Energy (Loud American) | Duration; Mute reaction; Block action |
 | **Grappled (Social)** | Cannot leave conversation; speed 0 socially | Until escape | Bar Approach (Sexpat); Camera Hold Forever (Instagram Husband); Networking Trap | CHA contest to escape; third party intervention |
+| **Restrained (Social)** | Speed 0; Disadvantage on attacks except against grappler; cannot reposition or use move actions | Until escape | Camera Hold Forever; clingy behavior; crowd crush | Breaking grapple; ally assistance; successful STR, DEX, or CHA escape contest |
+| **Prone (Social)** | You are visibly off-balance or physically compromised; standing costs a move action; adjacent attackers gain Advantage | Until you stand or reset footing | Collisions; sudden stops; public stumbles | Spend a move action; get helped up |
+| **Silenced** | Cannot use verbal attacks, spoken spells, or audio-based abilities | 1 round to 1 minute | Muting effects; signal suppression; hard moderation | End of effect; tech reset; moving out of area |
+| **Surprised** | No immediate action in round 1; cannot take reactions until after first turn | 1 round | Ambushes; leaks; somebody posting receipts before coffee | Survive the opening round |
 | **Power Loss** | Tech items non-functional; -4 INT (tech-based checks) | Until recharged | Dead battery; EMP; technology-free zones | Power Bank; outlet; Power Bank of Infinite Charge (immunity) |
 
 ### Curse & Long-Term Conditions
@@ -131,6 +139,7 @@
 |------|--------|----------|------------|
 | **WiFi Sense** | +WIS mod to locate internet signals | Passive | Digital Nomad class; WiFi Dowsing skill |
 | **Algorithm Understanding** | +5 to social media checks | 24 hours | Algorithm Manipulation spell |
+| **Misinformation** | +2 CR vs Fact Check and investigation-style callouts until publicly disproven | Until corrected | Spin campaigns; rumor mills; manipulative spells; LinkedIn nonsense |
 | **Receipts Collected** | Building toward Cancel attack | 3 rounds concentration | Cancel attack buildup |
 | **Portent** | Pre-rolled d20s to replace any roll | Until used | Reddit Power User; Data Scientist |
 | **Dark Knowledge** | +2 INT checks about bad news | Passive | Doomscroller class feature |
@@ -255,4 +264,3 @@
 > 4. Updated interaction rules if applicable
 
 *Last Updated: Session 0*
-

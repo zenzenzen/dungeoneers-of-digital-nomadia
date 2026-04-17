@@ -317,6 +317,7 @@ When creating ANY game content, verify:
 - [ ] Attack actions specify: target (CR), roll (d20 + stat + prof), damage (dice + stat mod + type)
 - [ ] Defensive abilities specify: trigger, duration, stat (if any)
 - [ ] Humor is maintained but mechanics are clear
+- [ ] **Flavor text included** — every entity has a snarky byline (see FLAVOR TEXT REQUIREMENTS)
 
 **Database Readiness** *(See DATABASE & BACKEND DESIGN GUIDELINES section)*
 - [ ] Unique `id` assigned as FIRST column (format: `[type]_[snake_case_name]`)
@@ -331,8 +332,8 @@ When creating ANY game content, verify:
 ## EXAMPLE: COMPLETE ITEM ENTRY
 
 ```csv
-name,type,rarity,cost,description,bonuses
-Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"Blocks out haters. Advantage on Concentration checks. +2 to WIS Saves vs Sonic and Verbal attacks.","+2 WIS Saves (Sonic/Verbal), Advantage Concentration"
+name,type,rarity,cost,description,flavor_text,bonuses
+Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"+2 WIS Saves vs Sonic/Verbal attacks. Advantage on Concentration checks.","They told you to 'just be yourself.' So you became unreachable.","+2 WIS Saves (Sonic/Verbal), Advantage Concentration"
 ```
 
 ## EXAMPLE: COMPLETE ATTACK ACTION
@@ -349,8 +350,8 @@ Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"Blocks out haters. 
 ## EXAMPLE: COMPLETE CLASS ENTRY
 
 ```csv
-name,hit_die,primary_stat,saves,features
-Digital Nomad,d8,DEX,Dex/Int,"WiFi Sense (+WIS to locate signals), Tax Evasion (DEX save to avoid fiscal consequences), Favored Terrain: Cafe (+2 to all checks in coffee shops)"
+name,hit_die,primary_stat,saves,features,flavor_text
+Digital Nomad,d8,DEX,Dex/Int,"WiFi Sense (+WIS to locate signals), Tax Evasion (DEX save to avoid fiscal consequences), Favored Terrain: Cafe (+2 to all checks in coffee shops)","You didn't choose the laptop lifestyle. The laptop lifestyle chose you. (Because rent is $3,000.)"
 ```
 
 ---
@@ -722,9 +723,10 @@ For consistency and database import reliability, use this column order:
 3. type/category fields
 4. core mechanical fields (stats, dice, costs)
 5. reference fields (foreign keys)
-6. text/description fields
-7. structured complex fields (bonuses, attacks)
-8. metadata fields (version, timestamps, tags)
+6. description (mechanical description)
+7. flavor_text (humorous byline — REQUIRED)
+8. structured complex fields (bonuses, attacks)
+9. metadata fields (version, timestamps, tags)
 ```
 
 ---
@@ -747,22 +749,22 @@ Before adding content, validate:
 ### EXAMPLE: DATABASE-READY ITEM ENTRY
 
 ```csv
-id,name,type,rarity,cost_cp,weight_lb,description,bonuses,required_stat,required_value,attunement,version,tags,is_active
-item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,headgear,rare,300,0.5,"Blocks out the haters. Advantage on Concentration checks.","save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration",WIS,12,false,1.0,"audio;defensive;focus",true
+id,name,type,rarity,cost_cp,weight_lb,description,flavor_text,bonuses,required_stat,required_value,attunement,version,tags,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,headgear,rare,300,0.5,"+2 WIS Saves vs Sonic and Verbal attacks. Advantage on Concentration checks.","They told you to 'just be yourself.' So you became unreachable.","save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration",WIS,12,false,1.0,"audio;defensive;focus",true
 ```
 
 ### EXAMPLE: DATABASE-READY SPELL ENTRY
 
 ```csv
-id,name,level,school,casting_time,range_ft,components,duration,class_ids,damage_dice,damage_type,save_stat,effect_on_save,description,version,tags,is_active
-spell_gaslight,Gaslight,2,enchantment,action,30,"V",1 minute,"class_influencer;class_girlboss",1d8,psychic,WIS,half,"Make the target doubt their own perception. On failed save: target is Confused.",1.0,"debuff;control;psychic",true
+id,name,level,school,casting_time,range_ft,components,duration,class_ids,damage_dice,damage_type,save_stat,effect_on_save,description,flavor_text,version,tags,is_active
+spell_gaslight,Gaslight,2,enchantment,action,30,"V",1 minute,"class_influencer;class_girlboss",1d8,psychic,WIS,half,"Make the target doubt their own perception. On failed save: target is Confused.","'I never said that. You're imagining things. Are you okay? You seem stressed.'",1.0,"debuff;control;psychic",true
 ```
 
 ### EXAMPLE: DATABASE-READY MONSTER ENTRY
 
 ```csv
-id,name,creature_type,size,cr,stat_str,stat_dex,stat_con,stat_int,stat_wis,stat_cha,armor_class,hit_dice,speed_ft,speed_fly_ft,attacks,special_traits,condition_immunities,damage_resistances,damage_immunities,languages,version,tags,is_active
-monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,8d8+16,30,0,"name:Humble Brag|stat:CHA|damage:2d6+4|type:psychic;name:Thought Leadership|stat:INT|damage:1d8+3|type:cringe","Agree to Disagree (reaction: redirect attack to nearby ally);Always Be Closing (bonus action: CHA save DC 14 or charmed)","charmed","psychic","","Common;Corporate",1.0,"social;humanoid;annoying",true
+id,name,creature_type,size,cr,stat_str,stat_dex,stat_con,stat_int,stat_wis,stat_cha,armor_class,hit_dice,speed_ft,speed_fly_ft,attacks,special_traits,condition_immunities,damage_resistances,damage_immunities,languages,flavor_text,version,tags,is_active
+monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,8d8+16,30,0,"name:Humble Brag|stat:CHA|damage:2d6+4|type:psychic;name:Thought Leadership|stat:INT|damage:1d8+3|type:cringe","Agree to Disagree (reaction: redirect attack to nearby ally);Always Be Closing (bonus action: CHA save DC 14 or charmed)","charmed","psychic","","Common;Corporate","Approach with caution. They WILL tell you about their TED Talk.",1.0,"social;humanoid;annoying",true
 ```
 
 ---
@@ -770,4 +772,6 @@ monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,
 *Remember: If a bonus doesn't clearly tie to STR, DEX, CON, INT, WIS, or CHA, it doesn't belong in the game.*
 
 *Remember: If content doesn't have a unique `id`, it can't exist in a database.*
+
+*Remember: If content doesn't have a `flavor_text`, it doesn't have a soul. Every entity gets a snarky byline.*
 

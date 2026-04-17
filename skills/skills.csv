@@ -1,49 +1,65 @@
-name,ability,description,example_use
-WiFi Dowsing,Wisdom,"Finding the strongest signal in a crowded cafe","Locating a seat near an outlet with 5 bars"
-Tax Evasion,Dexterity,"Avoiding residency requirements and fiscal responsibility","Explaining to customs why you're staying for 89 days"
-Content Creation,Charisma,"Generating engagement and likes","Filming a TikTok dance in public without shame"
-Trend Analysis,Wisdom,"Knowing what's cool before it's mainstream","Predicting the next gentrified neighborhood"
-Slack Etiquette,Charisma,"Passive-aggressive communication in professional settings","Sending 'Per my last email' without getting fired"
-Barista Negotiation,Persuasion,"Getting complex orders correct and free upgrades","Convincing the barista that oat milk shouldn't cost extra"
-Cryptocurrency Lore,Intelligence,"Understanding blockchain and pretending to understand NFTs","Explaining why the dip is actually good for Bitcoin"
-Subletting,Intelligence,"Finding and managing housing deals","Renting your Airbnb on another platform for profit"
-Visa Run Planning,Intelligence,"Navigating bureaucracy and border crossings","Calculating the exact day you need to leave the Schengen zone"
-Gentrification,Strength,"Forcing your way into local culture","Displacing local businesses with specialty coffee shops"
-Ghosting,Stealth,"Disappearing from social obligations","Leaving a Tinder date without paying"
-Humblebragging,Performance,"Boasting while pretending to complain","'It's so hard to choose between Bali and Lisbon this winter'"
-Latte Art,Dexterity,"Creating designs in milk foam","Impressing a date with a swan in their flat white"
-Thrifting,Investigation,"Finding valuable items in piles of junk","Locating a vintage Levi's jacket for $5"
-Meme Literacy,History,"Understanding internet culture references","Explaining 'Skibidi Toilet' to a Boomer"
-Cancel Culture History,History,"Knowing who has been cancelled and why","Recalling a tweet from 2012 to win an argument"
-Corporate Speak,Deception,"Using buzzwords to say nothing","'Let's circle back and touch base offline'"
-Gaslighting,Deception,"Making someone question their reality","'I never said that, you're being crazy'"
-Virtue Signaling,Performance,"Publicly expressing moral correctness","Posting a black square on Instagram"
-Gatekeeping,Intimidation,"Excluding others from a hobby or fandom","'Oh you like Nirvana? Name three songs'"
-Doxxing,Investigation,"Finding private information online","Locating someone's address from a reflection in a photo"
-Trolling,Performance,"Provoking emotional responses for fun","Posting controversial takes just to see the reaction"
-Mansplaining,Persuasion,"Explaining things to people who already know them","'Actually, it's pronounced Linux'"
-Astrology,Arcana,"Predicting personality based on star signs","'That is such a Scorpio thing to say'"
-Crystal Healing,Medicine,"Using rocks to treat medical conditions","'This amethyst will cure your anxiety'"
-Manifesting,Wisdom,"Thinking about things until they happen","'I'm manifesting a raise this quarter'"
-Vibe Checking,Insight,"Assessing the emotional atmosphere","'The vibes are off in this hostel'"
-Clout Chasing,Survival,"Doing anything for fame or attention","Crashing a celebrity's party"
-Self-Diagnosis,Medicine,"Using WebMD to identify rare diseases","'I definitely have scurvy'"
-Therapy Speak,Persuasion,"Using psychological terms in casual conversation","'You're violating my boundaries right now'"
-Doomscrolling,Constitution,"Enduring hours of negative news","Reading Twitter for 6 hours straight without blinking"
-Power Napping,Constitution,"Sleeping for exactly 20 minutes","Recharging in a coworking space beanbag"
-Meal Prepping,Survival,"Preparing a week's worth of bland food","Eating chicken and broccoli for the 5th day in a row"
-Sourdough Baking,Survival,"Creating yeast cultures from scratch","Keeping a starter alive for 3 years"
-Plant Parenting,Nature,"Keeping houseplants alive","Diagnosing why the Fiddle Leaf Fig is dropping leaves"
-Recycling,Nature,"Sorting trash into correct bins","Knowing which plastic is actually recyclable"
-Public Transit Navigation,Survival,"Understanding bus maps and schedules","Getting from the airport to the city center for under $2"
-Parallel Parking,Dexterity,"Parking a car in a tight spot","Fitting a Tesla into a compact space"
-IKEA Assembly,Intelligence,"Building furniture without instructions","Assembling a MALM bed frame in under an hour"
-Tech Troubleshooting,Intelligence,"Fixing basic computer issues","'Have you tried turning it off and on again?'"
-Password Remembering,Intelligence,"Recalling complex login credentials","Remembering 'P@ssw0rd123!' without a manager"
-Subscription Management,Wisdom,"Tracking monthly recurring payments","Cancelling the gym membership before the trial ends"
-Inbox Zero,Wisdom,"Keeping email unread count at 0","Archiving 5000 unread newsletters"
-Touch Typing,Dexterity,"Typing without looking at the keyboard","Hacking into the mainframe (writing code)"
-Selfie Taking,Dexterity,"Finding the perfect angle and lighting","Taking 50 photos to get one good one"
-Filter Selection,Wisdom,"Choosing the right image enhancement","Knowing when to use 'Paris' vs 'Clarendon'"
-Hashtagging,Intelligence,"Maximizing reach with keywords","Using #fyp #viral #trending correctly"
-Algorithm Manipulation,Intelligence,"Gaming the system for visibility","Posting at exactly 6 PM for maximum engagement"
+id,name,governing_ability,skill_category,parent_skill_id,description,example_use,version,is_active
+skill_athletics,Athletics,STR,core,,"Physical exertion, carrying, climbing, and forceful movement.",Shoving through a crowded train door before it closes.,1.0,true
+skill_bureaucracy,Bureaucracy,INT,core,,"Forms, systems, permits, and procedural survival.",Filling out the right visa form on the first try.,1.0,true
+skill_deception,Deception,CHA,core,,"Lying, deflecting, reframing, and plausible bullshit.",Explaining why you are definitely not working while on a tourist visa.,1.0,true
+skill_insight,Insight,WIS,core,,"Reading motives, pressure, vibes, and hidden tells.",Clocking that the apology is pre-packaged and not sincere.,1.0,true
+skill_intimidation,Intimidation,CHA,core,,"Pressure, dominance, and social threat display.",Making the line-cutter reconsider their life choices.,1.0,true
+skill_investigation,Investigation,INT,core,,"Research, evidence, deduction, and pattern finding.",Working out who stole the charger from the coworking kitchen.,1.0,true
+skill_history,History,INT,core,,"Remembering scenes, scandals, lore, and prior context.",Recalling who got cancelled for the exact same thing in 2021.,1.0,true
+skill_medicine,Medicine,WIS,core,,"Diagnosis, care, recovery, and bodily triage.","Figuring out whether it is jet lag, burnout, or both.",1.0,true
+skill_nature,Nature,WIS,core,,"Plants, food chains, outdoor conditions, and earthy nonsense.",Keeping the cafe herbs alive long enough to impress someone.,1.0,true
+skill_performance,Performance,CHA,core,,"Showmanship, delivery, stagecraft, and controlled attention.",Holding a room through charisma instead of evidence.,1.0,true
+skill_persuasion,Persuasion,CHA,core,,"Negotiation, reassurance, relationship building, and soft power.",Convincing the barista the extra oat milk charge is a hate crime.,1.0,true
+skill_stealth,Stealth,DEX,core,,"Avoiding notice, slipping away, and low-profile movement.",Leaving the party without triggering a goodbye conversation.,1.0,true
+skill_survival,Survival,WIS,core,,"Navigation, endurance, finding resources, and staying functional.","Locating an outlet, bathroom, and edible food under pressure.",1.0,true
+skill_technology,Technology,INT,core,,"Devices, code, systems, and general digital competence.",Fixing the hotspot before the team mutinies.,1.0,true
+skill_vehicle_handling,Vehicle Handling,DEX,core,,"Driving, riding, maneuvering, and transit control.",Getting a scooter through Bangkok traffic without becoming folklore.,1.0,true
+skill_arcana,Arcana,INT,core,,"Weird metaphysics, ritual systems, and esoteric pattern language.",Pretending astrology and market cycles are the same discipline.,1.0,true
+skill_wifi_dowsing,WiFi Dowsing,WIS,travel,skill_survival,Finding the strongest signal in a crowded cafe,Locating a seat near an outlet with 5 bars,1.0,true
+skill_tax_evasion,Tax Evasion,DEX,bureaucracy,skill_bureaucracy,Avoiding residency requirements and fiscal responsibility,Explaining to customs why you're staying for 89 days,1.0,true
+skill_content_creation,Content Creation,CHA,creator,skill_performance,Generating engagement and likes,Filming a TikTok dance in public without shame,1.0,true
+skill_trend_analysis,Trend Analysis,WIS,creator,skill_investigation,Knowing what's cool before it's mainstream,Predicting the next gentrified neighborhood,1.0,true
+skill_slack_etiquette,Slack Etiquette,CHA,office,skill_persuasion,Passive-aggressive communication in professional settings,Sending 'Per my last email' without getting fired,1.0,true
+skill_barista_negotiation,Barista Negotiation,CHA,social,skill_persuasion,Getting complex orders correct and free upgrades,Convincing the barista that oat milk shouldn't cost extra,1.0,true
+skill_cryptocurrency_lore,Cryptocurrency Lore,INT,finance,skill_technology,Understanding blockchain and pretending to understand NFTs,Explaining why the dip is actually good for Bitcoin,1.0,true
+skill_subletting,Subletting,INT,travel,skill_bureaucracy,Finding and managing housing deals,Renting your Airbnb on another platform for profit,1.0,true
+skill_visa_run_planning,Visa Run Planning,INT,travel,skill_bureaucracy,Navigating bureaucracy and border crossings,Calculating the exact day you need to leave the Schengen zone,1.0,true
+skill_gentrification,Gentrification,STR,social,skill_intimidation,Forcing your way into local culture,Displacing local businesses with specialty coffee shops,1.0,true
+skill_ghosting,Ghosting,DEX,social,skill_stealth,Disappearing from social obligations,Leaving a Tinder date without paying,1.0,true
+skill_humblebragging,Humblebragging,CHA,social,skill_performance,Boasting while pretending to complain,'It's so hard to choose between Bali and Lisbon this winter',1.0,true
+skill_latte_art,Latte Art,DEX,craft,skill_performance,Creating designs in milk foam,Impressing a date with a swan in their flat white,1.0,true
+skill_thrifting,Thrifting,INT,style,skill_investigation,Finding valuable items in piles of junk,Locating a vintage Levi's jacket for $5,1.0,true
+skill_meme_literacy,Meme Literacy,INT,culture,skill_history,Understanding internet culture references,Explaining 'Skibidi Toilet' to a Boomer,1.0,true
+skill_cancel_culture_history,Cancel Culture History,INT,culture,skill_history,Knowing who has been cancelled and why,Recalling a tweet from 2012 to win an argument,1.0,true
+skill_corporate_speak,Corporate Speak,CHA,office,skill_deception,Using buzzwords to say nothing,'Let's circle back and touch base offline',1.0,true
+skill_gaslighting,Gaslighting,CHA,social,skill_deception,Making someone question their reality,"'I never said that, you're being crazy'",1.0,true
+skill_virtue_signaling,Virtue Signaling,CHA,social,skill_performance,Publicly expressing moral correctness,Posting a black square on Instagram,1.0,true
+skill_gatekeeping,Gatekeeping,CHA,social,skill_intimidation,Excluding others from a hobby or fandom,'Oh you like Nirvana? Name three songs',1.0,true
+skill_doxxing,Doxxing,INT,digital,skill_investigation,Finding private information online,Locating someone's address from a reflection in a photo,1.0,true
+skill_trolling,Trolling,CHA,digital,skill_performance,Provoking emotional responses for fun,Posting controversial takes just to see the reaction,1.0,true
+skill_mansplaining,Mansplaining,CHA,social,skill_persuasion,Explaining things to people who already know them,"'Actually, it's pronounced Linux'",1.0,true
+skill_astrology,Astrology,INT,occult,skill_arcana,Predicting personality based on star signs,'That is such a Scorpio thing to say',1.0,true
+skill_crystal_healing,Crystal Healing,WIS,wellness,skill_medicine,Using rocks to treat medical conditions,'This amethyst will cure your anxiety',1.0,true
+skill_manifesting,Manifesting,WIS,wellness,skill_arcana,Thinking about things until they happen,'I'm manifesting a raise this quarter',1.0,true
+skill_vibe_checking,Vibe Checking,WIS,social,skill_insight,Assessing the emotional atmosphere,'The vibes are off in this hostel',1.0,true
+skill_clout_chasing,Clout Chasing,CHA,creator,skill_performance,Doing anything for fame or attention,Crashing a celebrity's party,1.0,true
+skill_self_diagnosis,Self-Diagnosis,WIS,wellness,skill_medicine,Using WebMD to identify rare diseases,'I definitely have scurvy',1.0,true
+skill_therapy_speak,Therapy Speak,CHA,social,skill_persuasion,Using psychological terms in casual conversation,'You're violating my boundaries right now',1.0,true
+skill_doomscrolling,Doomscrolling,CON,digital,skill_insight,Enduring hours of negative news,Reading Twitter for 6 hours straight without blinking,1.0,true
+skill_power_napping,Power Napping,CON,wellness,skill_medicine,Sleeping for exactly 20 minutes,Recharging in a coworking space beanbag,1.0,true
+skill_meal_prepping,Meal Prepping,WIS,survival,skill_survival,Preparing a week's worth of bland food,Eating chicken and broccoli for the 5th day in a row,1.0,true
+skill_sourdough_baking,Sourdough Baking,WIS,craft,skill_survival,Creating yeast cultures from scratch,Keeping a starter alive for 3 years,1.0,true
+skill_plant_parenting,Plant Parenting,WIS,nature,skill_nature,Keeping houseplants alive,Diagnosing why the Fiddle Leaf Fig is dropping leaves,1.0,true
+skill_recycling,Recycling,WIS,nature,skill_nature,Sorting trash into correct bins,Knowing which plastic is actually recyclable,1.0,true
+skill_public_transit_navigation,Public Transit Navigation,WIS,travel,skill_survival,Understanding bus maps and schedules,Getting from the airport to the city center for under $2,1.0,true
+skill_parallel_parking,Parallel Parking,DEX,travel,skill_vehicle_handling,Parking a car in a tight spot,Fitting a Tesla into a compact space,1.0,true
+skill_ikea_assembly,IKEA Assembly,INT,craft,skill_technology,Building furniture without instructions,Assembling a MALM bed frame in under an hour,1.0,true
+skill_tech_troubleshooting,Tech Troubleshooting,INT,digital,skill_technology,Fixing basic computer issues,'Have you tried turning it off and on again?',1.0,true
+skill_password_remembering,Password Remembering,INT,digital,skill_technology,Recalling complex login credentials,Remembering 'P@ssw0rd123!' without a manager,1.0,true
+skill_subscription_management,Subscription Management,WIS,office,skill_bureaucracy,Tracking monthly recurring payments,Cancelling the gym membership before the trial ends,1.0,true
+skill_inbox_zero,Inbox Zero,WIS,office,skill_bureaucracy,Keeping email unread count at 0,Archiving 5000 unread newsletters,1.0,true
+skill_touch_typing,Touch Typing,DEX,digital,skill_technology,Typing without looking at the keyboard,Hacking into the mainframe (writing code),1.0,true
+skill_selfie_taking,Selfie Taking,DEX,creator,skill_performance,Finding the perfect angle and lighting,Taking 50 photos to get one good one,1.0,true
+skill_filter_selection,Filter Selection,WIS,creator,skill_performance,Choosing the right image enhancement,Knowing when to use 'Paris' vs 'Clarendon',1.0,true
+skill_hashtagging,Hashtagging,INT,creator,skill_technology,Maximizing reach with keywords,Using #fyp #viral #trending correctly,1.0,true
+skill_algorithm_manipulation,Algorithm Manipulation,INT,creator,skill_technology,Gaming the system for visibility,Posting at exactly 6 PM for maximum engagement,1.0,true

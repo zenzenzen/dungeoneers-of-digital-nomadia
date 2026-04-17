@@ -55,7 +55,7 @@ Combat isn't physical—it's *social*. You **Gaslight**, **Gatekeep**, and **Gir
 | **Burnout Survivor** | d12 | Exhaustion Resistance, Quiet Quitting, Boundaries |
 | **Reply Guy** | d6 | Notification Spam, Persistence, Sliding Into DMs |
 
-*44 classes total and counting...*
+*43 classes total and counting...*
 
 ---
 
@@ -145,4 +145,3 @@ This project is for fun and parody purposes. Play responsibly. Touch grass occas
 ---
 
 *Remember: If you reach 0 Chill, you're not dead—you're just Triggered. Take a Self-Care short rest and come back when you've processed your emotions.*
-

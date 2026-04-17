@@ -53,9 +53,10 @@ Players compete in a series of rapid-fire romantic/social encounters. Each playe
 3. **The Check, Please** (1 round): Decide: **Match** (success), **Ghost** (flee), or **Block** (mutual destruction).
 
 **Match Conditions:**
-- Reduce date to 0 Chill without going to 0 yourself = **Match** (they're into you)
 - Both players above half Chill after 3 rounds = **Mutual Match**
-- Both at 0 Chill = **Toxic Match** (you're now in a situationship)
+- End the scene with both participants above 0 Chill and at least one successful charm, flirt, or vulnerability move = **Match**
+- Reduce a date to 0 Chill = **Hard Pass**. They leave Triggered, and you technically survived but absolutely did not find romance.
+- End with both sides below half Chill but above 0 = **Toxic Match** (you are now in a situationship and may deserve this)
 
 **Victory Conditions:**
 - **Individual Win**: First to 3 Matches OR last player standing
@@ -464,7 +465,6 @@ Standard campaign characters can enter specialized modes with these adjustments:
 
 ---
 
-*Last Updated: [Insert Date]*
-*Version: 0.1 (Alpha)*
+*Last Updated: 2026-04-17*
+*Version: 0.2*
 *Status: Active Development*
-
