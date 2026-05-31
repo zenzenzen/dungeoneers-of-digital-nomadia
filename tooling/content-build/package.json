@@ -1,0 +1,14 @@
+{
+  "name": "@ddn/content-build",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx src/build-content.ts"
+  },
+  "dependencies": {
+    "@ddn/content-schema": "workspace:*",
+    "csv-parse": "^5.5.6",
+    "tsx": "^4.19.4"
+  }
+}

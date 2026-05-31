@@ -29,6 +29,7 @@ ACTUAL_DATA_FILES = [
     "quests/quests.csv",
     "factions/factions.csv",
     "encounters/encounters.csv",
+    "hazards/hazards.csv",
     "locations/locations.csv",
     "weapons/weapons.csv",
     "magic_items/magic_items.csv",
@@ -74,6 +75,7 @@ NUMERIC_COLUMNS = {
         "resource_territory",
     ),
     "locations/locations.csv": ("rest_quality", "wifi_quality"),
+    "hazards/hazards.csv": ("detect_dc", "disable_dc", "save_dc"),
 }
 DECIMAL_COLUMNS = {
     "monsters/monsters.csv": ("challenge_rating",),
@@ -401,9 +403,11 @@ def main() -> int:
     npc_rows = load_index("npcs/npcs.csv")
     quest_rows = load_index("quests/quests.csv")
     encounter_rows = load_index("encounters/encounters.csv")
+    hazard_rows = load_index("hazards/hazards.csv")
     location_rows = load_index("locations/locations.csv")
     monster_rows = load_index("monsters/monsters.csv")
     campaign_rows = load_index("campaigns/campaigns.csv")
+    treasure_rows = load_index("treasure/treasure.csv")
 
     class_ids = set(class_rows)
     class_names = {row["name"] for row in class_rows.values()}
@@ -412,9 +416,11 @@ def main() -> int:
     npc_ids = set(npc_rows)
     quest_ids = set(quest_rows)
     encounter_ids = set(encounter_rows)
+    hazard_ids = set(hazard_rows)
     location_ids = set(location_rows)
     monster_ids = set(monster_rows)
     campaign_ids = set(campaign_rows)
+    treasure_ids = set(treasure_rows)
 
     issues.extend(audit_background_references(class_names, class_ids, skill_ids))
     issues.extend(audit_npc_references(class_names, class_ids))
@@ -434,6 +440,8 @@ def main() -> int:
     issues.extend(audit_reference_field("factions/factions.csv", "rival_faction_ids", faction_ids))
     issues.extend(audit_reference_field("encounters/encounters.csv", "location_id", location_ids))
     issues.extend(audit_reference_field("encounters/encounters.csv", "enemy_ids", monster_ids))
+    issues.extend(audit_reference_field("encounters/encounters.csv", "hazard_ids", hazard_ids))
+    issues.extend(audit_reference_field("encounters/encounters.csv", "reward_ids", treasure_ids))
     issues.extend(audit_reference_field("campaigns/campaigns.csv", "primary_faction_ids", faction_ids))
     issues.extend(audit_reference_field("campaigns/campaigns.csv", "opposition_faction_ids", faction_ids))
     issues.extend(audit_reference_field("campaigns/campaigns.csv", "featured_npc_ids", npc_ids))

@@ -1,0 +1,116 @@
+:root,
+:root[data-theme="light"] {
+  --surface-void: #f4efe6;
+  --surface-raised: #fbf6ed;
+  --surface-elevated: #fffaf3;
+  --surface-inset: #ece3d7;
+  --surface-glass: rgba(255, 250, 243, 0.78);
+
+  --surface-neutral: rgba(17, 14, 10, 0.03);
+  --surface-neutral-strong: rgba(17, 14, 10, 0.05);
+  --surface-accent: rgba(17, 14, 10, 0.06);
+  --surface-accent-strong: rgba(17, 14, 10, 0.1);
+  --surface-input: rgba(255, 250, 243, 0.92);
+
+  --panel-background: linear-gradient(180deg, rgba(255, 250, 243, 0.96), rgba(247, 239, 228, 0.94));
+  --brand-mark-background: linear-gradient(145deg, rgba(17, 14, 10, 0.1), rgba(17, 14, 10, 0.03));
+  --brand-mark-border: rgba(17, 14, 10, 0.18);
+  --topbar-background: rgba(244, 239, 230, 0.82);
+  --card-gradient: linear-gradient(180deg, rgba(17, 14, 10, 0.045), rgba(17, 14, 10, 0.015));
+  --pixel-background: linear-gradient(180deg, rgba(255, 250, 243, 0.98), rgba(236, 227, 215, 0.92));
+  --pixel-border: rgba(17, 14, 10, 0.12);
+  --selection-background: rgba(17, 14, 10, 0.18);
+  --page-glow: radial-gradient(circle at top, rgba(17, 14, 10, 0.06), transparent 34%);
+  --texture-dot: rgba(0, 0, 0, 0.04);
+  --hero-rule: rgba(17, 14, 10, 0.3);
+
+  --stroke-hairline: rgba(17, 14, 10, 0.08);
+  --stroke-default: rgba(17, 14, 10, 0.14);
+  --stroke-strong: rgba(17, 14, 10, 0.22);
+  --accent-border: rgba(17, 14, 10, 0.2);
+
+  --text-primary: rgba(17, 14, 10, 0.9);
+  --text-secondary: rgba(17, 14, 10, 0.68);
+  --text-tertiary: rgba(17, 14, 10, 0.48);
+  --text-disabled: rgba(17, 14, 10, 0.28);
+
+  --accent-amber: rgba(17, 14, 10, 0.9);
+  --accent-amber-dim: rgba(17, 14, 10, 0.08);
+  --accent-cyan: #1d84ad;
+  --accent-pink: #b24b82;
+  --accent-green: #2d8c52;
+  --accent-red: #bf4b4b;
+  --accent-violet: #7a5bc0;
+  --button-primary-bg: linear-gradient(180deg, rgba(17, 14, 10, 0.94), rgba(17, 14, 10, 0.82));
+  --button-primary-text: #f4efe6;
+
+  --status-chill: var(--accent-cyan);
+  --status-triggered: var(--accent-red);
+  --status-cringe: var(--accent-violet);
+  --status-clout: var(--accent-amber);
+
+  --radius-card: 12px;
+  --radius-banner: 14px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --shadow-panel: 0 18px 42px rgba(37, 24, 6, 0.1);
+  --shadow-glow: 0 0 0 1px rgba(17, 14, 10, 0.08), 0 14px 34px rgba(37, 24, 6, 0.12);
+}
+
+:root[data-theme="dark"] {
+  --surface-void: #0b0d10;
+  --surface-raised: #14171c;
+  --surface-elevated: #1b1f26;
+  --surface-inset: #090b0e;
+  --surface-glass: rgba(255, 255, 255, 0.03);
+
+  --surface-neutral: rgba(255, 255, 255, 0.02);
+  --surface-neutral-strong: rgba(255, 255, 255, 0.04);
+  --surface-accent: rgba(232, 163, 61, 0.1);
+  --surface-accent-strong: rgba(232, 163, 61, 0.14);
+  --surface-input: rgba(9, 11, 14, 0.95);
+
+  --panel-background: linear-gradient(180deg, rgba(20, 23, 28, 0.96), rgba(13, 15, 19, 0.96));
+  --brand-mark-background: linear-gradient(145deg, rgba(232, 163, 61, 0.2), rgba(20, 23, 28, 0.9));
+  --brand-mark-border: rgba(232, 163, 61, 0.26);
+  --topbar-background: rgba(11, 13, 16, 0.86);
+  --card-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  --pixel-background: linear-gradient(180deg, rgba(27, 31, 38, 0.9), rgba(9, 11, 14, 0.9));
+  --pixel-border: rgba(255, 255, 255, 0.08);
+  --selection-background: rgba(232, 163, 61, 0.22);
+  --page-glow: radial-gradient(circle at top, rgba(232, 163, 61, 0.12), transparent 30%);
+  --texture-dot: rgba(255, 255, 255, 0.03);
+  --hero-rule: rgba(232, 163, 61, 0.4);
+
+  --stroke-hairline: rgba(255, 255, 255, 0.06);
+  --stroke-default: rgba(255, 255, 255, 0.1);
+  --stroke-strong: rgba(255, 255, 255, 0.18);
+  --accent-border: rgba(232, 163, 61, 0.28);
+
+  --text-primary: #f5f7fa;
+  --text-secondary: #a7aebb;
+  --text-tertiary: #6b7280;
+  --text-disabled: #3f4552;
+
+  --accent-amber: #e8a33d;
+  --accent-amber-dim: rgba(232, 163, 61, 0.12);
+  --accent-cyan: #5ec8f2;
+  --accent-pink: #f472b6;
+  --accent-green: #4ade80;
+  --accent-red: #f87171;
+  --accent-violet: #c084fc;
+  --button-primary-bg: linear-gradient(180deg, rgba(232, 163, 61, 0.26), rgba(232, 163, 61, 0.12));
+  --button-primary-text: #090b0e;
+
+  --shadow-panel: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 0 1px rgba(232, 163, 61, 0.15), 0 14px 40px rgba(232, 163, 61, 0.08);
+}

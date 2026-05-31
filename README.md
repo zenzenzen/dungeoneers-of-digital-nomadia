@@ -130,6 +130,8 @@ This is a work in progress! Currently building out:
 - [ ] Character sheet templates
 - [ ] Balanced encounter tables
 
+For the current full-campaign scope, file map, and Pathfinder/3.5-style rules gap check, see [`campaign_scope_of_work.md`](campaign_scope_of_work.md).
+
 ---
 
 ## 💬 Contributing
