@@ -1,0 +1,12 @@
+{
+  "name": "dungeoneers-of-digital-nomadia",
+  "private": true,
+  "packageManager": "pnpm@10.11.1",
+  "scripts": {
+    "dev": "corepack pnpm run content:build && corepack pnpm --filter @ddn/web dev",
+    "build": "corepack pnpm run content:build && corepack pnpm --filter @ddn/web build",
+    "lint": "corepack pnpm --filter @ddn/web lint",
+    "content:build": "corepack pnpm --filter @ddn/content-build build",
+    "check": "corepack pnpm run content:build && corepack pnpm --filter @ddn/web lint"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+.next
+.turbo
+dist
+coverage
+packages/content/generated
+apps/web/public/content
+**/packages/content/generated
+**/apps/web/public/content
