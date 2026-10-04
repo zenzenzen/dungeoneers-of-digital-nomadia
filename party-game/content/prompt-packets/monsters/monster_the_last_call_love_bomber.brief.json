@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "cardId": "monster_the_last_call_love_bomber",
+  "name": "The Last-Call Love Bomber",
+  "kind": "monster",
+  "contentVersion": "f911a2b4477a2aaa",
+  "inputs": {
+    "campaign": "Swipe Right, Regret Later",
+    "approvedFlavor": "Already planning your destination wedding. Cannot recall your name.",
+    "sources": [],
+    "immutableMechanics": {
+      "rules": "Beat strength 10: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "effects": [],
+      "strength": 10,
+      "rewards": {
+        "cash_cp": 150
+      },
+      "setback": 3,
+      "loot": 1
+    },
+    "art": {
+      "subject": "An exuberant adult guest carrying a bouquet larger than their body",
+      "action": "Unfurling a miniature destination-wedding landscape from a ring box toward an adult they have just met",
+      "setting": "A rooftop bar being quietly packed away by staff",
+      "joke": "The imagined future has grown much larger than the actual acquaintance",
+      "motifs": [
+        "oversized bouquet",
+        "tiny island in a ring box",
+        "stacked closing-time chairs"
+      ],
+      "palette": [
+        "mint",
+        "lavender",
+        "peach",
+        "cyan",
+        "cream"
+      ],
+      "composition": "Bouquet and impossible ring-box island sweep toward the foreground; recipient's politely startled face stays visible"
+    }
+  },
+  "flavor": {
+    "template": "flavor.v2",
+    "prompt": "Write flavor for Digital Nomadia, a satirical social-combat card game.\nCampaign: Swipe Right, Regret Later\nCard: The Last-Call Love Bomber (monster)\nCurrent approved flavor: Already planning your destination wedding. Cannot recall your name.\nOriginal material and source references: []\nEncounter themes: nightlife, awkward\nVoice: dry, observant, a little wounded; someone telling a friend how the date went. Let a specific object or awkward behavior carry the joke. Preserve an existing line when it already works.\nImmutable gameplay contract: {\"rules\":\"Beat strength 10: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.\",\"effects\":[],\"strength\":10,\"rewards\":{\"cash_cp\":150},\"setback\":3,\"loot\":1}\n\nReturn three alternatives, each no more than 25 words. You may also propose an optional 40–80 word extended vignette for future collection detail; it will not be displayed until an editor approves it. Keep original quotations exact and cite their source IDs. Do not invent facts about real players, new abilities, resource prices, or effects. Do not explain the punchline or replace a good joke just to make it different.\n\nReturn JSON: {\"schemaVersion\":2,\"cardId\":\"monster_the_last_call_love_bomber\",\"candidates\":[{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\",\"note\":\"...\"}],\"extendedVignette\":{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\"}}. Every output is an editorial candidate. Approved flavor and gameplay remain unchanged until reviewed separately."
+  },
+  "visual": {
+    "template": "visual.v2",
+    "prompt": "Write an illustration brief for a Digital Nomadia trading card.\nCard: The Last-Call Love Bomber (monster_the_last_call_love_bomber)\nCampaign: Swipe Right, Regret Later\nSubject: An exuberant adult guest carrying a bouquet larger than their body\nVisible action: Unfurling a miniature destination-wedding landscape from a ring box toward an adult they have just met\nSetting: A rooftop bar being quietly packed away by staff\nVisual joke: The imagined future has grown much larger than the actual acquaintance\nMotifs: oversized bouquet, tiny island in a ring box, stacked closing-time chairs\nComposition: Bouquet and impossible ring-box island sweep toward the foreground; recipient's politely startled face stays visible\nPalette: mint, lavender, peach, cyan, cream\n\nUse the detail, staging, and dramatic light of a rich fantasy trading-card illustration. Translate the joke into contemporary social behavior. Use colorful Web 2.0 pastels: mint, lavender, peach, cyan, and warm cream. Keep one clear focal subject and a silhouette readable on a phone. People are fictional adults. Keep the proposed rendering style open for art direction.\n\nThe clean prompt must describe one visible scene. Do not paste the card name as lettering, source metadata, gameplay rules, or this writing assignment into it. Keep card frames, names, statistics, flavor text, and interface elements outside the image. Keep source jokes in the flavor workflow unless they describe something visible.\n\nReturn JSON with these fields: {\"schemaVersion\":2,\"cardId\":\"monster_the_last_call_love_bomber\",\"brief\":{\"subject\":\"...\",\"action\":\"...\",\"setting\":\"...\",\"visualJoke\":\"...\",\"composition\":\"...\",\"palette\":[]},\"cleanPrompt\":\"...\",\"negativePrompt\":\"text, letters, numbers, captions, logos, watermarks, card frame, rules box, user interface\",\"aspectRatio\":\"4:3\",\"styleStatus\":\"provisional\"}.",
+    "cleanTemplate": "visual-clean.v1",
+    "cleanPrompt": "Create a standalone illustration.\nSubject: An exuberant adult guest carrying a bouquet larger than their body\nVisible action: Unfurling a miniature destination-wedding landscape from a ring box toward an adult they have just met\nSetting: A rooftop bar being quietly packed away by staff\nVisual joke: The imagined future has grown much larger than the actual acquaintance\nMotifs: oversized bouquet, tiny island in a ring box, stacked closing-time chairs\nComposition: Bouquet and impossible ring-box island sweep toward the foreground; recipient's politely startled face stays visible\n\nRich fantasy trading-card detail, dramatic yet readable light, expressive body language, and clear foreground/background separation. Colorful Web 2.0 pastel palette: mint, lavender, peach, cyan, cream. Keep the main silhouette readable at phone size and leave quiet breathing room around the edges. Original composition; any people are fictional adults. Landscape 4:3 illustration only. No text, lettering, numbers, captions, logos, watermarks, card frame, rules box, or user interface.",
+    "negativePrompt": "text, lettering, numbers, captions, logos, watermarks, card frame, rules box, user interface",
+    "aspectRatio": "4:3",
+    "styleStatus": "provisional"
+  },
+  "status": "prompt_only"
+}

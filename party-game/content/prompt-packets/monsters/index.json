@@ -1,0 +1,110 @@
+[
+  {
+    "cardId": "monster_the_ghoster",
+    "name": "The Ghoster",
+    "fullBrief": "monster_the_ghoster.brief.json",
+    "cleanPrompt": "monster_the_ghoster.art.txt"
+  },
+  {
+    "cardId": "monster_the_mansplainer",
+    "name": "The Mansplainer",
+    "fullBrief": "monster_the_mansplainer.brief.json",
+    "cleanPrompt": "monster_the_mansplainer.art.txt"
+  },
+  {
+    "cardId": "monster_the_one_upper",
+    "name": "The One-Upper",
+    "fullBrief": "monster_the_one_upper.brief.json",
+    "cleanPrompt": "monster_the_one_upper.art.txt"
+  },
+  {
+    "cardId": "monster_the_pick_me",
+    "name": "The Pick-Me",
+    "fullBrief": "monster_the_pick_me.brief.json",
+    "cleanPrompt": "monster_the_pick_me.art.txt"
+  },
+  {
+    "cardId": "monster_the_clout_chaser",
+    "name": "The Clout Chaser",
+    "fullBrief": "monster_the_clout_chaser.brief.json",
+    "cleanPrompt": "monster_the_clout_chaser.art.txt"
+  },
+  {
+    "cardId": "monster_the_minor_red_flag",
+    "name": "The Minor Red Flag",
+    "fullBrief": "monster_the_minor_red_flag.brief.json",
+    "cleanPrompt": "monster_the_minor_red_flag.art.txt"
+  },
+  {
+    "cardId": "monster_the_situationship",
+    "name": "The Situationship",
+    "fullBrief": "monster_the_situationship.brief.json",
+    "cleanPrompt": "monster_the_situationship.art.txt"
+  },
+  {
+    "cardId": "monster_the_trauma_dumper",
+    "name": "The Trauma Dumper",
+    "fullBrief": "monster_the_trauma_dumper.brief.json",
+    "cleanPrompt": "monster_the_trauma_dumper.art.txt"
+  },
+  {
+    "cardId": "monster_the_energy_vampire",
+    "name": "The Energy Vampire",
+    "fullBrief": "monster_the_energy_vampire.brief.json",
+    "cleanPrompt": "monster_the_energy_vampire.art.txt"
+  },
+  {
+    "cardId": "monster_the_nice_guy",
+    "name": "The Nice Guy",
+    "fullBrief": "monster_the_nice_guy.brief.json",
+    "cleanPrompt": "monster_the_nice_guy.art.txt"
+  },
+  {
+    "cardId": "monster_the_crypto_bro",
+    "name": "The Crypto Bro",
+    "fullBrief": "monster_the_crypto_bro.brief.json",
+    "cleanPrompt": "monster_the_crypto_bro.art.txt"
+  },
+  {
+    "cardId": "monster_the_influencer_boyfriend",
+    "name": "The Influencer Boyfriend",
+    "fullBrief": "monster_the_influencer_boyfriend.brief.json",
+    "cleanPrompt": "monster_the_influencer_boyfriend.art.txt"
+  },
+  {
+    "cardId": "monster_the_algorithm_s_favorite",
+    "name": "The Algorithm’s Favorite",
+    "fullBrief": "monster_the_algorithm_s_favorite.brief.json",
+    "cleanPrompt": "monster_the_algorithm_s_favorite.art.txt"
+  },
+  {
+    "cardId": "monster_the_ex_in_the_group_chat",
+    "name": "The Ex in the Group Chat",
+    "fullBrief": "monster_the_ex_in_the_group_chat.brief.json",
+    "cleanPrompt": "monster_the_ex_in_the_group_chat.art.txt"
+  },
+  {
+    "cardId": "monster_the_soft_launch_detective",
+    "name": "The Soft-Launch Detective",
+    "fullBrief": "monster_the_soft_launch_detective.brief.json",
+    "cleanPrompt": "monster_the_soft_launch_detective.art.txt"
+  },
+  {
+    "cardId": "monster_the_bill_splitting_tribunal",
+    "name": "The Bill-Splitting Tribunal",
+    "fullBrief": "monster_the_bill_splitting_tribunal.brief.json",
+    "cleanPrompt": "monster_the_bill_splitting_tribunal.art.txt"
+  },
+  {
+    "cardId": "monster_the_attachment_style_podcast",
+    "name": "The Attachment Style Podcast",
+    "fullBrief": "monster_the_attachment_style_podcast.brief.json",
+    "cleanPrompt": "monster_the_attachment_style_podcast.art.txt"
+  },
+  {
+    "cardId": "monster_the_last_call_love_bomber",
+    "name": "The Last-Call Love Bomber",
+    "fullBrief": "monster_the_last_call_love_bomber.brief.json",
+    "cleanPrompt": "monster_the_last_call_love_bomber.art.txt"
+  }
+]

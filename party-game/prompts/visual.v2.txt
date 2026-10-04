@@ -1,0 +1,16 @@
+Write an illustration brief for a Digital Nomadia trading card.
+Card: {{name}} ({{card_id}})
+Campaign: {{campaign}}
+Subject: {{subject}}
+Visible action: {{action}}
+Setting: {{setting}}
+Visual joke: {{joke}}
+Motifs: {{motifs}}
+Composition: {{composition}}
+Palette: {{palette}}
+
+Use the detail, staging, and dramatic light of a rich fantasy trading-card illustration. Translate the joke into contemporary social behavior. Use colorful Web 2.0 pastels: mint, lavender, peach, cyan, and warm cream. Keep one clear focal subject and a silhouette readable on a phone. People are fictional adults. Keep the proposed rendering style open for art direction.
+
+The clean prompt must describe one visible scene. Do not paste the card name as lettering, source metadata, gameplay rules, or this writing assignment into it. Keep card frames, names, statistics, flavor text, and interface elements outside the image. Keep source jokes in the flavor workflow unless they describe something visible.
+
+Return JSON with these fields: {"schemaVersion":2,"cardId":"{{card_id}}","brief":{"subject":"...","action":"...","setting":"...","visualJoke":"...","composition":"...","palette":[]},"cleanPrompt":"...","negativePrompt":"text, letters, numbers, captions, logos, watermarks, card frame, rules box, user interface","aspectRatio":"4:3","styleStatus":"provisional"}.

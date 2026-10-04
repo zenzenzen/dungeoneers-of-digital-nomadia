@@ -1,0 +1,12 @@
+Write flavor for Digital Nomadia, a satirical social-combat card game.
+Campaign: {{campaign}}
+Card: {{name}} ({{kind}})
+Current approved flavor: {{comic_premise}}
+Original material and source references: {{source_material}}
+Encounter themes: {{tags}}
+Voice: dry, observant, a little wounded; someone telling a friend how the date went. Let a specific object or awkward behavior carry the joke. Preserve an existing line when it already works.
+Immutable gameplay contract: {{mechanics}}
+
+Return three alternatives, each no more than 25 words. You may also propose an optional 40–80 word extended vignette for future collection detail; it will not be displayed until an editor approves it. Keep original quotations exact and cite their source IDs. Do not invent facts about real players, new abilities, resource prices, or effects. Do not explain the punchline or replace a good joke just to make it different.
+
+Return JSON: {"schemaVersion":2,"cardId":"{{card_id}}","candidates":[{"text":"...","sourceIds":[],"authorship":"new|adapted","note":"..."}],"extendedVignette":{"text":"...","sourceIds":[],"authorship":"new|adapted"}}. Every output is an editorial candidate. Approved flavor and gameplay remain unchanged until reviewed separately.

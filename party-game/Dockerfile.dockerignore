@@ -1,0 +1,12 @@
+.git
+.icm
+**/node_modules
+**/dist
+**/.cache
+**/data
+**/.env
+**/.runtime.json
+**/output
+**/test-results
+**/playwright-report
+**/.DS_Store

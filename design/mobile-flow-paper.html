@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DDN — Mobile Flow (paper prototype)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f1e8d2;          /* aged paper */
+    --paper2:#f6efdd;
+    --pen:#222d33;            /* ballpoint blue-black */
+    --pen-soft:#3a474e;
+    --red:#d23e36;            /* red marker */
+    --blue:#2d7ff9;           /* WiFi Blue pen */
+    --mango:#e79a1e;          /* Mango pen */
+    --coral:#e8514f;          /* Burnout Coral pen */
+    --green:#1f9e72;          /* Visa green pen */
+    --hi-y:#fff09a;           /* highlighter */
+    --hi-b:#bcdcff;
+    --hand:"Caveat","Comic Sans MS","Segoe Print",cursive;
+    --marker:"Permanent Marker","Comic Sans MS",cursive;
+    --note:"Gloria Hallelujah","Comic Sans MS",cursive;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper);
+    /* ruled-notebook lines + red margin */
+    background-image:
+      linear-gradient(90deg, transparent 52px, rgba(210,62,54,.28) 52px, rgba(210,62,54,.28) 53px, transparent 54px),
+      repeating-linear-gradient(0deg, transparent 0 31px, rgba(64,96,120,.16) 31px 32px);
+    color:var(--pen);
+    font-family:var(--hand);
+    -webkit-font-smoothing:antialiased;
+    padding:0 0 90px;
+  }
+
+  /* paper grain */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(circle at 20% 10%, rgba(255,255,255,.35), transparent 40%),
+               radial-gradient(circle at 85% 80%, rgba(120,90,40,.10), transparent 45%);
+    mix-blend-mode:multiply;
+  }
+
+  .sheet{max-width:1500px;margin:0 auto;padding:26px 34px 0 70px;position:relative;z-index:1}
+
+  /* ===== header: notebook label ===== */
+  .cover{display:flex;align-items:center;gap:18px;margin-bottom:6px;flex-wrap:wrap}
+  .label{
+    background:#fff;border:2.5px solid var(--pen);
+    border-radius:16px 9px 18px 7px / 8px 16px 9px 17px;
+    padding:10px 18px;transform:rotate(-1.4deg);
+    box-shadow:3px 4px 0 rgba(34,45,51,.18);
+  }
+  .label .lt{font-family:var(--marker);font-size:24px;letter-spacing:.5px}
+  .label .ls{font-family:var(--note);font-size:11px;color:var(--pen-soft);margin-top:2px}
+  .stamp{
+    font-family:var(--marker);color:var(--red);border:3px solid var(--red);
+    border-radius:8px;padding:6px 12px;transform:rotate(7deg);font-size:15px;
+    opacity:.85;
+  }
+  h1.maintitle{font-family:var(--marker);font-size:30px;margin:18px 0 2px;letter-spacing:.5px}
+  .intro{font-family:var(--note);font-size:13px;color:var(--pen-soft);max-width:760px;margin:0 0 12px;line-height:1.7}
+
+  /* ===== legend ===== */
+  .legend{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;font-family:var(--hand);font-size:18px;margin:6px 0 18px}
+  .legend .k{display:inline-flex;align-items:center;gap:8px}
+  .legend .sw{width:22px;height:12px;border-radius:6px;border:2px solid var(--pen)}
+  .legend .arrowk svg{width:46px;height:14px}
+
+  /* ===== flow rows ===== */
+  .rowtitle{font-family:var(--marker);font-size:18px;margin:22px 0 6px;color:var(--pen);display:flex;align-items:center;gap:10px}
+  .rowtitle .num{background:var(--pen);color:var(--paper2);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font-size:15px;transform:rotate(-4deg)}
+  .flow{display:flex;align-items:flex-start;gap:0;flex-wrap:wrap;padding:8px 0 4px}
+
+  /* ===== phone ===== */
+  .stage{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .caption{font-family:var(--hand);font-size:17px;color:var(--pen);max-width:210px;text-align:center;line-height:1.15}
+  .caption b{font-family:var(--marker);font-size:13px;display:block;letter-spacing:.4px}
+  .phone{
+    position:relative;width:212px;height:430px;background:var(--paper2);
+    border:3px solid var(--pen);
+    border-radius:34px;
+    filter:url(#rough);
+    box-shadow:5px 7px 0 rgba(34,45,51,.16);
+    padding:14px 12px 12px;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .phone.tilt-l{transform:rotate(-1.6deg)}
+  .phone.tilt-r{transform:rotate(1.5deg)}
+  .notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:64px;height:10px;border:2.5px solid var(--pen);border-radius:0 0 12px 12px;border-top:none}
+  .homebar{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:78px;height:4px;background:var(--pen);border-radius:4px;opacity:.6}
+
+  .statusbar{display:flex;justify-content:space-between;align-items:center;font-family:var(--hand);font-size:13px;color:var(--pen-soft);padding:2px 6px 0;margin-top:4px}
+  .statusbar .batt{width:20px;height:11px;border:2px solid var(--pen-soft);border-radius:3px;position:relative}
+  .statusbar .batt::after{content:"";position:absolute;left:2px;top:2px;bottom:2px;width:9px;background:var(--green)}
+
+  .scrollarea{flex:1;display:flex;flex-direction:column;gap:7px;overflow:hidden;padding:2px 4px}
+
+  /* sketch primitives (crisp, irregular = hand-drawn) */
+  .sk{border:2.3px solid var(--pen);background:#fff;
+      border-radius:12px 8px 14px 7px / 7px 14px 8px 13px;
+      font-family:var(--hand);}
+  .h1{font-family:var(--marker);font-size:17px;line-height:1.05;letter-spacing:.3px}
+  .h2{font-family:var(--marker);font-size:12px;letter-spacing:.3px}
+  .txt{font-family:var(--hand);font-size:15px;color:var(--pen-soft);line-height:1.12}
+  .small{font-size:13px;color:var(--pen-soft);font-family:var(--hand)}
+  .ham{display:flex;flex-direction:column;gap:3px;width:22px}
+  .ham span{height:2.5px;background:var(--pen);border-radius:2px}
+  .toprow{display:flex;align-items:center;gap:8px}
+  .logo{width:22px;height:22px;border:2.5px solid var(--pen);border-radius:7px;display:grid;place-items:center;font-family:var(--marker);font-size:10px}
+  .grow{flex:1}
+  .btn{padding:7px 9px;text-align:center;font-family:var(--marker);font-size:12px;letter-spacing:.3px;border-radius:11px 8px 13px 7px / 7px 13px 8px 12px;border:2.3px solid var(--pen)}
+  .btn.blue{background:var(--hi-b);border-color:var(--blue);color:#13407f}
+  .btn.ghost{background:#fff}
+  .input{padding:7px 9px;font-family:var(--hand);font-size:14px;color:var(--pen-soft);display:flex;align-items:center;gap:7px}
+  .mag{width:13px;height:13px;border:2.3px solid var(--pen-soft);border-radius:50%;position:relative;flex:0 0 auto}
+  .mag::after{content:"";position:absolute;right:-4px;bottom:-4px;width:6px;height:2.3px;background:var(--pen-soft);transform:rotate(45deg)}
+  .chip{display:inline-block;border:2px solid var(--pen);border-radius:999px;padding:2px 9px;font-family:var(--hand);font-size:13px;background:#fff}
+  .chip.on{background:var(--pen);color:var(--paper2)}
+  .chip.hi{background:var(--hi-y);border-color:var(--mango)}
+  .chiprow{display:flex;gap:5px;flex-wrap:wrap}
+  .img{position:relative;min-height:42px;border:2.3px solid var(--pen);border-radius:10px;background:#fff;overflow:hidden}
+  .img::before,.img::after{content:"";position:absolute;inset:0}
+  .img::before{background:linear-gradient(to top right, transparent calc(50% - 1.2px), var(--pen-soft) calc(50% - 1.2px), var(--pen-soft) calc(50% + 1.2px), transparent calc(50% + 1.2px))}
+  .img::after{background:linear-gradient(to top left, transparent calc(50% - 1.2px), var(--pen-soft) calc(50% - 1.2px), var(--pen-soft) calc(50% + 1.2px), transparent calc(50% + 1.2px))}
+  .tilegrid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .tilegrid .t{border:2.2px solid var(--pen);border-radius:10px 7px 12px 7px;padding:8px 6px;text-align:center;font-family:var(--hand);font-size:13px;background:#fff;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .tilegrid .t .d{width:16px;height:16px;border:2px solid var(--pen);border-radius:5px}
+  .listrow{display:flex;align-items:center;gap:8px;border:2.2px solid var(--pen);border-radius:10px 7px 11px 7px;padding:6px 8px;background:#fff;font-family:var(--hand);font-size:14px}
+  .listrow .av{width:20px;height:20px;border:2px solid var(--pen);border-radius:6px;flex:0 0 auto}
+  .listrow .tag{margin-left:auto;font-family:var(--marker);font-size:10px;border:2px solid var(--coral);color:var(--coral);border-radius:6px;padding:1px 5px}
+  .listrow .tag.blue{border-color:var(--blue);color:#13407f}
+  .listrow .tag.mango{border-color:var(--mango);color:#8a5a06}
+  .statrow{display:flex;gap:6px}
+  .stat{flex:1;border:2.2px solid var(--pen);border-radius:9px 7px 10px 7px;padding:6px 4px;text-align:center;background:#fff}
+  .stat .k{font-family:var(--hand);font-size:11px;color:var(--pen-soft)}
+  .stat .v{font-family:var(--marker);font-size:16px}
+  .meter{height:11px;border:2px solid var(--pen);border-radius:999px;overflow:hidden;background:#fff}
+  .meter b{display:block;height:100%}
+  .otp{display:flex;gap:5px;justify-content:center}
+  .otp span{width:24px;height:30px;border:2.5px solid var(--pen);border-radius:8px 6px 9px 6px;display:grid;place-items:center;font-family:var(--marker);font-size:15px}
+  .bottomnav{display:flex;justify-content:space-around;align-items:center;border-top:2.3px dashed var(--pen);padding-top:7px;margin-top:auto}
+  .bottomnav .i{width:20px;height:20px;border:2.2px solid var(--pen);border-radius:6px}
+  .bottomnav .i.on{background:var(--hi-b);border-color:var(--blue)}
+
+  /* drawer overlay phone */
+  .drawer{position:absolute;inset:14px 12px 12px;background:rgba(34,45,51,.10);border-radius:26px;display:flex}
+  .drawer .panel{width:74%;background:var(--paper2);border-right:2.5px solid var(--pen);border-radius:24px 6px 6px 24px;padding:34px 12px 12px;display:flex;flex-direction:column;gap:9px}
+  .drawer .mi{font-family:var(--marker);font-size:15px;border-bottom:2px dotted var(--pen);padding-bottom:5px}
+  .drawer .mi.on{color:var(--blue)}
+
+  /* ===== connectors / arrows ===== */
+  .conn{width:104px;align-self:center;display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:120px}
+  .conn .lab{font-family:var(--note);font-size:12px;color:var(--red);text-align:center;line-height:1.3;max-width:104px}
+  .conn svg{width:96px;height:34px;overflow:visible}
+  .conn path,.conn line{filter:url(#rough)}
+
+  /* ===== annotations (red marker) ===== */
+  .anno{font-family:var(--note);color:var(--red);font-size:13px;line-height:1.45;max-width:230px}
+  .anno.tilt{transform:rotate(-2deg)}
+  .annoblock{display:flex;flex-direction:column;gap:4px;align-self:center;padding:0 6px;max-width:180px}
+  .star-note{font-family:var(--marker);color:var(--red);font-size:14px}
+  .curve svg{width:120px;height:80px;overflow:visible}
+  .curve path{filter:url(#rough)}
+
+  .footnote{font-family:var(--note);font-size:12px;color:var(--pen-soft);margin-top:30px;border-top:2px dashed rgba(34,45,51,.3);padding-top:12px;max-width:900px;line-height:1.7}
+
+  .heat{color:var(--coral)}.cool{color:var(--blue)}.go{color:var(--green)}
+</style>
+</head>
+<body>
+
+<!-- hand-drawn roughen filter (applied to phone frames + arrows only, so text stays crisp) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="sheet">
+
+  <div class="cover">
+    <div class="label">
+      <div class="lt">Dungeoneers of Digital Nomadia</div>
+      <div class="ls">mobile site flow · paper prototype · sprint 0</div>
+    </div>
+    <div class="stamp">LO-FI</div>
+  </div>
+
+  <h1 class="maintitle">Mobile Flow ✎</h1>
+  <p class="intro">
+    Hand-sketched, thumb-first. Same venture-SaaS surface as desktop, but stacked for one hand on a phone at a
+    coworking table. Two journeys: <b>discover &amp; browse</b> the compendium, then <b>play</b> a session.
+    Sticky bottom CTA stays in the thumb zone. The joke still reveals itself on scroll.
+  </p>
+
+  <div class="legend">
+    <span class="k"><span class="sw" style="background:#fff"></span>screen</span>
+    <span class="k"><span class="sw" style="background:var(--hi-b);border-color:var(--blue)"></span>primary tap (WiFi&nbsp;Blue)</span>
+    <span class="k"><span class="sw" style="background:var(--hi-y);border-color:var(--mango)"></span>game-state</span>
+    <span class="k arrowk"><svg viewBox="0 0 46 14"><line x1="0" y1="7" x2="38" y2="7" stroke="#222d33" stroke-width="2.4"/><path d="M38 7 L31 3 M38 7 L31 11" stroke="#222d33" stroke-width="2.4" fill="none"/></svg> tap → next screen</span>
+    <span class="k" style="color:var(--red);font-family:var(--note);font-size:12px">red = design note</span>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- ROW 1 — DISCOVER & BROWSE                                            -->
+  <!-- =================================================================== -->
+  <div class="rowtitle"><span class="num">1</span> Discover &amp; browse</div>
+  <div class="flow">
+
+    <!-- 1. HOME -->
+    <div class="stage">
+      <div class="phone tilt-l">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="logo">✦</span><span class="grow"></span><span class="ham"><span></span><span></span><span></span></span></div>
+          <div class="h1" style="margin-top:4px">Scale your<br>party.<br>Disrupt your<br>Chill.</div>
+          <div class="txt">A satirical TTRPG for remote<br>workers &amp; crypto pilgrims.</div>
+          <div class="img" style="min-height:54px"></div>
+          <div class="statrow">
+            <div class="stat"><div class="k">WiFi</div><div class="v cool">98%</div></div>
+            <div class="stat"><div class="k">Heat</div><div class="v heat">●●○</div></div>
+            <div class="stat"><div class="k">Vibe</div><div class="v" style="color:var(--mango)">+4</div></div>
+          </div>
+          <div class="sk btn blue">Enter the Campaign</div>
+        </div>
+        <div class="bottomnav"><span class="i on"></span><span class="i"></span><span class="i"></span><span class="i"></span></div>
+      </div>
+      <div class="caption"><b>1 · HOME</b>hero + live "vibe" widgets</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">tap ☰</div>
+    </div>
+
+    <!-- 2. NAV DRAWER -->
+    <div class="stage">
+      <div class="phone tilt-r">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea" style="opacity:.35">
+          <div class="toprow"><span class="logo">✦</span><span class="grow"></span><span class="ham"><span></span><span></span><span></span></span></div>
+          <div class="h1">Scale your party.</div>
+          <div class="img" style="min-height:54px"></div>
+        </div>
+        <div class="drawer">
+          <div class="panel">
+            <div class="mi">Campaigns</div>
+            <div class="mi on">Compendium</div>
+            <div class="mi">Rules</div>
+            <div class="mi">Session Room</div>
+            <div class="mi">Characters</div>
+            <div class="mi">About</div>
+          </div>
+        </div>
+      </div>
+      <div class="caption"><b>2 · NAV DRAWER</b>full primary nav</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">tap Compendium</div>
+    </div>
+
+    <!-- 3. COMPENDIUM HUB -->
+    <div class="stage">
+      <div class="phone tilt-l">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="ham"><span></span><span></span><span></span></span><span class="h2">Compendium</span></div>
+          <div class="sk input"><span class="mag"></span>Search all entities…</div>
+          <div class="tilegrid">
+            <div class="t"><span class="d" style="background:var(--coral)"></span>Monsters</div>
+            <div class="t"><span class="d" style="background:var(--blue)"></span>Items</div>
+            <div class="t"><span class="d" style="background:var(--mango)"></span>Spells</div>
+            <div class="t"><span class="d" style="background:var(--green)"></span>NPCs</div>
+            <div class="t"><span class="d" style="background:var(--pen)"></span>Factions</div>
+            <div class="t"><span class="d" style="background:#7c5cff"></span>Locations</div>
+          </div>
+        </div>
+        <div class="bottomnav"><span class="i"></span><span class="i on"></span><span class="i"></span><span class="i"></span></div>
+      </div>
+      <div class="caption"><b>3 · COMPENDIUM</b>search-first, big tap tiles</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">tap Monsters</div>
+    </div>
+
+    <!-- 4. MONSTERS LIST -->
+    <div class="stage">
+      <div class="phone tilt-r">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="h2">← Monsters</span></div>
+          <div class="sk input"><span class="mag"></span>Filter…</div>
+          <div class="chiprow"><span class="chip on">CR ≤ 5</span><span class="chip">controller</span><span class="chip">sonic</span></div>
+          <div class="listrow"><span class="av" style="background:var(--coral)"></span>The Karen<span class="tag">CR 3</span></div>
+          <div class="listrow"><span class="av" style="background:#7c5cff"></span>The Gatekeeper<span class="tag">CR 5</span></div>
+          <div class="listrow"><span class="av" style="background:var(--green)"></span>Energy Vampire<span class="tag mango">CR 4</span></div>
+          <div class="listrow"><span class="av" style="background:var(--blue)"></span>The Reply Guy<span class="tag blue">CR 1</span></div>
+        </div>
+        <div class="bottomnav"><span class="i"></span><span class="i on"></span><span class="i"></span><span class="i"></span></div>
+      </div>
+      <div class="caption"><b>4 · MONSTERS</b>sticky search + filter chips</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">tap "The Karen"</div>
+    </div>
+
+    <!-- 5. MONSTER DETAIL -->
+    <div class="stage">
+      <div class="phone tilt-l">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="h2">← The Karen</span><span class="grow"></span><span class="chip hi">CR 3</span></div>
+          <div class="img" style="min-height:46px"></div>
+          <div class="statrow">
+            <div class="stat"><div class="k">Chill</div><div class="v">45</div></div>
+            <div class="stat"><div class="k">Cringe&nbsp;Res</div><div class="v">16</div></div>
+            <div class="stat"><div class="k">Vibe</div><div class="v">+1</div></div>
+          </div>
+          <div class="h2">Actions</div>
+          <div class="listrow" style="font-size:13px">Screech — 3d6 sonic</div>
+          <div class="listrow" style="font-size:13px">Summon Manager</div>
+          <div class="chiprow"><span class="chip" style="border-color:var(--green);color:var(--green)">⇲ Bangkok Burnout</span><span class="chip" style="border-color:var(--green);color:var(--green)">⇲ Headphones</span></div>
+          <div class="sk btn" style="border-color:var(--mango);background:var(--hi-y);color:#8a5a06">+ Add to encounter</div>
+        </div>
+      </div>
+      <div class="caption"><b>5 · MONSTER</b>stat block + cross-links</div>
+    </div>
+
+    <!-- annotation flowing off detail -->
+    <div class="annoblock">
+      <div class="curve">
+        <svg viewBox="0 0 120 80"><path d="M4 6 C 50 6, 70 30, 60 72" stroke="#d23e36" stroke-width="2.4" fill="none"/><path d="M60 72 L53 63 M60 72 L68 64" stroke="#d23e36" stroke-width="2.4" fill="none"/></svg>
+      </div>
+      <div class="anno tilt">"Add to encounter" jumps straight into the live Session Room ↓ — compendium feeds play, no retyping.</div>
+    </div>
+
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- ROW 2 — PLAY A SESSION                                               -->
+  <!-- =================================================================== -->
+  <div class="rowtitle"><span class="num">2</span> Play a session</div>
+  <div class="flow">
+
+    <!-- 6. JOIN -->
+    <div class="stage">
+      <div class="phone tilt-r">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="h2">Join a session</span></div>
+          <div class="txt" style="text-align:center;margin-top:6px">Enter the 6-char code your<br>GM texted you</div>
+          <div class="otp"><span>C</span><span>R</span><span>Y</span><span>P</span><span>T</span><span>7</span></div>
+          <div class="sk input">Display name</div>
+          <div class="sk input">Passphrase (rejoin)</div>
+          <div class="sk btn blue" style="margin-top:4px">Take a seat</div>
+          <div class="small" style="text-align:center">no account needed — guest play</div>
+        </div>
+      </div>
+      <div class="caption"><b>6 · JOIN</b>OTP code, big tap targets</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">seat taken</div>
+    </div>
+
+    <!-- 7. LIVE ENCOUNTER -->
+    <div class="stage">
+      <div class="phone tilt-l">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="h2">CRYPT7</span><span class="grow"></span><span class="chip hi">your turn</span></div>
+          <div class="h2">Vibe Check order</div>
+          <div class="listrow" style="border-color:var(--mango)"><span class="av" style="background:var(--mango)"></span>You · Influencer<span class="tag mango">+6</span></div>
+          <div class="listrow"><span class="av" style="background:var(--coral)"></span>The Karen<span class="tag">+1</span></div>
+          <div class="small">Chill</div>
+          <div class="meter"><b style="width:64%;background:var(--blue)"></b></div>
+          <div class="small">Heat</div>
+          <div class="meter"><b style="width:42%;background:var(--coral)"></b></div>
+          <div class="chiprow" style="margin-top:2px"><span class="chip">🎲 d20</span><span class="chip">Gaslight</span><span class="chip">Gatekeep</span></div>
+          <div class="sk btn blue">Commit turn →</div>
+        </div>
+      </div>
+      <div class="caption"><b>7 · LIVE</b>thumb-zone turn controls</div>
+    </div>
+
+    <div class="conn">
+      <svg viewBox="0 0 96 34"><line x1="2" y1="17" x2="84" y2="17" stroke="#222d33" stroke-width="2.6" fill="none"/><path d="M84 17 L74 10 M84 17 L74 24" stroke="#222d33" stroke-width="2.6" fill="none"/></svg>
+      <div class="lab">whose char?<br>↙ built here</div>
+    </div>
+
+    <!-- 8. CHARACTER SHEET -->
+    <div class="stage">
+      <div class="phone tilt-r">
+        <span class="notch"></span><span class="homebar"></span>
+        <div class="statusbar"><span>9:41</span><span class="batt"></span></div>
+        <div class="scrollarea">
+          <div class="toprow"><span class="h2">My character</span><span class="grow"></span><span class="chip hi">lvl 1</span></div>
+          <div class="img" style="min-height:46px"></div>
+          <div class="h1" style="font-size:15px">Bryce, Influencer</div>
+          <div class="statrow">
+            <div class="stat"><div class="k">Chill</div><div class="v">28</div></div>
+            <div class="stat"><div class="k">CR&nbsp;Res</div><div class="v">14</div></div>
+            <div class="stat"><div class="k">Vibe</div><div class="v">+4</div></div>
+          </div>
+          <div class="h2">Inventory</div>
+          <div class="listrow" style="font-size:12px"><span class="av" style="background:var(--blue)"></span>NC Headphones of Isolation</div>
+          <div class="sk btn blue">Join a session →</div>
+        </div>
+        <div class="bottomnav"><span class="i"></span><span class="i"></span><span class="i"></span><span class="i on"></span></div>
+      </div>
+      <div class="caption"><b>8 · CHARACTER</b>local-first, printable</div>
+    </div>
+
+    <!-- closing annotation -->
+    <div class="annoblock">
+      <div class="anno"><span class="star-note">the loop ↻</span><br>character → join → live turn → push-notify next player. "Words-with-Friends" cadence: a turn can take a minute or a day.</div>
+    </div>
+
+  </div>
+
+  <p class="footnote">
+    ✎ Paper-prototype conventions: irregular hand-drawn borders = "not final, react to the flow not the pixels."
+    Boxes with an ✕ = image / pixel-art placeholder. Highlighter-blue = the one primary tap per screen; highlighter-yellow = a game-state moment.
+    Bottom tab bar + sticky CTA keep every primary action inside the thumb arc. Translate to the real venture-SaaS visual system once the
+    flow is approved — see <b>website-flow.html</b> for the high-fidelity desktop counterpart.
+  </p>
+
+</div>
+
+</body>
+</html>

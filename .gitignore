@@ -1,9 +1,29 @@
-node_modules
-.next
-.turbo
-dist
-coverage
-packages/content/generated
-apps/web/public/content
-**/packages/content/generated
-**/apps/web/public/content
+# Local machine state and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# Dependencies, build output, caches, and test artifacts
+node_modules/
+dist/
+coverage/
+.cache/
+.docpipe/
+__pycache__/
+*.py[cod]
+*.log
+playwright-report/
+test-results/
+
+# Room databases, backups, seat tokens, and process handles
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+/party-game/data/
+/party-game/output/
+/party-game/.runtime.json

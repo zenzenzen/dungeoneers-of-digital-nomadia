@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "cardId": "monster_the_situationship",
+  "name": "The Situationship",
+  "kind": "monster",
+  "contentVersion": "f911a2b4477a2aaa",
+  "inputs": {
+    "campaign": "Swipe Right, Regret Later",
+    "approvedFlavor": "A relationship with a free trial and no cancellation button.",
+    "sources": [
+      {
+        "id": "source_monsters_monster_situationship",
+        "sourceRefs": [
+          {
+            "path": "monsters/monsters.csv",
+            "sha256": "3487011d7a4e4eafac95b5f7a4f5438cacd3911dd369ec6433c3bad7620a0823",
+            "row": 75
+          },
+          {
+            "path": "monsters/monsters_template.csv",
+            "sha256": "72e4593e84c12320f51abcd23dfe2d8787439bea63ccf22f53f2fa52b94937c0",
+            "row": 4
+          }
+        ],
+        "jokes": [
+          "You are not dating. You are not not dating. Congratulations on your administrative nightmare."
+        ]
+      }
+    ],
+    "immutableMechanics": {
+      "rules": "Beat strength 6: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "effects": [],
+      "strength": 6,
+      "rewards": {
+        "cash_cp": 100,
+        "exposure": 1
+      },
+      "setback": 2,
+      "loot": 1
+    },
+    "art": {
+      "subject": "Two fictional adults separated by an impossibly tangled velvet rope",
+      "action": "Each holding a different end of the same rope, trying to work out whether to enter or leave",
+      "setting": "A lavish rooftop entrance with doors opening onto more velvet ropes",
+      "joke": "A casual arrangement requires the navigation skills of a labyrinth",
+      "motifs": [
+        "velvet rope maze",
+        "unlatched clasp",
+        "two abandoned drinks"
+      ],
+      "palette": [
+        "mint",
+        "lavender",
+        "peach",
+        "cyan",
+        "cream"
+      ],
+      "composition": "Rope knots dominate the foreground; both adults readable behind them, neither cast as the villain"
+    }
+  },
+  "flavor": {
+    "template": "flavor.v2",
+    "prompt": "Write flavor for Digital Nomadia, a satirical social-combat card game.\nCampaign: Swipe Right, Regret Later\nCard: The Situationship (monster)\nCurrent approved flavor: A relationship with a free trial and no cancellation button.\nOriginal material and source references: [{\"id\":\"source_monsters_monster_situationship\",\"sourceRefs\":[{\"path\":\"monsters/monsters.csv\",\"sha256\":\"3487011d7a4e4eafac95b5f7a4f5438cacd3911dd369ec6433c3bad7620a0823\",\"row\":75},{\"path\":\"monsters/monsters_template.csv\",\"sha256\":\"72e4593e84c12320f51abcd23dfe2d8787439bea63ccf22f53f2fa52b94937c0\",\"row\":4}],\"jokes\":[\"You are not dating. You are not not dating. Congratulations on your administrative nightmare.\"]}]\nEncounter themes: boundaries, first_impressions\nVoice: dry, observant, a little wounded; someone telling a friend how the date went. Let a specific object or awkward behavior carry the joke. Preserve an existing line when it already works.\nImmutable gameplay contract: {\"rules\":\"Beat strength 6: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.\",\"effects\":[],\"strength\":6,\"rewards\":{\"cash_cp\":100,\"exposure\":1},\"setback\":2,\"loot\":1}\n\nReturn three alternatives, each no more than 25 words. You may also propose an optional 40–80 word extended vignette for future collection detail; it will not be displayed until an editor approves it. Keep original quotations exact and cite their source IDs. Do not invent facts about real players, new abilities, resource prices, or effects. Do not explain the punchline or replace a good joke just to make it different.\n\nReturn JSON: {\"schemaVersion\":2,\"cardId\":\"monster_the_situationship\",\"candidates\":[{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\",\"note\":\"...\"}],\"extendedVignette\":{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\"}}. Every output is an editorial candidate. Approved flavor and gameplay remain unchanged until reviewed separately."
+  },
+  "visual": {
+    "template": "visual.v2",
+    "prompt": "Write an illustration brief for a Digital Nomadia trading card.\nCard: The Situationship (monster_the_situationship)\nCampaign: Swipe Right, Regret Later\nSubject: Two fictional adults separated by an impossibly tangled velvet rope\nVisible action: Each holding a different end of the same rope, trying to work out whether to enter or leave\nSetting: A lavish rooftop entrance with doors opening onto more velvet ropes\nVisual joke: A casual arrangement requires the navigation skills of a labyrinth\nMotifs: velvet rope maze, unlatched clasp, two abandoned drinks\nComposition: Rope knots dominate the foreground; both adults readable behind them, neither cast as the villain\nPalette: mint, lavender, peach, cyan, cream\n\nUse the detail, staging, and dramatic light of a rich fantasy trading-card illustration. Translate the joke into contemporary social behavior. Use colorful Web 2.0 pastels: mint, lavender, peach, cyan, and warm cream. Keep one clear focal subject and a silhouette readable on a phone. People are fictional adults. Keep the proposed rendering style open for art direction.\n\nThe clean prompt must describe one visible scene. Do not paste the card name as lettering, source metadata, gameplay rules, or this writing assignment into it. Keep card frames, names, statistics, flavor text, and interface elements outside the image. Keep source jokes in the flavor workflow unless they describe something visible.\n\nReturn JSON with these fields: {\"schemaVersion\":2,\"cardId\":\"monster_the_situationship\",\"brief\":{\"subject\":\"...\",\"action\":\"...\",\"setting\":\"...\",\"visualJoke\":\"...\",\"composition\":\"...\",\"palette\":[]},\"cleanPrompt\":\"...\",\"negativePrompt\":\"text, letters, numbers, captions, logos, watermarks, card frame, rules box, user interface\",\"aspectRatio\":\"4:3\",\"styleStatus\":\"provisional\"}.",
+    "cleanTemplate": "visual-clean.v1",
+    "cleanPrompt": "Create a standalone illustration.\nSubject: Two fictional adults separated by an impossibly tangled velvet rope\nVisible action: Each holding a different end of the same rope, trying to work out whether to enter or leave\nSetting: A lavish rooftop entrance with doors opening onto more velvet ropes\nVisual joke: A casual arrangement requires the navigation skills of a labyrinth\nMotifs: velvet rope maze, unlatched clasp, two abandoned drinks\nComposition: Rope knots dominate the foreground; both adults readable behind them, neither cast as the villain\n\nRich fantasy trading-card detail, dramatic yet readable light, expressive body language, and clear foreground/background separation. Colorful Web 2.0 pastel palette: mint, lavender, peach, cyan, cream. Keep the main silhouette readable at phone size and leave quiet breathing room around the edges. Original composition; any people are fictional adults. Landscape 4:3 illustration only. No text, lettering, numbers, captions, logos, watermarks, card frame, rules box, or user interface.",
+    "negativePrompt": "text, lettering, numbers, captions, logos, watermarks, card frame, rules box, user interface",
+    "aspectRatio": "4:3",
+    "styleStatus": "provisional"
+  },
+  "status": "prompt_only"
+}

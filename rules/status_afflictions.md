@@ -28,6 +28,7 @@
 | **Bored** | -2 to all checks; must make WIS save to pay attention | 1 minute | Back Home Story (Retirement Visa Boomer); Meeting That Could Have Been An Email; Energy Vampire attacks | WIS save DC 12; engaging stimulus |
 | **Distracted** | -2 on attack rolls and focus-based checks; cannot take opportunity attacks | 1 round to 1 minute | Speakerphone Blast; push notifications; crowded chaotic scenes | Regaining focus; end of effect; Mute |
 | **Panic** | Must use move action to create distance from trigger; drops Concentration; Disadvantage on INT and CHA checks | 1d4 rounds or until calmed | Wifi collapse; immigration scares; sudden public humiliation; VPN failure during work | Reassurance; leaving danger; successful WIS save DC 14 |
+| **Asleep** | Cannot take actions or reactions; unaware of the scene; attacks against have Advantage; drops Concentration | Until source duration ends or awakened | Snore (Hostel Snorer); Warm Sound (Vinyl Purist); System Update spell; Jet Lag | Taking damage; loud noise in the same zone; adjacent ally uses a standard action to wake you; source-specific save |
 
 ### Social & Reputation Conditions
 
@@ -224,6 +225,12 @@
 - Haste then Exhaustion (automatic after Haste ends)
 - Hustle then Burnout (risk after excessive hustle)
 
+### Asleep Wake Rules
+- Taking any damage wakes an Asleep target after the damage resolves.
+- Loud noise in the same zone wakes an Asleep target unless the source explicitly says otherwise.
+- An adjacent ally can spend a standard action to wake an Asleep target without dealing damage.
+- Ordinary conversation, quiet movement, or passive scene noise does not wake an Asleep target.
+
 ---
 
 ## SAVING THROW REFERENCE
@@ -238,6 +245,7 @@
 | Exhaustion | CON | 14-18 |
 | Embarrassed | CHA | 12-15 |
 | Craving | WIS | 12-16 |
+| Asleep | WIS or CON | 12-16 |
 
 ---
 

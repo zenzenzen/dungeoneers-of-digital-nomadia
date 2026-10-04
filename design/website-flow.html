@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DDN — Website Flow</title>
+<style>
+  /* ===== DDN venture-SaaS palette (campaign_site_buildout_plan.md) ===== */
+  :root{
+    --ink:#101114;          /* Investor Black */
+    --paper:#F7F8F3;        /* Pitch Deck White */
+    --wifi:#2D7FF9;         /* WiFi Blue  — primary action */
+    --mango:#FFB84D;        /* Mango Signal — game state */
+    --visa:#20B486;         /* Visa Stamp Green — positive */
+    --coral:#F05D5E;        /* Burnout Coral — danger/heat */
+    --chrome:#D8DEE8;       /* Muted Chrome */
+    --line:#E4E7EE;
+    --ink-60:#5b606b;
+    --ink-40:#9aa0ac;
+    --card:#ffffff;
+    --shadow:0 1px 2px rgba(16,17,20,.06),0 8px 30px rgba(16,17,20,.08);
+    --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.45;
+    padding-bottom:80px;
+  }
+
+  /* ===== Page header ===== */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:var(--ink);color:var(--paper);
+    display:flex;align-items:center;gap:14px;
+    padding:14px 28px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .name{font-weight:700;letter-spacing:-.01em;font-size:16px}
+  .brand .sub{color:#aab0bd;font-size:12px;font-family:var(--mono)}
+  .topbar .right{margin-left:auto;display:flex;gap:8px;align-items:center}
+  .pill-mono{font-family:var(--mono);font-size:11px;color:#aab0bd;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:4px 10px}
+
+  /* star logo */
+  .star{width:34px;height:34px;border-radius:9px;background:#000;display:grid;place-items:center;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+  .star svg{width:26px;height:26px}
+
+  .wrap{max-width:1320px;margin:0 auto;padding:30px 28px 0}
+
+  h1.title{font-size:30px;letter-spacing:-.02em;margin:0 0 4px}
+  .lede{color:var(--ink-60);max-width:760px;margin:0 0 22px;font-size:15px}
+
+  /* ===== Legend ===== */
+  .legend{
+    display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:14px 18px;box-shadow:var(--shadow);margin-bottom:28px;
+  }
+  .legend .grp{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-60)}
+  .swatch{width:16px;height:16px;border-radius:5px;border:1px solid rgba(0,0,0,.08)}
+  .key{display:inline-flex;align-items:center;gap:7px;font-size:12.5px}
+  .key .dot{width:11px;height:11px;border-radius:3px}
+  .dot.page{background:var(--ink)}
+  .dot.action{background:var(--wifi)}
+  .dot.state{background:var(--mango)}
+  .dot.exit{background:var(--visa)}
+
+  /* ===== Section / lane ===== */
+  .lane{margin-bottom:34px}
+  .lane-head{display:flex;align-items:baseline;gap:12px;margin:0 0 14px}
+  .lane-head .idx{font-family:var(--mono);font-size:12px;color:#fff;background:var(--ink);border-radius:6px;padding:3px 8px}
+  .lane-head h2{font-size:17px;margin:0;letter-spacing:-.01em}
+  .lane-head .who{color:var(--ink-40);font-size:13px}
+
+  .flow{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:8px}
+  .flow::-webkit-scrollbar{height:8px}
+  .flow::-webkit-scrollbar-thumb{background:var(--chrome);border-radius:8px}
+
+  /* ===== screen card (mini wireframe) ===== */
+  .screen{
+    flex:0 0 250px;width:250px;
+    background:var(--card);border:1px solid var(--line);border-radius:13px;
+    box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;
+  }
+  .screen.wide{flex-basis:290px;width:290px}
+  .chrome{display:flex;align-items:center;gap:6px;padding:8px 10px;border-bottom:1px solid var(--line);background:#fbfcfb}
+  .chrome i{width:8px;height:8px;border-radius:50%;background:var(--chrome);display:inline-block}
+  .chrome .url{margin-left:6px;flex:1;font-family:var(--mono);font-size:10px;color:var(--ink-40);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px 7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .body{padding:12px;flex:1;display:flex;flex-direction:column;gap:8px}
+  .scr-name{font-size:12px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:6px}
+  .scr-name .tag{font-family:var(--mono);font-size:9px;font-weight:600;color:#fff;background:var(--ink);border-radius:4px;padding:2px 5px;text-transform:none;letter-spacing:0}
+
+  /* wireframe primitives */
+  .bar{height:7px;border-radius:4px;background:var(--chrome)}
+  .bar.dk{background:#c3cad6}
+  .bar.s{width:55%}
+  .bar.xs{width:35%}
+  .row{display:flex;gap:6px;align-items:center}
+  .nav{display:flex;gap:5px;align-items:center}
+  .nav .ld{width:14px;height:14px;border-radius:4px;background:var(--ink)}
+  .chip{font-size:9.5px;font-family:var(--mono);border:1px solid var(--line);border-radius:999px;padding:2px 7px;color:var(--ink-60);white-space:nowrap;background:#fff}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn{font-size:10px;font-weight:700;border-radius:7px;padding:5px 9px;text-align:center;white-space:nowrap}
+  .btn.pri{background:var(--wifi);color:#fff}
+  .btn.gho{border:1px solid var(--ink);color:var(--ink)}
+  .meter{height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+  .meter b{display:block;height:100%}
+  .statchip{display:flex;flex-direction:column;gap:2px;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 7px;flex:1}
+  .statchip .k{font-size:8px;font-family:var(--mono);color:var(--ink-40);text-transform:uppercase}
+  .statchip .v{font-size:13px;font-weight:800;letter-spacing:-.02em}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+  .tile{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 7px;display:flex;flex-direction:column;gap:5px}
+  .tile .ico{width:18px;height:18px;border-radius:6px}
+  .tile .lb{font-size:9.5px;font-weight:600;color:var(--ink)}
+  .listrow{display:flex;align-items:center;gap:7px;padding:5px 6px;border:1px solid var(--line);border-radius:7px;background:#fff}
+  .listrow .av{width:18px;height:18px;border-radius:5px;flex:0 0 auto}
+  .listrow .nm{font-size:10px;font-weight:600;flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .listrow .cr{font-size:8.5px;font-family:var(--mono);color:#fff;border-radius:4px;padding:1px 5px}
+  .search{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--paper)}
+  .search .mag{width:11px;height:11px;border-radius:50%;border:2px solid var(--ink-40)}
+  .search .ph{font-size:9.5px;color:var(--ink-40);flex:1}
+  .search .k{font-family:var(--mono);font-size:8.5px;color:var(--ink-40);border:1px solid var(--line);border-radius:4px;padding:1px 4px;background:#fff}
+  .otp{display:flex;gap:5px;justify-content:center}
+  .otp span{width:22px;height:28px;border:1.5px solid var(--ink);border-radius:6px;display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:13px}
+  .seat{display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--ink-60)}
+  .seat .av{width:16px;height:16px;border-radius:50%}
+  .clock{width:26px;height:26px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--coral);border-right-color:var(--coral)}
+  .timeline{display:flex;align-items:center;gap:0}
+  .timeline .node{width:9px;height:9px;border-radius:50%;background:var(--wifi)}
+  .timeline .seg{height:2px;flex:1;background:var(--line)}
+  .hero-h{font-size:14px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+  .muted{color:var(--ink-40);font-size:9px}
+
+  /* ===== connector between cards ===== */
+  .conn{flex:0 0 86px;width:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;position:relative;align-self:center}
+  .conn .lab{font-size:10px;font-family:var(--mono);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 8px;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .conn .arrow{display:flex;align-items:center;width:100%;color:var(--wifi)}
+  .conn .arrow .ln{height:2px;flex:1;background:currentColor}
+  .conn .arrow .hd{width:0;height:0;border-left:7px solid currentColor;border-top:5px solid transparent;border-bottom:5px solid transparent}
+  .conn.state .arrow{color:var(--mango)}
+  .conn.exit .arrow{color:var(--visa)}
+  .conn.back .arrow{color:var(--ink-40)}
+
+  /* entry chip */
+  .entry{flex:0 0 96px;width:96px;align-self:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+  .entry .blob{width:74px;height:74px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-align:center;font-size:10px;font-weight:700;line-height:1.2;padding:8px}
+  .entry .cap{font-size:10px;color:var(--ink-40);font-family:var(--mono);text-align:center}
+
+  /* branch chips (for the hub fan-out) */
+  .branchcol{flex:0 0 150px;width:150px;align-self:center;display:flex;flex-direction:column;gap:7px}
+  .branchcol .b{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 9px;box-shadow:var(--shadow);font-size:11px;font-weight:600}
+  .branchcol .b .n{width:7px;height:7px;border-radius:2px}
+  .branchcol .hint{font-size:9.5px;color:var(--ink-40);font-family:var(--mono)}
+
+  /* ===== IA sitemap ===== */
+  .ia{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:20px 22px;margin-bottom:34px}
+  .ia h3{margin:0 0 14px;font-size:14px}
+  .ia .tree{display:flex;gap:14px;flex-wrap:wrap}
+  .ia .node0{background:var(--ink);color:#fff;border-radius:9px;padding:8px 12px;font-weight:700;font-size:12px;align-self:flex-start}
+  .ia .col{display:flex;flex-direction:column;gap:7px;min-width:150px}
+  .ia .n1{font-weight:700;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--paper)}
+  .ia .n2{font-size:11px;color:var(--ink-60);border-left:2px solid var(--chrome);margin-left:8px;padding:3px 0 3px 10px;font-family:var(--mono)}
+
+  .foot{color:var(--ink-40);font-size:12px;text-align:center;margin-top:8px;font-family:var(--mono)}
+  .callout{background:#fff;border:1px dashed var(--chrome);border-radius:10px;padding:10px 14px;font-size:12.5px;color:var(--ink-60);margin:-8px 0 26px}
+  .callout b{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="star">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <defs>
+          <radialGradient id="g" cx="50%" cy="46%" r="60%">
+            <stop offset="0%" stop-color="#FFE49A"/>
+            <stop offset="34%" stop-color="#FF9D5C"/>
+            <stop offset="64%" stop-color="#F05D8E"/>
+            <stop offset="100%" stop-color="#7C5CFF"/>
+          </radialGradient>
+        </defs>
+        <path d="M50 4 C57 34 66 43 96 50 C66 57 57 66 50 96 C43 66 34 57 4 50 C34 43 43 34 50 4Z" fill="url(#g)" stroke="#fff" stroke-width="3"/>
+      </svg>
+    </span>
+    <div>
+      <div class="name">Dungeoneers of Digital Nomadia</div>
+      <div class="sub">website flow · v1 · desktop</div>
+    </div>
+  </div>
+  <div class="right">
+    <span class="pill-mono">venture-SaaS surface → RPG payload</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1 class="title">Website Flow</h1>
+  <p class="lede">
+    Maps how a visitor moves through the site. The chrome reads like a premium founder-productivity
+    platform; the content keeps revealing it's a tabletop RPG about WiFi scarcity and social combat.
+    Five journeys, each a row of screens connected by the action that advances them.
+  </p>
+
+  <div class="legend">
+    <div class="grp"><span class="key"><span class="dot page"></span>Page / screen</span></div>
+    <div class="grp"><span class="key"><span class="dot action"></span>Primary action (WiFi&nbsp;Blue)</span></div>
+    <div class="grp"><span class="key"><span class="dot state"></span>Game-state moment (Mango)</span></div>
+    <div class="grp"><span class="key"><span class="dot exit"></span>Cross-link / hand-off (Visa Green)</span></div>
+    <div class="grp" style="margin-left:auto">
+      <span class="swatch" style="background:#101114"></span>
+      <span class="swatch" style="background:#F7F8F3"></span>
+      <span class="swatch" style="background:#2D7FF9"></span>
+      <span class="swatch" style="background:#FFB84D"></span>
+      <span class="swatch" style="background:#20B486"></span>
+      <span class="swatch" style="background:#F05D5E"></span>
+      <span class="swatch" style="background:#D8DEE8"></span>
+    </div>
+  </div>
+
+  <!-- ===================== IA SITEMAP ===================== -->
+  <div class="ia">
+    <h3>Information architecture</h3>
+    <div class="tree">
+      <div class="node0">/&nbsp;&nbsp;Home</div>
+      <div class="col">
+        <div class="n1">/campaigns</div>
+        <div class="n2">/the-great-bangkok-burnout</div>
+        <div class="n2">/seoul-nights-wifi-and-lies</div>
+        <div class="n2">/devcon-descent</div>
+      </div>
+      <div class="col">
+        <div class="n1">/compendium</div>
+        <div class="n2">/monsters · /monsters/:slug</div>
+        <div class="n2">/items · /spells · /npcs</div>
+        <div class="n2">/factions · /locations</div>
+        <div class="n2">/quests · /hazards</div>
+      </div>
+      <div class="col">
+        <div class="n1">/rules</div>
+        <div class="n2">/social-combat</div>
+        <div class="n2">/conditions · /damage-types</div>
+      </div>
+      <div class="col">
+        <div class="n1">/session</div>
+        <div class="n2">/join · /:code</div>
+        <div class="n2">/:code/turn/:n</div>
+      </div>
+      <div class="col">
+        <div class="n1">/characters</div>
+        <div class="n2">/new · /:id</div>
+        <div class="n1">/about</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== LANE A — LAND & CONVERT ===================== -->
+  <div class="lane">
+    <div class="lane-head"><span class="idx">A</span><h2>Land &amp; convert</h2><span class="who">first-time visitor · "is this a startup or a game?"</span></div>
+    <div class="flow">
+
+      <div class="entry">
+        <div class="blob">Ad / search / word-of-mouth</div>
+        <div class="cap">entry</div>
+      </div>
+
+      <div class="conn"><span class="lab">visits /</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen wide">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">nomadia.gg/</span></div>
+        <div class="body">
+          <div class="scr-name">Home <span class="tag">hero</span></div>
+          <div class="row nav"><span class="ld"></span><span class="chip">Campaigns</span><span class="chip">Compendium</span><span class="chip">Rules</span><span class="btn pri" style="margin-left:auto">Enter</span></div>
+          <div class="hero-h">Scale your party.<br>Disrupt your Chill.</div>
+          <div class="muted">A satirical TTRPG for remote workers, founders &amp; crypto pilgrims.</div>
+          <div class="row"><span class="btn pri">Enter the Campaign</span><span class="btn gho">Browse the Compendium</span></div>
+          <div class="grid3">
+            <div class="statchip"><span class="k">Vibe Check</span><span class="v" style="color:var(--mango)">+4</span></div>
+            <div class="statchip"><span class="k">WiFi</span><span class="v" style="color:var(--wifi)">98%</span></div>
+            <div class="statchip"><span class="k">Heat</span><span class="v" style="color:var(--coral)">●●○</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">scrolls</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="branchcol">
+        <div class="hint">hero CTAs fan out to →</div>
+        <div class="b"><span class="n" style="background:var(--wifi)"></span>Compendium (Lane B)</div>
+        <div class="b"><span class="n" style="background:var(--ink)"></span>Campaigns (Lane C)</div>
+        <div class="b"><span class="n" style="background:var(--mango)"></span>Session Room (Lane D)</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>Characters (Lane E)</div>
+        <div class="hint">+ Traction · Testimonials · Final CTA "Join the waitlist for enlightenment. Or just roll initiative."</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== LANE B — BROWSE COMPENDIUM ===================== -->
+  <div class="lane">
+    <div class="lane-head"><span class="idx">B</span><h2>Browse the Compendium</h2><span class="who">GM / curious player · "show me the monsters"</span></div>
+    <div class="flow">
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/compendium</span></div>
+        <div class="body">
+          <div class="scr-name">Compendium hub</div>
+          <div class="search"><span class="mag"></span><span class="ph">Search all entities…</span><span class="k">⌘K</span></div>
+          <div class="grid3">
+            <div class="tile"><span class="ico" style="background:var(--coral)"></span><span class="lb">Monsters</span></div>
+            <div class="tile"><span class="ico" style="background:var(--wifi)"></span><span class="lb">Items</span></div>
+            <div class="tile"><span class="ico" style="background:var(--mango)"></span><span class="lb">Spells</span></div>
+            <div class="tile"><span class="ico" style="background:var(--visa)"></span><span class="lb">NPCs</span></div>
+            <div class="tile"><span class="ico" style="background:var(--ink)"></span><span class="lb">Factions</span></div>
+            <div class="tile"><span class="ico" style="background:#7C5CFF"></span><span class="lb">Locations</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">picks Monsters</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/compendium/monsters</span></div>
+        <div class="body">
+          <div class="scr-name">Monsters · list</div>
+          <div class="search"><span class="mag"></span><span class="ph">Filter…</span></div>
+          <div class="row" style="flex-wrap:wrap;gap:4px"><span class="chip on">CR ≤ 5</span><span class="chip">controller</span><span class="chip">sonic</span></div>
+          <div class="listrow"><span class="av" style="background:var(--coral)"></span><span class="nm">The Karen</span><span class="cr" style="background:var(--coral)">CR 3</span></div>
+          <div class="listrow"><span class="av" style="background:#7C5CFF"></span><span class="nm">The Gatekeeper</span><span class="cr" style="background:var(--ink)">CR 5</span></div>
+          <div class="listrow"><span class="av" style="background:var(--visa)"></span><span class="nm">The Energy Vampire</span><span class="cr" style="background:var(--mango)">CR 4</span></div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">opens row</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen wide">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/compendium/monsters/the-karen</span></div>
+        <div class="body">
+          <div class="scr-name">The Karen <span class="tag">CR 3 · controller</span></div>
+          <div class="grid3">
+            <div class="statchip"><span class="k">Chill</span><span class="v">45</span></div>
+            <div class="statchip"><span class="k">Cringe Res.</span><span class="v">16</span></div>
+            <div class="statchip"><span class="k">Vibe</span><span class="v">+1</span></div>
+          </div>
+          <div class="muted">Actions</div>
+          <div class="listrow"><span class="nm">Screech — 3d6 sonic</span></div>
+          <div class="listrow"><span class="nm">Summon Manager — adds CR 1 ally</span></div>
+          <div class="muted" style="margin-top:2px">Cross-links</div>
+          <div class="row" style="flex-wrap:wrap;gap:4px">
+            <span class="chip" style="border-color:var(--visa);color:var(--visa)">⇲ Bangkok Burnout</span>
+            <span class="chip" style="border-color:var(--visa);color:var(--visa)">⇲ Headphones of Isolation</span>
+            <span class="chip" style="border-color:var(--visa);color:var(--visa)">⇲ Sonic dmg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="conn exit"><span class="lab">cross-link</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="branchcol">
+        <div class="hint">every entity exposes related content →</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>→ Campaign it appears in</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>→ Counter-item detail</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>→ Rule popover</div>
+        <div class="b"><span class="n" style="background:var(--mango)"></span>→ "Add to encounter" (Lane D)</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== LANE C — ADOPT A CAMPAIGN ===================== -->
+  <div class="lane">
+    <div class="lane-head"><span class="idx">C</span><h2>Adopt a campaign</h2><span class="who">GM evaluating prep · "what will I run Friday?"</span></div>
+    <div class="flow">
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/campaigns</span></div>
+        <div class="body">
+          <div class="scr-name">Campaigns · index</div>
+          <div class="row" style="flex-wrap:wrap;gap:4px"><span class="chip">setting</span><span class="chip">theme</span><span class="chip">level</span><span class="chip">sessions</span></div>
+          <div class="listrow" style="border-color:var(--wifi);box-shadow:0 0 0 1px var(--wifi)"><span class="av" style="background:var(--mango)"></span><span class="nm">The Great Bangkok Burnout</span><span class="cr" style="background:var(--wifi)">★</span></div>
+          <div class="listrow"><span class="av" style="background:var(--wifi)"></span><span class="nm">Seoul Nights: WiFi &amp; Lies</span></div>
+          <div class="listrow"><span class="av" style="background:#7C5CFF"></span><span class="nm">DevCon Descent</span></div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">opens flagship</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen wide">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/campaigns/the-great-bangkok-burnout</span></div>
+        <div class="body">
+          <div class="scr-name">Bangkok Burnout <span class="tag">case study</span></div>
+          <div class="bar dk s"></div>
+          <div class="muted">Act structure</div>
+          <div class="timeline"><span class="node"></span><span class="seg"></span><span class="node"></span><span class="seg"></span><span class="node"></span><span class="seg"></span><span class="node" style="background:var(--line)"></span></div>
+          <div class="grid2">
+            <div class="tile"><span class="lb">Faction clocks</span><div class="row" style="gap:6px"><span class="clock"></span><span class="clock" style="border-top-color:var(--mango);border-right-color:var(--mango)"></span></div></div>
+            <div class="tile"><span class="lb" style="color:var(--coral)">Operational Risk</span><span class="muted">3 monsters · 2 open links</span></div>
+          </div>
+          <div class="btn pri">Run this campaign →</div>
+        </div>
+      </div>
+
+      <div class="conn state"><span class="lab">"Run it"</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="branchcol">
+        <div class="hint">prep mode hides spoilers; hands off to →</div>
+        <div class="b"><span class="n" style="background:var(--mango)"></span>Session Room, pre-loaded (Lane D)</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>Linked quests · NPCs · encounters</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== LANE D — RUN A SESSION ===================== -->
+  <div class="lane">
+    <div class="lane-head"><span class="idx">D</span><h2>Run a session</h2><span class="who">table at play · async "Words-with-Friends" cadence</span></div>
+    <div class="flow">
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/session</span></div>
+        <div class="body">
+          <div class="scr-name">Session Room · lobby</div>
+          <div class="btn pri">Create session</div>
+          <div class="muted" style="text-align:center">— or join —</div>
+          <div class="otp"><span>C</span><span>R</span><span>Y</span><span>P</span><span>T</span><span>7</span></div>
+          <div class="seat"><span class="av" style="background:var(--wifi)"></span>seat 1 · host</div>
+          <div class="seat"><span class="av" style="background:var(--mango)"></span>seat 2 · joined</div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">guest /join</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/join</span></div>
+        <div class="body">
+          <div class="scr-name">Join by code</div>
+          <div class="otp"><span>C</span><span>R</span><span>Y</span><span>P</span><span>T</span><span>7</span></div>
+          <div class="search"><span class="ph">Display name</span></div>
+          <div class="search"><span class="ph">Passphrase (rejoin token)</span></div>
+          <div class="btn pri">Take a seat</div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">enters room</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen wide">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/session/CRYPT7</span></div>
+        <div class="body">
+          <div class="scr-name">Live encounter <span class="tag">your turn</span></div>
+          <div class="muted">Vibe Check order</div>
+          <div class="listrow" style="border-color:var(--mango)"><span class="av" style="background:var(--mango)"></span><span class="nm">You — Influencer</span><span class="cr" style="background:var(--mango)">+6</span></div>
+          <div class="listrow"><span class="av" style="background:var(--coral)"></span><span class="nm">The Karen</span><span class="cr" style="background:var(--coral)">+1</span></div>
+          <div class="grid2">
+            <div class="statchip"><span class="k">Chill</span><div class="meter"><b style="width:64%;background:var(--wifi)"></b></div></div>
+            <div class="statchip"><span class="k">Heat</span><div class="meter"><b style="width:40%;background:var(--coral)"></b></div></div>
+          </div>
+          <div class="row"><span class="btn gho">d20</span><span class="btn gho">Gaslight</span><span class="btn pri">Commit turn</span></div>
+        </div>
+      </div>
+
+      <div class="conn state"><span class="lab">turn ends</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="branchcol">
+        <div class="hint">async loop →</div>
+        <div class="b"><span class="n" style="background:var(--mango)"></span>Push notify next seat</div>
+        <div class="b"><span class="n" style="background:var(--ink)"></span>Append to event log / replay URL</div>
+        <div class="b"><span class="n" style="background:var(--visa)"></span>Player-safe handout mode</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== LANE E — BUILD A CHARACTER ===================== -->
+  <div class="lane">
+    <div class="lane-head"><span class="idx">E</span><h2>Build a character</h2><span class="who">player onboarding · "make my joke build, legally"</span></div>
+    <div class="flow">
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/characters</span></div>
+        <div class="body">
+          <div class="scr-name">My characters</div>
+          <div class="listrow"><span class="av" style="background:var(--mango)"></span><span class="nm">Bryce, Crypto Bro</span></div>
+          <div class="btn pri">+ New character</div>
+          <div class="muted">Local-first draft · export JSON</div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">starts builder</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/characters/new</span></div>
+        <div class="body">
+          <div class="scr-name">Builder</div>
+          <div class="muted">Class</div>
+          <div class="row" style="flex-wrap:wrap;gap:4px"><span class="chip on">Influencer</span><span class="chip">Karen</span><span class="chip">Yoga Teacher</span></div>
+          <div class="muted">Background · Skills · Items</div>
+          <div class="bar"></div><div class="bar s"></div>
+          <div class="btn pri">Generate sheet</div>
+        </div>
+      </div>
+
+      <div class="conn"><span class="lab">saves</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="screen wide">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">/characters/:id</span></div>
+        <div class="body">
+          <div class="scr-name">Character sheet <span class="tag">lvl 1 Influencer</span></div>
+          <div class="grid3">
+            <div class="statchip"><span class="k">Chill</span><span class="v">28</span></div>
+            <div class="statchip"><span class="k">Cringe Res.</span><span class="v">14</span></div>
+            <div class="statchip"><span class="k">Vibe</span><span class="v">+4</span></div>
+          </div>
+          <div class="muted">Inventory</div>
+          <div class="listrow"><span class="av" style="background:var(--wifi)"></span><span class="nm">Noise-Cancelling Headphones</span></div>
+          <div class="row"><span class="btn gho">Print</span><span class="btn pri">Join a session →</span></div>
+        </div>
+      </div>
+
+      <div class="conn exit"><span class="lab">brings to table</span><div class="arrow"><span class="ln"></span><span class="hd"></span></div></div>
+
+      <div class="branchcol">
+        <div class="hint">closes the loop →</div>
+        <div class="b"><span class="n" style="background:var(--mango)"></span>Seats into Session Room (Lane D)</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Design intent:</b> every detail page is a hub, not a dead end — monsters link to the campaigns they
+    appear in, items link to the rules they trigger, campaigns deploy straight into the Session Room.
+    The satire stays on the surface (fake traction metrics, "Operational Risk" panels, waitlist-for-enlightenment
+    copy) while the data stays canonical underneath. Primary actions are always WiFi&nbsp;Blue; game-state moments
+    glow Mango; danger reads Coral.
+  </div>
+
+  <div class="foot">Dungeoneers of Digital Nomadia — website flow · derived from campaign_site_buildout_plan.md</div>
+</div>
+
+</body>
+</html>

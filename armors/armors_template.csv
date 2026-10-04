@@ -1,5 +1,4 @@
-name,type,armor_class,strength_requirement,stealth_disadvantage,weight,cost,description
-Leather Armor,Light,11 + Dex modifier,None,No,10 lb,10 gp,Boiled leather breastplate and shoulder protectors
-Chain Mail,Heavy,16,Str 13,Yes,55 lb,75 gp,Made of interlocking metal rings
-Shield,Shield,+2,None,No,6 lb,10 gp,Wooden or metal protection carried in one hand
-
+id,name,category,subtype,slot,rarity,cr_bonus,stat_requirement_stat,stat_requirement_value,stealth_disadvantage,stealth_penalty,cost_cp,cost_btc,acquisition_type,sell_value_cp,weight_lb,attunement_required,effects_json,flavor_text,rules_text,tags,version,is_active
+armor_oversized_band_tee,Oversized Band Tee,armor,light,body,common,1,,,false,0,50,0,purchase,,0.5,false,"{""dsl"":""cr_bonus:+1;stat_bonus:CHA:+1:music_conversations""}",A shirt from a band you've definitely heard of. Probably.,cr_bonus:+1;stat_bonus:CHA:+1:music_conversations,clothing;casual;music,1.0,true
+armor_thrifted_blazer,Thrifted Blazer,armor,light,body,common,1,,,false,0,80,0,purchase,,1.0,false,"{""dsl"":""cr_bonus:+1;stat_bonus:CHA:+1:professional_settings""}","Slightly musty, very sustainable. Makes you look like you have meetings.",cr_bonus:+1;stat_bonus:CHA:+1:professional_settings,clothing;professional;sustainable,1.0,true
+armor_lululemon_athleisure,Lululemon Athleisure Set,armor,light,body,uncommon,2,DEX,12,false,0,200,0,purchase,,0.5,false,"{""dsl"":""cr_bonus:+2;save_bonus:DEX:+1""}",Yoga pants and matching top. You could work out in this. You won't.,cr_bonus:+2;save_bonus:DEX:+1,clothing;athleisure;yoga,1.0,true

@@ -1,7 +1,4 @@
-name,type,weight,cost,description,properties
-Rope (Hempen),Adventuring Gear,10 lb,1 gp,50 feet of sturdy rope,Can support 3000 lbs
-Torch,Adventuring Gear,1 lb,1 cp,Burns for 1 hour providing bright light in 20 ft radius,Light source; can be used as improvised weapon (1 fire damage)
-Backpack,Container,5 lb,2 gp,Holds 1 cubic foot / 30 lbs of gear,Storage
-Thieves' Tools,Tool,1 lb,25 gp,Kit for picking locks and disarming traps,Proficiency required for use
-Healing Kit,Kit,3 lb,5 gp,10 uses for stabilizing dying creatures,No healing; stabilizes with Medicine check
-
+id,name,category,subtype,slot,rarity,cost_cp,cost_btc,acquisition_type,sell_value_cp,weight_lb,attunement_required,effects_json,flavor_text,rules_text,tags,version,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,gear,headgear,head,rare,300,0,purchase,,0.5,false,"{""dsl"":""save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration""}",Blocks out the haters. Advantage on Concentration checks.,save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration,audio;defensive;focus,1.0,true
+item_hoodie_anonymity,Hoodie of Anonymity,gear,armor,body,uncommon,80,0,purchase,,1.0,false,"{""dsl"":""cr_bonus:urban:+2;skill_bonus:DEX:stealth:+2""}",A plain black hoodie. You blend into any urban environment.,cr_bonus:urban:+2;skill_bonus:DEX:stealth:+2,stealth;urban;clothing,1.0,true
+item_ergonomic_laptop_stand,Ergonomic Laptop Stand,gear,accessory,accessory,common,40,0,purchase,,2.0,false,"{""dsl"":""save_bonus:CON:exhaustion:+1;immunity:back_pain""}",Prevents posture damage during long work sessions.,save_bonus:CON:exhaustion:+1;immunity:back_pain,ergonomic;work;health,1.0,true
