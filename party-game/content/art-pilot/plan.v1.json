@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "monster-art-pilot-v1",
+  "status": "prepared",
+  "researchDate": "2026-10-04",
+  "styleStatus": "provisional",
+  "styleFile": "content/art-pilot/style.v1.txt",
+  "schemaFile": "content/art-pilot/model-schemas.2026-10-04.json",
+  "recommendation": "sunburst",
+  "models": [
+    {
+      "key": "sunburst",
+      "label": "GPT Image 2.5 Sunburst",
+      "params": {"model": "gpt_image_2_5", "variant": "sunburst", "quality": "high", "resolution": "2k", "background": "opaque", "aspect_ratio": "4:3", "count": 1}
+    },
+    {
+      "key": "banana-pro",
+      "label": "Nano Banana Pro",
+      "params": {"model": "nano_banana_pro", "resolution": "2k", "aspect_ratio": "4:3", "count": 1}
+    }
+  ],
+  "cards": [
+    {
+      "id": "monster_the_ghoster",
+      "tests": ["Translucency is intentional and distinct from broken anatomy", "Abandoned shoes and drink explain the disappearance", "Waiting guest remains readable at card size"]
+    },
+    {
+      "id": "monster_the_situationship",
+      "tests": ["Two adults each hold one end of the same velvet rope", "Tangle reads as relationship uncertainty", "Neither adult is cast as the villain"]
+    },
+    {
+      "id": "monster_the_bill_splitting_tribunal",
+      "tests": ["Cocktail table reads as a mock courtroom", "Umbrellas and scales remain visible in the foreground", "Multiple people have distinct plausible hands and gestures"]
+    }
+  ],
+  "referenceImages": [],
+  "submission": {"authorized": false, "jobsSubmitted": 0, "costQuote": null},
+  "sources": [
+    {"url": "https://developers.openai.com/api/docs/guides/image-prompting", "supports": "Sunburst is the quality-oriented variant; reference-based style transfer and controlled editing guidance"},
+    {"url": "https://ai.google.dev/gemini-api/docs/image-generation", "supports": "Nano Banana Pro targets professional asset production and complex instructions; Nano Banana 2 targets speed and volume"},
+    {"url": "https://bfl.ai/models/flux-3-image", "supports": "FLUX 3 Image offers layout control using element bounding boxes and image editing"}
+  ]
+}

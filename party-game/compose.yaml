@@ -1,0 +1,17 @@
+services:
+  game:
+    build:
+      context: ..
+      dockerfile: party-game/Dockerfile
+    ports:
+      - "${NOMADIA_PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      DB_PATH: /data/nomadia.sqlite
+      PUBLIC_ORIGIN: "${PUBLIC_ORIGIN:-http://localhost:3000}"
+      MAX_ROOMS: "100"
+    volumes:
+      - nomadia_data:/data
+    restart: unless-stopped
+volumes:
+  nomadia_data:

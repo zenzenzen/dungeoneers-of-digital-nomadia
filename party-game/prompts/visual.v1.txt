@@ -1,0 +1,11 @@
+Create a standalone illustration brief for a Digital Nomadia digital trading card.
+Subject: {{subject}}
+Action: {{action}}
+Setting: {{setting}}
+Visual joke: {{joke}}
+Recurring motifs: {{motifs}}
+Palette: mint, lavender, peach, cyan, warm cream; colorful Web 2.0 pastel energy.
+Style reference: the rich central illustration and dramatic visual storytelling of a premium fantasy trading card such as Magic: The Gathering, applied to absurd contemporary social life. Final rendering style remains provisional.
+
+One focal subject, a readable silhouette at phone size, expressive body language, clear foreground/background separation, and mundane objects given exaggerated mythic importance. Reserve quiet breathing room around the subject. Illustration only: no text, letters, numbers, logos, watermark, card frame, rules box, or UI. Original composition. Any depicted people are fictional adults. Do not turn a mechanical bonus into printed lettering.
+Return JSON: {"schemaVersion":1,"cardId":"{{card_id}}","prompt":"...","negativePrompt":"text, lettering, numbers, logos, watermark, card frame, UI","aspectRatio":"4:3","styleStatus":"provisional"}. This brief is a generation input; it is not a generated or approved image.

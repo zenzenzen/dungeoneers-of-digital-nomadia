@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "styleStatus": "provisional",
+  "monsters": {
+    "monster_the_ghoster": {
+      "subject": "An elegantly dressed adult date whose body is becoming translucent",
+      "action": "Slipping through a rooftop doorway while their abandoned cocktail and still-solid shoes remain at the table",
+      "setting": "A rooftop mixer at dusk, with one waiting adult seated beside an untouched second drink",
+      "joke": "They put more effort into disappearing than into saying goodbye",
+      "motifs": ["empty chair", "translucent jacket", "condensation on two glasses"],
+      "composition": "Three-quarter view; disappearing guest on the right, abandoned place setting in the foreground; no readable phone screen"
+    },
+    "monster_the_mansplainer": {
+      "subject": "An overdressed adult guest with a tiny lecture podium attached to their cocktail glass",
+      "action": "Delivering an elaborate demonstration of how to use a drinking straw to an unimpressed adult bartender",
+      "setting": "A crowded mixer bar, momentarily converted into a miniature lecture hall",
+      "joke": "A mundane object has somehow become their keynote topic",
+      "motifs": ["oversized pointing finger", "tiny podium", "bent straw"],
+      "composition": "Low-angle close-up of the lecturer and absurd podium; bartender's level stare at the edge of frame"
+    },
+    "monster_the_one_upper": {
+      "subject": "An adult traveler balancing a ludicrously tall stack of luggage",
+      "action": "Adding one more suitcase to stand higher than the person showing a modest holiday souvenir",
+      "setting": "A rooftop conversation circle overlooking a tropical skyline",
+      "joke": "Every shared experience becomes a height competition",
+      "motifs": ["stacked luggage", "small souvenir shell", "precarious cocktail"],
+      "composition": "Strong upward diagonal; shell low in the foreground, unstable traveler filling the upper center"
+    },
+    "monster_the_pick_me": {
+      "subject": "An adult guest theatrically stepping outside a circle of nearly identical party outfits",
+      "action": "Pointing proudly at their unique jacket while the same jacket hangs on every nearby chair",
+      "setting": "A coat-check corner beside the dating mixer",
+      "joke": "The declaration of uniqueness has arrived in the group's standard uniform",
+      "motifs": ["matching jackets", "empty coat hooks", "self-awarded ribbon without lettering"],
+      "composition": "Guest centered in a clear silhouette; repeated jackets form a quiet visual echo behind them"
+    },
+    "monster_the_clout_chaser": {
+      "subject": "An adult guest whose sparkling gaze follows a hovering ring light",
+      "action": "Leaning past their actual date to shake hands with the date's camera rig",
+      "setting": "A mixer photo corner with a soft fabric backdrop",
+      "joke": "The camera is receiving all the romantic attention",
+      "motifs": ["ring light halo", "neglected bouquet", "outstretched handshake"],
+      "composition": "Triangular arrangement of guest, camera and overlooked date; brightest highlight belongs to the lens"
+    },
+    "monster_the_minor_red_flag": {
+      "subject": "An impeccably groomed adult guest carrying a tiny red pennant",
+      "action": "Posing charmingly while the pennant casts an enormous ominous flag-shaped shadow",
+      "setting": "The warmly lit entrance to a rooftop party",
+      "joke": "The warning looks small until you notice its shadow",
+      "motifs": ["tiny red pennant", "immaculate hair", "outsized shadow"],
+      "composition": "Friendly portrait on the left; giant shadow sweeps across the right background; one restrained red accent"
+    },
+    "monster_the_situationship": {
+      "subject": "Two fictional adults separated by an impossibly tangled velvet rope",
+      "action": "Each holding a different end of the same rope, trying to work out whether to enter or leave",
+      "setting": "A lavish rooftop entrance with doors opening onto more velvet ropes",
+      "joke": "A casual arrangement requires the navigation skills of a labyrinth",
+      "motifs": ["velvet rope maze", "unlatched clasp", "two abandoned drinks"],
+      "composition": "Rope knots dominate the foreground; both adults readable behind them, neither cast as the villain"
+    },
+    "monster_the_trauma_dumper": {
+      "subject": "An earnest adult guest opening a suitcase stuffed with oversized personal keepsakes",
+      "action": "Pouring the impossible collection onto a tiny appetizer plate while another adult patiently holds a fork",
+      "setting": "A two-person cocktail table at a social mixer",
+      "joke": "The first course cannot support this much backstory",
+      "motifs": ["overfilled suitcase", "childhood trophy without lettering", "tiny appetizer fork"],
+      "composition": "Keepsakes cascade diagonally across the table; attentive faces remain visible; humor comes from scale, not distress"
+    },
+    "monster_the_energy_vampire": {
+      "subject": "A radiant adult conversationalist opposite an increasingly slumped date",
+      "action": "Drawing a ribbon of warm light from their companion's cup into their own overflowing glass",
+      "setting": "A rooftop dinner table after the rest of the party has moved on",
+      "joke": "The conversation appears to charge only one participant",
+      "motifs": ["light siphon", "drooping napkin", "overflowing luminous drink"],
+      "composition": "Two-shot with an asymmetric glow; cheerful conversationalist in sharp focus, sleepy companion clearly visible"
+    },
+    "monster_the_nice_guy": {
+      "subject": "An adult guest wearing a self-made medal and carrying an absurd paper receipt roll",
+      "action": "Presenting a single rose while unspooling the blank receipt across the floor",
+      "setting": "A mixer entrance where a door is being held open with conspicuous effort",
+      "joke": "A small courtesy arrives with an invoice nobody requested",
+      "motifs": ["blank receipt spiral", "single rose", "homemade medal"],
+      "composition": "Rose and offering hand in the foreground; curling receipt leads toward the theatrical bow; paper has no marks"
+    },
+    "monster_the_crypto_bro": {
+      "subject": "An adult guest in glossy casual tailoring, cradling a fragile crystal coin",
+      "action": "Offering the coin like an engagement ring while it quietly dissolves into pastel vapor",
+      "setting": "A rooftop bar with speculative-looking crystal towers in the far distance",
+      "joke": "The commitment is confident; the asset is evaporating",
+      "motifs": ["unmarked crystal coin", "velvet ring box", "vanishing vapor"],
+      "composition": "Tight portrait with the ring box below center; the guest's confident smile contrasts with the dissolving object"
+    },
+    "monster_the_influencer_boyfriend": {
+      "subject": "An adult partner buried under cameras, reflectors and a folding stool",
+      "action": "Holding a perfect photo pose for their date while attempting to offer a free hand to hold",
+      "setting": "The scenic rooftop edge during the last warm light of the evening",
+      "joke": "There is barely room for affection among the production equipment",
+      "motifs": ["reflector fan", "camera straps", "unclaimed hand"],
+      "composition": "Overloaded partner in full silhouette; the reaching hand is the quiet focal point; no brand marks"
+    },
+    "monster_the_algorithm_s_favorite": {
+      "subject": "A dazzling adult guest surrounded by orbiting pastel hearts",
+      "action": "Rotating on a tiny display pedestal as nearby adults reach toward them but never meet their gaze",
+      "setting": "A dreamlike rooftop mixer shaped by translucent, blank app-like panels",
+      "joke": "Perfect visibility has produced no actual connection",
+      "motifs": ["orbiting hearts", "display pedestal", "translucent blank panels"],
+      "composition": "Centered iconic silhouette with circular movement; supporting hands stop short of the orbit; panels contain no interface or text"
+    },
+    "monster_the_ex_in_the_group_chat": {
+      "subject": "An adult former date calmly occupying the empty center of a friends' conversation circle",
+      "action": "Pulling an impossibly long pastel speech-ribbon out of a silent phone while everyone else freezes mid-toast",
+      "setting": "A rooftop lounge where an otherwise relaxed group has suddenly gone quiet",
+      "joke": "One unresolved conversation has taken over the whole gathering",
+      "motifs": ["blank speech-ribbon", "frozen toast", "phone turned away"],
+      "composition": "The ribbon cuts gently across the group; focal figure looks relaxed, supporting expressions carry the awkwardness"
+    },
+    "monster_the_soft_launch_detective": {
+      "subject": "An adult amateur detective in evening wear, carrying a jeweler's loupe",
+      "action": "Examining a wine glass reflection for a second person's hidden silhouette",
+      "setting": "A mixer table turned into a tiny investigation desk",
+      "joke": "A barely visible elbow has become a major case",
+      "motifs": ["wine-glass reflection", "loupe", "cropped photographs without text"],
+      "composition": "Large foreground wine glass acts as a lens; detective's intense eye is the secondary focal point"
+    },
+    "monster_the_bill_splitting_tribunal": {
+      "subject": "A solemn adult guest presiding over a cocktail table as if it were a courtroom",
+      "action": "Weighing cocktail umbrellas on miniature scales while other adults offer contradictory gestures",
+      "setting": "The end of a rooftop dinner, with six empty glasses around a small table",
+      "joke": "Settling the drinks bill has acquired the dignity of a constitutional hearing",
+      "motifs": ["cocktail umbrella gavel", "miniature scales", "blank receipt"],
+      "composition": "Symmetrical mock-court scene; tiny scales in sharp foreground focus, judge-like guest centered behind"
+    },
+    "monster_the_attachment_style_podcast": {
+      "subject": "An adult date surrounded by far too many studio microphones",
+      "action": "Leaning into a microphone while their companion's untouched drink gathers a miniature cobweb",
+      "setting": "An intimate mixer table overtaken by a portable recording booth",
+      "joke": "A simple check-in has become an entire episode",
+      "motifs": ["microphone forest", "untouched drink", "headphones draped on a chair"],
+      "composition": "Microphone arms frame the speaker without obscuring the face; small cobweb provides the delayed visual joke"
+    },
+    "monster_the_last_call_love_bomber": {
+      "subject": "An exuberant adult guest carrying a bouquet larger than their body",
+      "action": "Unfurling a miniature destination-wedding landscape from a ring box toward an adult they have just met",
+      "setting": "A rooftop bar being quietly packed away by staff",
+      "joke": "The imagined future has grown much larger than the actual acquaintance",
+      "motifs": ["oversized bouquet", "tiny island in a ring box", "stacked closing-time chairs"],
+      "composition": "Bouquet and impossible ring-box island sweep toward the foreground; recipient's politely startled face stays visible"
+    }
+  }
+}

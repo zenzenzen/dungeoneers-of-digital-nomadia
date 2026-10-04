@@ -1,0 +1,44 @@
+name: Party game validation
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: party-game-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: party-game
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version-file: party-game/.node-version
+          cache: npm
+          cache-dependency-path: party-game/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Validate source library
+        run: python3 ../tools/content_audit.py --strict
+      - name: Validate content, types, and rules
+        run: npm run check
+      - name: Build production client
+        run: npm run build
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Play solo and multiplayer browser scenarios
+        run: npm run test:e2e
+      - name: Build portable service
+        run: docker build -f party-game/Dockerfile -t digital-nomadia:ci .
+        working-directory: .

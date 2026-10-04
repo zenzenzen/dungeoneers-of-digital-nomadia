@@ -2,6 +2,19 @@
 
 > A satirical tabletop RPG where digital nomads battle through social combat, WiFi dead zones, and coworking space drama. Violence is replaced by vibes.
 
+## Mode boundary
+
+The active browser game lives in `party-game/` and follows `rules/party_game.md` plus its versioned campaign/card data. It uses levels, card strength, Chill, and explicit currency effects. Do not apply the six-stat, d20, tactical, or spell-slot rules below to the party application.
+
+The rules below describe the preserved tabletop source library. Canonical source order for tabletop content:
+
+1. `rules/combat_system.md`
+2. `rules/status_afflictions.md`
+3. `rules/controlled_vocabulary.md`
+4. `rules/content_schema_standards.md`
+
+`CONTENT_COHERENCE_AUDIT.md` and `CONTENT_COHERENCE_TOUCH_MANIFEST.md` document the 2026-05-31 coherence remediation and its touched files.
+
 ---
 
 ## THE SIX CORE STATS
@@ -11,10 +24,10 @@ All bonuses, penalties, skills, and combat effects **MUST** reference these clas
 | Stat | Abbr | Governs | Combat Role |
 |------|------|---------|-------------|
 | **Strength** | STR | Physical force, intimidation presence, hustle endurance | Powering through, grappling (blocking exits), forcing social compliance |
-| **Dexterity** | DEX | Reflexes, typing speed, dodging questions, stealth | Initiative tiebreaker, AC contribution, sneak attacks, evasion |
-| **Constitution** | CON | Stamina, burnout resistance, jet lag immunity, caffeine tolerance | Max Chill (HP), resisting Exhaustion/Burnout, long meeting survival |
+| **Dexterity** | DEX | Reflexes, typing speed, dodging questions, stealth | Vibe Check tiebreaker, evasive movement, sneak attacks |
+| **Constitution** | CON | Stamina, burnout resistance, jet lag immunity, caffeine tolerance | Max Chill, resisting Exhaustion/Burnout, long meeting survival |
 | **Intelligence** | INT | Logic, fact-checking, coding, research, lore recall | Gatekeep damage, debunking misinformation, tech attacks |
-| **Wisdom** | WIS | Intuition, reading vibes, self-awareness, boundary setting | Cringe Resistance (AC), spotting manipulation, resisting gaslighting |
+| **Wisdom** | WIS | Intuition, reading vibes, self-awareness, boundary setting | Cringe Resistance, spotting manipulation, resisting gaslighting |
 | **Charisma** | CHA | Social magnetism, clout, content quality, influence | Vibe Check (initiative), most attack rolls, Gaslight/Girlboss damage |
 
 ### Stat Modifier Table
@@ -36,12 +49,12 @@ All bonuses, penalties, skills, and combat effects **MUST** reference these clas
 
 ## COMBAT STATS
 
-### Chill (Hit Points)
+### Chill
 - **Formula**: `Hit Die Average + CON modifier per level`
 - **At 0 Chill**: Character is **Triggered** and must leave the scene
 - **Restoration**: Self-Care (Short Rest) restores `1d8 + CON mod`; Therapy (Long Rest) restores full
 
-### Cringe Resistance (Armor Class)
+### Cringe Resistance
 - **Base Formula**: `10 + WIS modifier + CHA modifier`
 - **With Outfit**: `Base CR + Outfit Bonus`
 - **Minimum CR**: 10 (even with negative modifiers)
@@ -67,8 +80,8 @@ When creating content, ALL bonuses MUST use this format:
 ```
 +N Attack        → Bonus to attack rolls (specify: all, melee, ranged, spell)
 +N Damage        → Bonus damage (specify type: psychic, sonic, reputation, etc.)
-+N CR            → Bonus to Cringe Resistance (AC equivalent)
-+N Chill         → Bonus to max Chill (HP equivalent)
++N CR            → Bonus to Cringe Resistance
++N Chill         → Bonus to max Chill
 +N Vibe Check    → Bonus to initiative
 ```
 
@@ -143,7 +156,7 @@ Examples:
 - Primary: Attack and damage bonuses
 - Secondary: Range, special effects
 - Must specify: Damage dice, damage type, attack stat (STR, DEX, or CHA)
-- Example: `Mechanical Keyboard: 1d6 + STR bludgeoning + 1d4 sonic, Melee`
+- Example: `Mechanical Keyboard: 1d6 + INT sonic damage, Personal`
 
 ### Wondrous Items
 - Can provide any effect, but must be stat-anchored
@@ -213,7 +226,7 @@ Every skill MUST be tied to exactly ONE ability:
 
 ### Required Fields
 ```csv
-name,type,size,armor_class,hit_points,speed,challenge_rating,abilities,attacks,special_traits
+id,name,role,type,size,challenge_rating,chill,cringe_resistance,speed,abilities,actions,reactions,traits,loot,flavor_text,tags,version,is_active
 ```
 
 ### Abilities Format
@@ -241,7 +254,7 @@ Examples:
 
 ### Required Fields
 ```csv
-name,level,school,casting_time,range,components,duration,description
+spell_id,id,name,level,school,caster_class_ids,casting_time,components,action_type,range,targeting,save_type,save_dc_formula,damage_formula,damage_type,condition_ids,duration,concentration,flavor_text,rules_text,description,tags,version,is_active
 ```
 
 ### Spell Damage Scaling
@@ -276,6 +289,7 @@ Spell Save DC = 8 + Proficiency + Spellcasting Stat Modifier
 | **Cringed** | -2 CR for 1 minute | Failed Performance, embarrassment | End of encounter or CHA save |
 | **Confused** | Disadvantage on next action | Critical Gaslight | WIS save at end of turn |
 | **Charmed** | Won't attack charmer, advantage on CHA checks vs target | Love Bomb, various | WIS save, damage |
+| **Asleep** | Cannot take actions or reactions; unaware; attacks against have Advantage | Snore, Warm Sound, System Update | Damage, loud noise, adjacent ally standard action, or source-specific save |
 | **Exhaustion** | Stacking penalties (1-6 levels) | Overwork, caffeine crash | Long Rest removes 1 level |
 | **FOMO** | Must move toward any social gathering; disadvantage on WIS saves | Missing an event, seeing others having fun | Attending the event or WIS save DC 15 |
 | **Ghosted** | Cannot target the creature who Ghosted you; -2 CHA for 1 hour | Failed relationship check, being left on read | New social interaction or CHA save DC 12 |
@@ -294,12 +308,14 @@ Spell Save DC = 8 + Proficiency + Spellcasting Stat Modifier
 
 | Currency | Value | Notes |
 |----------|-------|-------|
-| **Gold Piece (GP)** | Standard | 1 GP = 10 SP = 100 CP |
-| **Silver Piece (SP)** | 1/10 GP | Common transactions |
-| **Copper Piece (CP)** | 1/100 GP | Small purchases |
-| **Bitcoin (BTC)** | Volatile | Roll d100 daily: value = roll × 10 GP |
-| **Exposure** | Worthless | Cannot be used for actual purchases |
-| **Therapy Hours** | Special | Earned through roleplay, spent on Chill restoration |
+| **cash_cp** | Canon cash unit | Use `cost_cp`, reward amounts, and treasure amounts |
+| **btc** | Crypto denomination | Use `cost_btc` or `currency_id=btc` |
+| **exposure** | Non-cash compensation | Use only as `reward_type` or `currency_id` |
+| **therapy_healedness** | Recovery progress | Use as reward/resource, not a stat |
+| **social_capital** | Scene leverage | Spendable favor/status resource |
+| **temp_chill** | Temporary Chill | Temporary health resource |
+
+Forbidden legacy currency terms: `gp`, `sp`, `gold`, uppercase `BTC` as an ID, freeform `cash`, `Sanity`, and `Karma`.
 
 ---
 
@@ -314,7 +330,7 @@ When creating ANY game content, verify:
 - [ ] Equipment bonuses are reasonable for rarity (+1 common, +2 uncommon, +3 rare, +4 very rare, +5 legendary)
 - [ ] Class features specify which stat they key off
 - [ ] Conditions have clear triggers and recovery methods
-- [ ] Attack actions specify: target (CR), roll (d20 + stat + prof), damage (dice + stat mod + type)
+- [ ] Attack actions specify: target (Cringe Resistance or save), roll (d20 + stat + prof), damage (dice + stat mod + type)
 - [ ] Defensive abilities specify: trigger, duration, stat (if any)
 - [ ] Humor is maintained but mechanics are clear
 - [ ] **Flavor text included** — every entity has a snarky byline (see FLAVOR TEXT REQUIREMENTS)
@@ -332,8 +348,8 @@ When creating ANY game content, verify:
 ## EXAMPLE: COMPLETE ITEM ENTRY
 
 ```csv
-name,type,rarity,cost,description,flavor_text,bonuses
-Noise Cancelling Headphones of Isolation,Headgear,Rare,3 gp,"+2 WIS Saves vs Sonic/Verbal attacks. Advantage on Concentration checks.","They told you to 'just be yourself.' So you became unreachable.","+2 WIS Saves (Sonic/Verbal), Advantage Concentration"
+id,name,category,subtype,slot,rarity,cost_cp,cost_btc,acquisition_type,sell_value_cp,weight_lb,attunement_required,effects_json,flavor_text,rules_text,tags,version,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,gear,headgear,head,rare,300,,purchase,150,0.5,false,"[{""type"":""save_bonus"",""stat"":""WIS"",""damage_type"":""sonic"",""bonus"":2},{""type"":""advantage"",""target"":""concentration""}]","They told you to 'just be yourself.' So you became unreachable.","+2 WIS Saves vs Sonic attacks. Advantage on Concentration checks.","audio;defensive;focus",1.0,true
 ```
 
 ## EXAMPLE: COMPLETE ATTACK ACTION
@@ -428,7 +444,7 @@ Advanced Gatekeeping,Influencer,Basic Gatekeeping
 | Source Entity | Foreign Key Field | Target Entity |
 |---------------|-------------------|---------------|
 | Character | `class_id`, `background_id`, `race_id` | Classes, Backgrounds, Races |
-| Spell | `class_ids` (array) | Classes |
+| Spell | `caster_class_ids` (array) | Classes |
 | Item | `required_class_id` | Classes |
 | Feat | `prerequisite_feat_ids` (array) | Feats |
 | Quest | `location_id`, `npc_ids` (array) | Locations, NPCs |
@@ -448,7 +464,7 @@ STR, DEX, CON, INT, WIS, CHA
 
 #### `enum_damage_type`
 ```
-psychic, sonic, reputation, necrotic, cringe, poison, bludgeoning, slashing, piercing, radiant, force
+psychic, sonic, reputation, cringe, necrotic, poison
 ```
 
 #### `enum_rarity`
@@ -478,17 +494,17 @@ abjuration, conjuration, divination, enchantment, evocation, illusion, necromanc
 
 #### `enum_condition`
 ```
-triggered, cancelled, shadowbanned, burnout, cringed, confused, charmed, exhaustion, blinded, deafened, frightened, grappled, incapacitated, invisible, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious
+triggered, cancelled, shadowbanned, burnout, cringed, confused, charmed, frightened, stunned, incapacitated, bored, distracted, panic, asleep, annoyed, embarrassed, shamed, judged, ghosted, doubt, uncomfortable, poisoned, exhaustion, hangover, food_poisoning, jet_lag, blinded, deafened, obsessed, craving, phone_addiction, fomo, doomscroll_compulsion, identity_crisis, purposeless, imposter_syndrome, anxious, irritable, slow, difficult_terrain_emotional, cannot_be_ignored, grappled_social, restrained_social, prone_social, silenced, surprised, power_loss, cursed_review, red_mouth_stain, back_pain, carpal_tunnel
 ```
 
 #### `enum_currency`
 ```
-cp, sp, gp, btc, exposure, therapy_hours
+cash_cp, btc, exposure, therapy_healedness, social_capital, temp_chill
 ```
 
 #### `enum_action_type`
 ```
-action, bonus_action, reaction, free_action, movement
+standard, move, swift, immediate, full_round, extended
 ```
 
 When adding content, use ONLY values from these enums. If a new value is needed, add it to this list first.
@@ -532,12 +548,10 @@ attacks,"name:Gaslight|...; name:Clap Back|..."
 
 #### Cost Format
 ```csv
-# Standardized cost format (always use lowest denomination or structured)
+# Standardized cost format
 cost_cp,350
-# OR
-cost,"{""gp"": 3, ""sp"": 5}"
-# OR CSV shorthand:
-cost,"3gp5sp"
+cost_btc,0.001
+currency_id,cash_cp
 ```
 
 ---
@@ -552,10 +566,10 @@ Always use proper data types for numeric values:
 | Stat Score | Integer 1-30 | `14` |
 | Modifier | Signed Integer | `-2`, `+3` |
 | Level | Integer 0-20 | `5` |
-| CR | Decimal or Fraction | `0.25`, `0.5`, `1`, `17` |
+| Challenge Rating | Decimal or Fraction | `0.25`, `0.5`, `1`, `17` |
 | Distance | Integer (feet) | `30`, `60` |
 | Duration | String pattern | `1 minute`, `1 hour`, `instantaneous`, `concentration, up to 1 minute` |
-| Cost | Integer (copper) or structured | `350` or `3gp5sp` |
+| Cost | Integer in canonical CP or decimal BTC | `350`, `0.001` |
 | Weight | Decimal (lbs) | `2.5` |
 
 ---
@@ -585,7 +599,7 @@ Mark fields that should be computed at runtime rather than stored:
 | `proficiency_bonus` | Level-based lookup | `+2` at levels 1-4, etc. |
 | `spell_save_dc` | `8 + proficiency + stat_mod` | Computed per caster |
 | `chill_max` | `hit_die_avg + (CON_mod × level)` | Computed per character |
-| `cringe_resistance` | `10 + WIS_mod + CHA_mod + armor` | Computed per character |
+| `cringe_resistance` | `10 + floor(level / 2) + WIS_mod + CHA_mod + outfit_bonus + item_bonus` | Computed per character |
 
 In CSV, you can include these for reference but prefix with `_computed_`:
 ```csv
@@ -749,22 +763,22 @@ Before adding content, validate:
 ### EXAMPLE: DATABASE-READY ITEM ENTRY
 
 ```csv
-id,name,type,rarity,cost_cp,weight_lb,description,flavor_text,bonuses,required_stat,required_value,attunement,version,tags,is_active
-item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,headgear,rare,300,0.5,"+2 WIS Saves vs Sonic and Verbal attacks. Advantage on Concentration checks.","They told you to 'just be yourself.' So you became unreachable.","save_bonus:WIS:sonic:+2;save_bonus:WIS:verbal:+2;advantage:concentration",WIS,12,false,1.0,"audio;defensive;focus",true
+id,name,category,subtype,slot,rarity,cost_cp,cost_btc,acquisition_type,sell_value_cp,weight_lb,attunement_required,effects_json,flavor_text,rules_text,tags,version,is_active
+item_noise_cancel_headphones,Noise Cancelling Headphones of Isolation,gear,headgear,head,rare,300,,purchase,150,0.5,false,"[{""type"":""save_bonus"",""stat"":""WIS"",""damage_type"":""sonic"",""bonus"":2},{""type"":""advantage"",""target"":""concentration""}]","They told you to 'just be yourself.' So you became unreachable.","+2 WIS Saves vs Sonic attacks. Advantage on Concentration checks.","audio;defensive;focus",1.0,true
 ```
 
 ### EXAMPLE: DATABASE-READY SPELL ENTRY
 
 ```csv
-id,name,level,school,casting_time,range_ft,components,duration,class_ids,damage_dice,damage_type,save_stat,effect_on_save,description,flavor_text,version,tags,is_active
-spell_gaslight,Gaslight,2,enchantment,action,30,"V",1 minute,"class_influencer;class_girlboss",1d8,psychic,WIS,half,"Make the target doubt their own perception. On failed save: target is Confused.","'I never said that. You're imagining things. Are you okay? You seem stressed.'",1.0,"debuff;control;psychic",true
+spell_id,id,name,level,school,caster_class_ids,casting_time,components,action_type,range,targeting,save_type,save_dc_formula,damage_formula,damage_type,condition_ids,duration,concentration,flavor_text,rules_text,description,tags,version,is_active
+spell_gaslight,spell_gaslight,Gaslight,2,enchantment,"class_influencer;class_girlboss",1 action,V,standard,30 ft,one creature,WIS,"10 + spell level + casting ability mod",1d8,psychic,confused,1 minute,true,"'I never said that. You're imagining things. Are you okay? You seem stressed.'","Target takes 1d8 psychic damage and is Confused on a failed WIS save; half damage and no condition on success.","Target takes 1d8 psychic damage and is Confused on a failed WIS save; half damage and no condition on success.","debuff;control;psychic",1.0,true
 ```
 
 ### EXAMPLE: DATABASE-READY MONSTER ENTRY
 
 ```csv
-id,name,creature_type,size,cr,stat_str,stat_dex,stat_con,stat_int,stat_wis,stat_cha,armor_class,hit_dice,speed_ft,speed_fly_ft,attacks,special_traits,condition_immunities,damage_resistances,damage_immunities,languages,flavor_text,version,tags,is_active
-monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,8d8+16,30,0,"name:Humble Brag|stat:CHA|damage:2d6+4|type:psychic;name:Thought Leadership|stat:INT|damage:1d8+3|type:cringe","Agree to Disagree (reaction: redirect attack to nearby ally);Always Be Closing (bonus action: CHA save DC 14 or charmed)","charmed","psychic","","Common;Corporate","Approach with caution. They WILL tell you about their TED Talk.",1.0,"social;humanoid;annoying",true
+id,name,role,type,size,challenge_rating,chill,cringe_resistance,speed,abilities,actions,reactions,traits,loot,flavor_text,tags,version,is_active
+monster_linkedin_lunatic,LinkedIn Lunatic,controller,humanoid,medium,3,45,14,30 ft,"STR:10|DEX:12|CON:14|INT:16|WIS:8|CHA:18","Humble Brag (2d6+CHA psychic); Thought Leadership (1d8+INT cringe; WIS save or Charmed)","Agree to Disagree (redirect one reputation attack)","Always Be Closing (+2 CR while pitching)","networking_card;exposure","Approach with caution. They WILL tell you about their TED Talk.","social;humanoid;annoying",1.0,true
 ```
 
 ---
@@ -774,4 +788,3 @@ monster_linkedin_lunatic,LinkedIn Lunatic,humanoid,medium,3,10,12,14,16,8,18,14,
 *Remember: If content doesn't have a unique `id`, it can't exist in a database.*
 
 *Remember: If content doesn't have a `flavor_text`, it doesn't have a soul. Every entity gets a snarky byline.*
-

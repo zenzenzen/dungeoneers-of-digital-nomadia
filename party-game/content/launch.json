@@ -1,0 +1,4238 @@
+{
+  "version": "f911a2b4477a2aaa",
+  "cards": [
+    {
+      "id": "class_digital_nomad",
+      "kind": "class",
+      "name": "Digital Nomad",
+      "flavor": "Home is where the WiFi connects automatically.",
+      "rules": "+1 strength. +2 against travel; −1 against office.",
+      "tags": [
+        "travel",
+        "office"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "office"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_digital_nomad"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Digital Nomad",
+        "action": "Home is where the WiFi connects automatically.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Home is where the WiFi connects automatically.",
+        "motifs": [
+          "travel",
+          "office"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_influencer",
+      "kind": "class",
+      "name": "Influencer",
+      "flavor": "The connection is authentic. The lighting is sponsored.",
+      "rules": "+1 strength. +2 against status; −1 against boundaries.",
+      "tags": [
+        "status",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "status"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_influencer"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Influencer",
+        "action": "The connection is authentic. The lighting is sponsored.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The connection is authentic. The lighting is sponsored.",
+        "motifs": [
+          "status",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_crypto_bro",
+      "kind": "class",
+      "name": "Crypto Bro",
+      "flavor": "Looking for someone to hold through the bear market.",
+      "rules": "+1 strength. +2 against money; −1 against wellness.",
+      "tags": [
+        "money",
+        "wellness"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "money"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "wellness"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_crypto_bro"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Crypto Bro",
+        "action": "Looking for someone to hold through the bear market.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Looking for someone to hold through the bear market.",
+        "motifs": [
+          "money",
+          "wellness"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_yoga_teacher",
+      "kind": "class",
+      "name": "Yoga Teacher",
+      "flavor": "Very flexible. Except about your attachment style.",
+      "rules": "+1 strength. +2 against wellness; −1 against tech.",
+      "tags": [
+        "wellness",
+        "tech"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "wellness"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "tech"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_yoga_teacher"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Yoga Teacher",
+        "action": "Very flexible. Except about your attachment style.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Very flexible. Except about your attachment style.",
+        "motifs": [
+          "wellness",
+          "tech"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_life_coach",
+      "kind": "class",
+      "name": "Life Coach",
+      "flavor": "You are not single. You are pre-partnered.",
+      "rules": "+1 strength. +2 against boundaries; −1 against money.",
+      "tags": [
+        "boundaries",
+        "money"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "boundaries"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "money"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_life_coach"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Life Coach",
+        "action": "You are not single. You are pre-partnered.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "You are not single. You are pre-partnered.",
+        "motifs": [
+          "boundaries",
+          "money"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_startup_founder",
+      "kind": "class",
+      "name": "Startup Founder",
+      "flavor": "Our relationship is still in stealth.",
+      "rules": "+1 strength. +2 against tech; −1 against first impressions.",
+      "tags": [
+        "tech",
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "tech"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "first_impressions"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_startup_founder"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Startup Founder",
+        "action": "Our relationship is still in stealth.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Our relationship is still in stealth.",
+        "motifs": [
+          "tech",
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_burnout_survivor",
+      "kind": "class",
+      "name": "Burnout Survivor",
+      "flavor": "My five-year plan is a nap with benefits.",
+      "rules": "+1 strength. +2 against office; −1 against nightlife.",
+      "tags": [
+        "office",
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "office"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "nightlife"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_burnout_survivor"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Burnout Survivor",
+        "action": "My five-year plan is a nap with benefits.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "My five-year plan is a nap with benefits.",
+        "motifs": [
+          "office",
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "class_reply_guy",
+      "kind": "class",
+      "name": "Reply Guy",
+      "flavor": "Already typing. Nobody asked.",
+      "rules": "+1 strength. +2 against awkward; −1 against boundaries.",
+      "tags": [
+        "awkward",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "awkward"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_classes_class_reply_guy"
+      ],
+      "authorship": "adapted",
+      "quantity": 1,
+      "art": {
+        "subject": "Reply Guy",
+        "action": "Already typing. Nobody asked.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Already typing. Nobody asked.",
+        "motifs": [
+          "awkward",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_genetically_blessed_height",
+      "kind": "trait",
+      "name": "Genetically Blessed Height",
+      "flavor": "The profile says 183. The doorframe has questions.",
+      "rules": "+2 against first impressions; −1 against travel.",
+      "tags": [
+        "first_impressions",
+        "travel"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "first_impressions"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "travel"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_genetically_blessed_height"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Genetically Blessed Height",
+        "action": "The profile says 183. The doorframe has questions.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The profile says 183. The doorframe has questions.",
+        "motifs": [
+          "first_impressions",
+          "travel"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_clean_freak",
+      "kind": "trait",
+      "name": "Clean Freak",
+      "flavor": "Your love language is a freshly disinfected surface.",
+      "rules": "+2 against wellness; −1 against nightlife.",
+      "tags": [
+        "wellness",
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "wellness"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "nightlife"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_clean_freak"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Clean Freak",
+        "action": "Your love language is a freshly disinfected surface.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Your love language is a freshly disinfected surface.",
+        "motifs": [
+          "wellness",
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_super_well_traveled",
+      "kind": "trait",
+      "name": "Super Well Traveled",
+      "flavor": "Thirty countries. One story. Repeated.",
+      "rules": "+2 against travel; −1 against boundaries.",
+      "tags": [
+        "travel",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_super_well_traveled"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Super Well Traveled",
+        "action": "Thirty countries. One story. Repeated.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Thirty countries. One story. Repeated.",
+        "motifs": [
+          "travel",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_hot_athletic_body",
+      "kind": "trait",
+      "name": "Hot Athletic Body",
+      "flavor": "Emotionally unavailable. Physically in excellent condition.",
+      "rules": "+2 against first impressions; −1 against office.",
+      "tags": [
+        "first_impressions",
+        "office"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "first_impressions"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "office"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_hot_athletic_body"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Hot Athletic Body",
+        "action": "Emotionally unavailable. Physically in excellent condition.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Emotionally unavailable. Physically in excellent condition.",
+        "motifs": [
+          "first_impressions",
+          "office"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_connoisseur_of_fine_things",
+      "kind": "trait",
+      "name": "Connoisseur of Fine Things",
+      "flavor": "Can identify the vintage of a financial mistake.",
+      "rules": "+2 against status; −1 against money.",
+      "tags": [
+        "status",
+        "money"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "status"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "money"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_connoisseur_of_fine_things"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Connoisseur of Fine Things",
+        "action": "Can identify the vintage of a financial mistake.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Can identify the vintage of a financial mistake.",
+        "motifs": [
+          "status",
+          "money"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_big_bank_account",
+      "kind": "trait",
+      "name": "Big Bank Account",
+      "flavor": "It cannot buy love. It can reserve the rooftop.",
+      "rules": "+2 against money; −1 against boundaries.",
+      "tags": [
+        "money",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "money"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_big_bank_account"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Big Bank Account",
+        "action": "It cannot buy love. It can reserve the rooftop.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "It cannot buy love. It can reserve the rooftop.",
+        "motifs": [
+          "money",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_coffee_shop_warrior",
+      "kind": "trait",
+      "name": "Coffee Shop Warrior",
+      "flavor": "Holds a table better than a conversation.",
+      "rules": "+2 against office; −1 against nightlife.",
+      "tags": [
+        "office",
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "office"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "nightlife"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_coffee_shop_warrior"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Coffee Shop Warrior",
+        "action": "Holds a table better than a conversation.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Holds a table better than a conversation.",
+        "motifs": [
+          "office",
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_digital_detox_believer",
+      "kind": "trait",
+      "name": "Digital Detox Believer",
+      "flavor": "Please validate my offline journey online.",
+      "rules": "+2 against wellness; −1 against tech.",
+      "tags": [
+        "wellness",
+        "tech"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "wellness"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "tech"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_digital_detox_believer"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Digital Detox Believer",
+        "action": "Please validate my offline journey online.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Please validate my offline journey online.",
+        "motifs": [
+          "wellness",
+          "tech"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_perpetual_networker",
+      "kind": "trait",
+      "name": "Perpetual Networker",
+      "flavor": "Was this a date or a discovery call?",
+      "rules": "+2 against status; −1 against boundaries.",
+      "tags": [
+        "status",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "status"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_perpetual_networker"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Perpetual Networker",
+        "action": "Was this a date or a discovery call?",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Was this a date or a discovery call?",
+        "motifs": [
+          "status",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_yoga_instructor_certificate",
+      "kind": "trait",
+      "name": "Yoga Instructor Certificate",
+      "flavor": "Two hundred hours of training. Infinite unsolicited advice.",
+      "rules": "+2 against wellness; −1 against money.",
+      "tags": [
+        "wellness",
+        "money"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "wellness"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "money"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_yoga_instructor_certificate"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Yoga Instructor Certificate",
+        "action": "Two hundred hours of training. Infinite unsolicited advice.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Two hundred hours of training. Infinite unsolicited advice.",
+        "motifs": [
+          "wellness",
+          "money"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_minimalist_owns_macbook_pro",
+      "kind": "trait",
+      "name": "Minimalist (Owns MacBook Pro)",
+      "flavor": "Everything I own fits in one very expensive bag.",
+      "rules": "+2 against tech; −1 against status.",
+      "tags": [
+        "tech",
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "tech"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "status"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_minimalist_owns_macbook_pro"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Minimalist (Owns MacBook Pro)",
+        "action": "Everything I own fits in one very expensive bag.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Everything I own fits in one very expensive bag.",
+        "motifs": [
+          "tech",
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_polyglot_pretender",
+      "kind": "trait",
+      "name": "Polyglot Pretender",
+      "flavor": "Fluent in ordering beer and changing the subject.",
+      "rules": "+2 against travel; −1 against first impressions.",
+      "tags": [
+        "travel",
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "first_impressions"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_polyglot_pretender"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Polyglot Pretender",
+        "action": "Fluent in ordering beer and changing the subject.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Fluent in ordering beer and changing the subject.",
+        "motifs": [
+          "travel",
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_actual_polyglot",
+      "kind": "trait",
+      "name": "Actual Polyglot",
+      "flavor": "Can misunderstand mixed signals in seven languages.",
+      "rules": "+2 against travel; −1 against awkward.",
+      "tags": [
+        "travel",
+        "awkward"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "awkward"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_actual_polyglot"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Actual Polyglot",
+        "action": "Can misunderstand mixed signals in seven languages.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Can misunderstand mixed signals in seven languages.",
+        "motifs": [
+          "travel",
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_never_lost",
+      "kind": "trait",
+      "name": "Never Lost",
+      "flavor": "I know exactly where this is going. Allegedly.",
+      "rules": "+2 against travel; −1 against boundaries.",
+      "tags": [
+        "travel",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_never_lost"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Never Lost",
+        "action": "I know exactly where this is going. Allegedly.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "I know exactly where this is going. Allegedly.",
+        "motifs": [
+          "travel",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_obsessed_food_drink_knower",
+      "kind": "trait",
+      "name": "Obsessed Food & Drink Knower",
+      "flavor": "A tasting note has become a hostage situation.",
+      "rules": "+2 against nightlife; −1 against office.",
+      "tags": [
+        "nightlife",
+        "office"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "nightlife"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "office"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_obsessed_food_drink_knower"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Obsessed Food & Drink Knower",
+        "action": "A tasting note has become a hostage situation.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A tasting note has become a hostage situation.",
+        "motifs": [
+          "nightlife",
+          "office"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_blogger_vlogger",
+      "kind": "trait",
+      "name": "Blogger Vlogger",
+      "flavor": "Could you do that vulnerable moment again?",
+      "rules": "+2 against status; −1 against first impressions.",
+      "tags": [
+        "status",
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "status"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "first_impressions"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_blogger_vlogger"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Blogger Vlogger",
+        "action": "Could you do that vulnerable moment again?",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Could you do that vulnerable moment again?",
+        "motifs": [
+          "status",
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_chronic_oversharer",
+      "kind": "trait",
+      "name": "Chronic Oversharer",
+      "flavor": "The icebreaker came with a family medical history.",
+      "rules": "+2 against awkward; −1 against first impressions.",
+      "tags": [
+        "awkward",
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "awkward"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "first_impressions"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_chronic_oversharer"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Chronic Oversharer",
+        "action": "The icebreaker came with a family medical history.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The icebreaker came with a family medical history.",
+        "motifs": [
+          "awkward",
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_extreme_cheapskate",
+      "kind": "trait",
+      "name": "Extreme Cheapskate",
+      "flavor": "Split the bill, including emotional labor.",
+      "rules": "+2 against money; −1 against nightlife.",
+      "tags": [
+        "money",
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "money"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "nightlife"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_extreme_cheapskate"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Extreme Cheapskate",
+        "action": "Split the bill, including emotional labor.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Split the bill, including emotional labor.",
+        "motifs": [
+          "money",
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_trust_fund_kid",
+      "kind": "trait",
+      "name": "Trust Fund Kid",
+      "flavor": "Self-made, with a small loan from the group chat.",
+      "rules": "+2 against money; −1 against office.",
+      "tags": [
+        "money",
+        "office"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "money"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "office"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_trust_fund_kid"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Trust Fund Kid",
+        "action": "Self-made, with a small loan from the group chat.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Self-made, with a small loan from the group chat.",
+        "motifs": [
+          "money",
+          "office"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_burned_out_ex_corporate",
+      "kind": "trait",
+      "name": "Burned Out Ex-Corporate",
+      "flavor": "Available immediately. Enthusiasm negotiable.",
+      "rules": "+2 against office; −1 against status.",
+      "tags": [
+        "office",
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "office"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "status"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_burned_out_ex_corporate"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Burned Out Ex-Corporate",
+        "action": "Available immediately. Enthusiasm negotiable.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Available immediately. Enthusiasm negotiable.",
+        "motifs": [
+          "office",
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_spiritual_bypass_master",
+      "kind": "trait",
+      "name": "Spiritual Bypass Master",
+      "flavor": "It is not avoidance. It is a higher vibration.",
+      "rules": "+2 against wellness; −1 against boundaries.",
+      "tags": [
+        "wellness",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "wellness"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_spiritual_bypass_master"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Spiritual Bypass Master",
+        "action": "It is not avoidance. It is a higher vibration.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "It is not avoidance. It is a higher vibration.",
+        "motifs": [
+          "wellness",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_no_boundaries",
+      "kind": "trait",
+      "name": "No Boundaries",
+      "flavor": "A plus-one to your entire life.",
+      "rules": "+2 against nightlife; −1 against boundaries.",
+      "tags": [
+        "nightlife",
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "nightlife"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_no_boundaries"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "No Boundaries",
+        "action": "A plus-one to your entire life.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A plus-one to your entire life.",
+        "motifs": [
+          "nightlife",
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_perpetually_jetlagged",
+      "kind": "trait",
+      "name": "Perpetually Jetlagged",
+      "flavor": "Emotionally in yesterday. Physically at this bar.",
+      "rules": "+2 against travel; −1 against tech.",
+      "tags": [
+        "travel",
+        "tech"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "travel"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "tech"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_perpetually_jetlagged"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Perpetually Jetlagged",
+        "action": "Emotionally in yesterday. Physically at this bar.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Emotionally in yesterday. Physically at this bar.",
+        "motifs": [
+          "travel",
+          "tech"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "trait_living_off_savings",
+      "kind": "trait",
+      "name": "Living Off Savings",
+      "flavor": "Financial independence, with a countdown.",
+      "rules": "+2 against money; −1 against status.",
+      "tags": [
+        "money",
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2,
+          "tags": [
+            "money"
+          ]
+        },
+        {
+          "kind": "power",
+          "amount": -1,
+          "tags": [
+            "status"
+          ]
+        }
+      ],
+      "sources": [
+        "source_feats_living_off_savings"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Living Off Savings",
+        "action": "Financial independence, with a countdown.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Financial independence, with a countdown.",
+        "motifs": [
+          "money",
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "monster_the_ghoster",
+      "kind": "monster",
+      "name": "The Ghoster",
+      "flavor": "Last seen: emotionally unavailable.",
+      "rules": "Beat strength 4: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "boundaries",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_ghoster"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An elegantly dressed adult date whose body is becoming translucent",
+        "action": "Slipping through a rooftop doorway while their abandoned cocktail and still-solid shoes remain at the table",
+        "setting": "A rooftop mixer at dusk, with one waiting adult seated beside an untouched second drink",
+        "joke": "They put more effort into disappearing than into saying goodbye",
+        "motifs": [
+          "empty chair",
+          "translucent jacket",
+          "condensation on two glasses"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Three-quarter view; disappearing guest on the right, abandoned place setting in the foreground; no readable phone screen"
+      },
+      "strength": 4,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_mansplainer",
+      "kind": "monster",
+      "name": "The Mansplainer",
+      "flavor": "Actually, the correct way to enjoy this date is—",
+      "rules": "Beat strength 5: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "tech",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_mansplainer"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An overdressed adult guest with a tiny lecture podium attached to their cocktail glass",
+        "action": "Delivering an elaborate demonstration of how to use a drinking straw to an unimpressed adult bartender",
+        "setting": "A crowded mixer bar, momentarily converted into a miniature lecture hall",
+        "joke": "A mundane object has somehow become their keynote topic",
+        "motifs": [
+          "oversized pointing finger",
+          "tiny podium",
+          "bent straw"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Low-angle close-up of the lecturer and absurd podium; bartender's level stare at the edge of frame"
+      },
+      "strength": 5,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_one_upper",
+      "kind": "monster",
+      "name": "The One-Upper",
+      "flavor": "You went to Bali? They discovered it.",
+      "rules": "Beat strength 6: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "travel",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_one_upper"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult traveler balancing a ludicrously tall stack of luggage",
+        "action": "Adding one more suitcase to stand higher than the person showing a modest holiday souvenir",
+        "setting": "A rooftop conversation circle overlooking a tropical skyline",
+        "joke": "Every shared experience becomes a height competition",
+        "motifs": [
+          "stacked luggage",
+          "small souvenir shell",
+          "precarious cocktail"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Strong upward diagonal; shell low in the foreground, unstable traveler filling the upper center"
+      },
+      "strength": 6,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_pick_me",
+      "kind": "monster",
+      "name": "The Pick-Me",
+      "flavor": "Not like other people. In precisely the usual way.",
+      "rules": "Beat strength 4: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "first_impressions",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_pick_me"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult guest theatrically stepping outside a circle of nearly identical party outfits",
+        "action": "Pointing proudly at their unique jacket while the same jacket hangs on every nearby chair",
+        "setting": "A coat-check corner beside the dating mixer",
+        "joke": "The declaration of uniqueness has arrived in the group's standard uniform",
+        "motifs": [
+          "matching jackets",
+          "empty coat hooks",
+          "self-awarded ribbon without lettering"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Guest centered in a clear silhouette; repeated jackets form a quiet visual echo behind them"
+      },
+      "strength": 4,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_clout_chaser",
+      "kind": "monster",
+      "name": "The Clout Chaser",
+      "flavor": "Looking for a meaningful connection with your followers.",
+      "rules": "Beat strength 5: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "status",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_clout_chaser"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult guest whose sparkling gaze follows a hovering ring light",
+        "action": "Leaning past their actual date to shake hands with the date's camera rig",
+        "setting": "A mixer photo corner with a soft fabric backdrop",
+        "joke": "The camera is receiving all the romantic attention",
+        "motifs": [
+          "ring light halo",
+          "neglected bouquet",
+          "outstretched handshake"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Triangular arrangement of guest, camera and overlooked date; brightest highlight belongs to the lens"
+      },
+      "strength": 5,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_minor_red_flag",
+      "kind": "monster",
+      "name": "The Minor Red Flag",
+      "flavor": "A little concerning. Excellent hair, though.",
+      "rules": "Beat strength 6: gain 1 level, 50 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "awkward",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_minor_red_flag"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An impeccably groomed adult guest carrying a tiny red pennant",
+        "action": "Posing charmingly while the pennant casts an enormous ominous flag-shaped shadow",
+        "setting": "The warmly lit entrance to a rooftop party",
+        "joke": "The warning looks small until you notice its shadow",
+        "motifs": [
+          "tiny red pennant",
+          "immaculate hair",
+          "outsized shadow"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Friendly portrait on the left; giant shadow sweeps across the right background; one restrained red accent"
+      },
+      "strength": 6,
+      "tier": 1,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 50
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_situationship",
+      "kind": "monster",
+      "name": "The Situationship",
+      "flavor": "A relationship with a free trial and no cancellation button.",
+      "rules": "Beat strength 6: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "boundaries",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_situationship"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Two fictional adults separated by an impossibly tangled velvet rope",
+        "action": "Each holding a different end of the same rope, trying to work out whether to enter or leave",
+        "setting": "A lavish rooftop entrance with doors opening onto more velvet ropes",
+        "joke": "A casual arrangement requires the navigation skills of a labyrinth",
+        "motifs": [
+          "velvet rope maze",
+          "unlatched clasp",
+          "two abandoned drinks"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Rope knots dominate the foreground; both adults readable behind them, neither cast as the villain"
+      },
+      "strength": 6,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_trauma_dumper",
+      "kind": "monster",
+      "name": "The Trauma Dumper",
+      "flavor": "The appetizer arrived midway through the origin story.",
+      "rules": "Beat strength 7: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "wellness",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_trauma_dumper"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An earnest adult guest opening a suitcase stuffed with oversized personal keepsakes",
+        "action": "Pouring the impossible collection onto a tiny appetizer plate while another adult patiently holds a fork",
+        "setting": "A two-person cocktail table at a social mixer",
+        "joke": "The first course cannot support this much backstory",
+        "motifs": [
+          "overfilled suitcase",
+          "childhood trophy without lettering",
+          "tiny appetizer fork"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Keepsakes cascade diagonally across the table; attentive faces remain visible; humor comes from scale, not distress"
+      },
+      "strength": 7,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_energy_vampire",
+      "kind": "monster",
+      "name": "The Energy Vampire",
+      "flavor": "An intimate dinner for two. One of you leaves with the energy.",
+      "rules": "Beat strength 8: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "office",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_energy_vampire"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "A radiant adult conversationalist opposite an increasingly slumped date",
+        "action": "Drawing a ribbon of warm light from their companion's cup into their own overflowing glass",
+        "setting": "A rooftop dinner table after the rest of the party has moved on",
+        "joke": "The conversation appears to charge only one participant",
+        "motifs": [
+          "light siphon",
+          "drooping napkin",
+          "overflowing luminous drink"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Two-shot with an asymmetric glow; cheerful conversationalist in sharp focus, sleepy companion clearly visible"
+      },
+      "strength": 8,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_nice_guy",
+      "kind": "monster",
+      "name": "The Nice Guy",
+      "flavor": "Has a receipt for every basic act of decency.",
+      "rules": "Beat strength 6: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "first_impressions",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_nice_guy"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult guest wearing a self-made medal and carrying an absurd paper receipt roll",
+        "action": "Presenting a single rose while unspooling the blank receipt across the floor",
+        "setting": "A mixer entrance where a door is being held open with conspicuous effort",
+        "joke": "A small courtesy arrives with an invoice nobody requested",
+        "motifs": [
+          "blank receipt spiral",
+          "single rose",
+          "homemade medal"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Rose and offering hand in the foreground; curling receipt leads toward the theatrical bow; paper has no marks"
+      },
+      "strength": 6,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_crypto_bro",
+      "kind": "monster",
+      "name": "The Crypto Bro",
+      "flavor": "The spark is real. The returns are hypothetical.",
+      "rules": "Beat strength 7: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "money",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_crypto_bro"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult guest in glossy casual tailoring, cradling a fragile crystal coin",
+        "action": "Offering the coin like an engagement ring while it quietly dissolves into pastel vapor",
+        "setting": "A rooftop bar with speculative-looking crystal towers in the far distance",
+        "joke": "The commitment is confident; the asset is evaporating",
+        "motifs": [
+          "unmarked crystal coin",
+          "velvet ring box",
+          "vanishing vapor"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Tight portrait with the ring box below center; the guest's confident smile contrasts with the dissolving object"
+      },
+      "strength": 7,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_influencer_boyfriend",
+      "kind": "monster",
+      "name": "The Influencer Boyfriend",
+      "flavor": "An unpaid internship with occasional hand-holding.",
+      "rules": "Beat strength 8: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "tags": [
+        "status",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [
+        "source_monsters_monster_influencer_boyfriend"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult partner buried under cameras, reflectors and a folding stool",
+        "action": "Holding a perfect photo pose for their date while attempting to offer a free hand to hold",
+        "setting": "The scenic rooftop edge during the last warm light of the evening",
+        "joke": "There is barely room for affection among the production equipment",
+        "motifs": [
+          "reflector fan",
+          "camera straps",
+          "unclaimed hand"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Overloaded partner in full silhouette; the reaching hand is the quiet focal point; no brand marks"
+      },
+      "strength": 8,
+      "tier": 2,
+      "setback": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_algorithm_s_favorite",
+      "kind": "monster",
+      "name": "The Algorithm’s Favorite",
+      "flavor": "Everyone matched. Somehow nobody connected.",
+      "rules": "Beat strength 8: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "tech",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "A dazzling adult guest surrounded by orbiting pastel hearts",
+        "action": "Rotating on a tiny display pedestal as nearby adults reach toward them but never meet their gaze",
+        "setting": "A dreamlike rooftop mixer shaped by translucent, blank app-like panels",
+        "joke": "Perfect visibility has produced no actual connection",
+        "motifs": [
+          "orbiting hearts",
+          "display pedestal",
+          "translucent blank panels"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Centered iconic silhouette with circular movement; supporting hands stop short of the orbit; panels contain no interface or text"
+      },
+      "strength": 8,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_ex_in_the_group_chat",
+      "kind": "monster",
+      "name": "The Ex in the Group Chat",
+      "flavor": "Typing… since three relationships ago.",
+      "rules": "Beat strength 9: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "boundaries",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult former date calmly occupying the empty center of a friends' conversation circle",
+        "action": "Pulling an impossibly long pastel speech-ribbon out of a silent phone while everyone else freezes mid-toast",
+        "setting": "A rooftop lounge where an otherwise relaxed group has suddenly gone quiet",
+        "joke": "One unresolved conversation has taken over the whole gathering",
+        "motifs": [
+          "blank speech-ribbon",
+          "frozen toast",
+          "phone turned away"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "The ribbon cuts gently across the group; focal figure looks relaxed, supporting expressions carry the awkwardness"
+      },
+      "strength": 9,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_soft_launch_detective",
+      "kind": "monster",
+      "name": "The Soft-Launch Detective",
+      "flavor": "Enhance the reflection in the wine glass.",
+      "rules": "Beat strength 10: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "status",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult amateur detective in evening wear, carrying a jeweler's loupe",
+        "action": "Examining a wine glass reflection for a second person's hidden silhouette",
+        "setting": "A mixer table turned into a tiny investigation desk",
+        "joke": "A barely visible elbow has become a major case",
+        "motifs": [
+          "wine-glass reflection",
+          "loupe",
+          "cropped photographs without text"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Large foreground wine glass acts as a lens; detective's intense eye is the secondary focal point"
+      },
+      "strength": 10,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_bill_splitting_tribunal",
+      "kind": "monster",
+      "name": "The Bill-Splitting Tribunal",
+      "flavor": "Six cocktails. Seven conflicting theories of fairness.",
+      "rules": "Beat strength 8: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "money",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "A solemn adult guest presiding over a cocktail table as if it were a courtroom",
+        "action": "Weighing cocktail umbrellas on miniature scales while other adults offer contradictory gestures",
+        "setting": "The end of a rooftop dinner, with six empty glasses around a small table",
+        "joke": "Settling the drinks bill has acquired the dignity of a constitutional hearing",
+        "motifs": [
+          "cocktail umbrella gavel",
+          "miniature scales",
+          "blank receipt"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Symmetrical mock-court scene; tiny scales in sharp foreground focus, judge-like guest centered behind"
+      },
+      "strength": 8,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150,
+        "exposure": 1
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_attachment_style_podcast",
+      "kind": "monster",
+      "name": "The Attachment Style Podcast",
+      "flavor": "A forty-minute answer to “How was your day?”",
+      "rules": "Beat strength 9: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "wellness",
+        "first_impressions"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "An adult date surrounded by far too many studio microphones",
+        "action": "Leaning into a microphone while their companion's untouched drink gathers a miniature cobweb",
+        "setting": "An intimate mixer table overtaken by a portable recording booth",
+        "joke": "A simple check-in has become an entire episode",
+        "motifs": [
+          "microphone forest",
+          "untouched drink",
+          "headphones draped on a chair"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Microphone arms frame the speaker without obscuring the face; small cobweb provides the delayed visual joke"
+      },
+      "strength": 9,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150
+      },
+      "loot": 1
+    },
+    {
+      "id": "monster_the_last_call_love_bomber",
+      "kind": "monster",
+      "name": "The Last-Call Love Bomber",
+      "flavor": "Already planning your destination wedding. Cannot recall your name.",
+      "rules": "Beat strength 10: gain 1 level, 150 cash and 1 loot. Failed escape: lose 3 Chill.",
+      "tags": [
+        "nightlife",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "An exuberant adult guest carrying a bouquet larger than their body",
+        "action": "Unfurling a miniature destination-wedding landscape from a ring box toward an adult they have just met",
+        "setting": "A rooftop bar being quietly packed away by staff",
+        "joke": "The imagined future has grown much larger than the actual acquaintance",
+        "motifs": [
+          "oversized bouquet",
+          "tiny island in a ring box",
+          "stacked closing-time chairs"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "Bouquet and impossible ring-box island sweep toward the foreground; recipient's politely startled face stays visible"
+      },
+      "strength": 10,
+      "tier": 3,
+      "setback": 3,
+      "rewards": {
+        "cash_cp": 150
+      },
+      "loot": 1
+    },
+    {
+      "id": "event_the_icebreaker_circle",
+      "kind": "event",
+      "name": "The Icebreaker Circle",
+      "flavor": "Your fun fact is now legally binding.",
+      "rules": "Draw 2 action cards.",
+      "tags": [
+        "awkward"
+      ],
+      "effects": [
+        {
+          "kind": "draw",
+          "amount": 2
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "The Icebreaker Circle",
+        "action": "Your fun fact is now legally binding.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Your fun fact is now legally binding.",
+        "motifs": [
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_paid_in_exposure",
+      "kind": "event",
+      "name": "Paid in Exposure",
+      "flavor": "Your rent is unfortunately not an influencer.",
+      "rules": "Gain 2 exposure.",
+      "tags": [
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "exposure",
+          "amount": 2
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Paid in Exposure",
+        "action": "Your rent is unfortunately not an influencer.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Your rent is unfortunately not an influencer.",
+        "motifs": [
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_complimentary_therapy",
+      "kind": "event",
+      "name": "Complimentary Therapy",
+      "flavor": "The bartender has heard worse.",
+      "rules": "Gain 1 therapy healedness.",
+      "tags": [
+        "wellness"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "therapy_healedness",
+          "amount": 1
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Complimentary Therapy",
+        "action": "The bartender has heard worse.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The bartender has heard worse.",
+        "motifs": [
+          "wellness"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_the_open_bar",
+      "kind": "event",
+      "name": "The Open Bar",
+      "flavor": "Confidence, temporarily on the house.",
+      "rules": "Gain 2 temp chill.",
+      "tags": [
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "temp_chill",
+          "amount": 2
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "The Open Bar",
+        "action": "Confidence, temporarily on the house.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Confidence, temporarily on the house.",
+        "motifs": [
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_found_a_wallet",
+      "kind": "event",
+      "name": "Found a Wallet",
+      "flavor": "The universe provides. In modest denominations.",
+      "rules": "Gain 100 cash cp.",
+      "tags": [
+        "money"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "cash_cp",
+          "amount": 100
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Found a Wallet",
+        "action": "The universe provides. In modest denominations.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The universe provides. In modest denominations.",
+        "motifs": [
+          "money"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_the_group_chat_vouches",
+      "kind": "event",
+      "name": "The Group Chat Vouches",
+      "flavor": "References available upon romantic request.",
+      "rules": "Gain 1 social capital.",
+      "tags": [
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "social_capital",
+          "amount": 1
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "The Group Chat Vouches",
+        "action": "References available upon romantic request.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "References available upon romantic request.",
+        "motifs": [
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_a_very_small_airdrop",
+      "kind": "event",
+      "name": "A Very Small Airdrop",
+      "flavor": "You are now an investor in a coin named after a vegetable.",
+      "rules": "Gain 1000 satoshis.",
+      "tags": [
+        "tech"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "btc",
+          "amount": 1000
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "A Very Small Airdrop",
+        "action": "You are now an investor in a coin named after a vegetable.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "You are now an investor in a coin named after a vegetable.",
+        "motifs": [
+          "tech"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "event_unsolicited_feedback",
+      "kind": "event",
+      "name": "Unsolicited Feedback",
+      "flavor": "“You look different in person.” So does their personality.",
+      "rules": "Lose 1 Chill. Draw 1 action cards.",
+      "tags": [
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "chill",
+          "amount": -1
+        },
+        {
+          "kind": "draw",
+          "amount": 1
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Unsolicited Feedback",
+        "action": "“You look different in person.” So does their personality.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "“You look different in person.” So does their personality.",
+        "motifs": [
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_perfect_small_talk",
+      "kind": "action",
+      "name": "Perfect Small Talk",
+      "flavor": "A conversation with absolutely no nutritional value.",
+      "rules": "Party +3 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 3,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_perfect_small_talk"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Perfect Small Talk",
+        "action": "A conversation with absolutely no nutritional value.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A conversation with absolutely no nutritional value.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_where_are_you_from",
+      "kind": "action",
+      "name": "Where Are You From",
+      "flavor": "Turns harmless curiosity into a data product with eye contact.",
+      "rules": "Party +2 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 2,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_where_are_you_from"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Where Are You From",
+        "action": "Turns harmless curiosity into a data product with eye contact.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Turns harmless curiosity into a data product with eye contact.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_super_like",
+      "kind": "action",
+      "name": "Super Like",
+      "flavor": "A small payment for a large expectation.",
+      "rules": "Party +4 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 4,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_super_like"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Super Like",
+        "action": "A small payment for a large expectation.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A small payment for a large expectation.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_the_irish_exit",
+      "kind": "action",
+      "name": "The Irish Exit",
+      "flavor": "No goodbye. No notes. No further questions.",
+      "rules": "Active player escapes immediately without rewards or setbacks.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "escape"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_the_irish_exit"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "The Irish Exit",
+        "action": "No goodbye. No notes. No further questions.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "No goodbye. No notes. No further questions.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_screenshot",
+      "kind": "action",
+      "name": "Screenshot",
+      "flavor": "The cloud remembers what the heart forgives.",
+      "rules": "Encounter +3 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 3,
+          "side": "encounter"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_screenshot"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Screenshot",
+        "action": "The cloud remembers what the heart forgives.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The cloud remembers what the heart forgives.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_ratio",
+      "kind": "action",
+      "name": "Ratio",
+      "flavor": "The group chat has reached a verdict.",
+      "rules": "Encounter +2 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 2,
+          "side": "encounter"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_ratio"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Ratio",
+        "action": "The group chat has reached a verdict.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The group chat has reached a verdict.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_gaslight",
+      "kind": "action",
+      "name": "Gaslight",
+      "flavor": "That is not what the notification said.",
+      "rules": "Party −2 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": -2,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_gaslight"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Gaslight",
+        "action": "That is not what the notification said.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "That is not what the notification said.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_safe_space",
+      "kind": "action",
+      "name": "Safe Space",
+      "flavor": "A brief ceasefire in the discourse.",
+      "rules": "Active player regains 2 Chill.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "chill",
+          "amount": 2
+        }
+      ],
+      "sources": [
+        "source_spells_spell_safe_space"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Safe Space",
+        "action": "A brief ceasefire in the discourse.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A brief ceasefire in the discourse.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_block_user",
+      "kind": "action",
+      "name": "Block User",
+      "flavor": "Your peace has a privacy setting.",
+      "rules": "Cancel the next hostile intervention this encounter.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "shield"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_block_user"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Block User",
+        "action": "Your peace has a privacy setting.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Your peace has a privacy setting.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_mansplain_shield",
+      "kind": "action",
+      "name": "Mansplain Shield",
+      "flavor": "We have already read the documentation.",
+      "rules": "Remove negative party strength modifiers this encounter.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "cleanse"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_mansplain_shield"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Mansplain Shield",
+        "action": "We have already read the documentation.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "We have already read the documentation.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_change_the_subject",
+      "kind": "action",
+      "name": "Change The Subject",
+      "flavor": "Anyway. Have you tried the food?",
+      "rules": "Party +2 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 2,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_change_the_subject"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Change The Subject",
+        "action": "Anyway. Have you tried the food?",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Anyway. Have you tried the food?",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_humble_brag_beam",
+      "kind": "action",
+      "name": "Humble Brag Beam",
+      "flavor": "I am so humbled by how impressive I am.",
+      "rules": "Party +3 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 3,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_humble_brag_beam"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Humble Brag Beam",
+        "action": "I am so humbled by how impressive I am.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "I am so humbled by how impressive I am.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_double_text_defense",
+      "kind": "action",
+      "name": "Double Text Defense",
+      "flavor": "Following up on my previous emotional investment.",
+      "rules": "Party +2 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 2,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_double_text_defense"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Double Text Defense",
+        "action": "Following up on my previous emotional investment.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Following up on my previous emotional investment.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_the_slow_fade",
+      "kind": "action",
+      "name": "The Slow Fade",
+      "flavor": "One fewer exclamation mark, every day.",
+      "rules": "Encounter +4 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 4,
+          "side": "encounter"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_the_slow_fade"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "The Slow Fade",
+        "action": "One fewer exclamation mark, every day.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "One fewer exclamation mark, every day.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_read_receipts_off",
+      "kind": "action",
+      "name": "Read Receipts Off",
+      "flavor": "Schrödinger’s interest.",
+      "rules": "Gain 2 temporary Chill.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "temp_chill",
+          "amount": 2
+        }
+      ],
+      "sources": [
+        "source_spells_spell_read_receipts_off"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Read Receipts Off",
+        "action": "Schrödinger’s interest.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Schrödinger’s interest.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_collaboration_request",
+      "kind": "action",
+      "name": "Collaboration Request",
+      "flavor": "Can you help? The budget is friendship.",
+      "rules": "Gain 1 social capital and party +1 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "resource",
+          "currency": "social_capital",
+          "amount": 1
+        },
+        {
+          "kind": "combat",
+          "amount": 1,
+          "side": "party"
+        }
+      ],
+      "sources": [
+        "source_spells_spell_collaboration_request"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Collaboration Request",
+        "action": "Can you help? The budget is friendship.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Can you help? The budget is friendship.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_personal_rebrand",
+      "kind": "action",
+      "name": "Personal Rebrand",
+      "flavor": "Same problems. New bio.",
+      "rules": "Replace your own class with a random class card.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "class_swap"
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Personal Rebrand",
+        "action": "Same problems. New bio.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Same problems. New bio.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_a_friend_has_receipts",
+      "kind": "action",
+      "name": "A Friend Has Receipts",
+      "flavor": "Nobody asked for the annotated timeline.",
+      "rules": "Encounter +5 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 5,
+          "side": "encounter"
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "A Friend Has Receipts",
+        "action": "Nobody asked for the annotated timeline.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Nobody asked for the annotated timeline.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_emergency_hype_friend",
+      "kind": "action",
+      "name": "Emergency Hype Friend",
+      "flavor": "They have never been more confident in your questionable decisions.",
+      "rules": "Party +5 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "combat",
+          "amount": 5,
+          "side": "party"
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Emergency Hype Friend",
+        "action": "They have never been more confident in your questionable decisions.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "They have never been more confident in your questionable decisions.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "action_pocket_pep_talk",
+      "kind": "action",
+      "name": "Pocket Pep Talk",
+      "flavor": "You are somebody’s very specific type.",
+      "rules": "Active player regains 1 Chill; party +1 strength.",
+      "tags": [
+        "social"
+      ],
+      "effects": [
+        {
+          "kind": "chill",
+          "amount": 1
+        },
+        {
+          "kind": "combat",
+          "amount": 1,
+          "side": "party"
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Pocket Pep Talk",
+        "action": "You are somebody’s very specific type.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "You are somebody’s very specific type.",
+        "motifs": [
+          "social"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      }
+    },
+    {
+      "id": "equipment_noise_cancelling_headphones_of_isolation",
+      "kind": "equipment",
+      "name": "Noise Cancelling Headphones of Isolation",
+      "flavor": "Blocks out the haters. Occasionally also your date.",
+      "rules": "+1 strength; another +1 against awkward.",
+      "tags": [
+        "awkward"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "awkward"
+          ]
+        }
+      ],
+      "sources": [
+        "source_equipment_item_noise_cancel_headphones"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Noise Cancelling Headphones of Isolation",
+        "action": "Blocks out the haters. Occasionally also your date.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Blocks out the haters. Occasionally also your date.",
+        "motifs": [
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 150
+      }
+    },
+    {
+      "id": "equipment_hoodie_of_anonymity",
+      "kind": "equipment",
+      "name": "Hoodie of Anonymity",
+      "flavor": "Soft-launch your entire personality.",
+      "rules": "+1 strength; another +1 against boundaries.",
+      "tags": [
+        "boundaries"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "boundaries"
+          ]
+        }
+      ],
+      "sources": [
+        "source_equipment_item_hoodie_anonymity"
+      ],
+      "authorship": "adapted",
+      "quantity": 3,
+      "art": {
+        "subject": "Hoodie of Anonymity",
+        "action": "Soft-launch your entire personality.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Soft-launch your entire personality.",
+        "motifs": [
+          "boundaries"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 100
+      }
+    },
+    {
+      "id": "equipment_ring_light_of_plausible_chemistry",
+      "kind": "equipment",
+      "name": "Ring Light of Plausible Chemistry",
+      "flavor": "The spark has three color temperatures.",
+      "rules": "+2 strength; another +1 against status.",
+      "tags": [
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "status"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Ring Light of Plausible Chemistry",
+        "action": "The spark has three color temperatures.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The spark has three color temperatures.",
+        "motifs": [
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 200
+      }
+    },
+    {
+      "id": "equipment_emergency_breath_mints",
+      "kind": "equipment",
+      "name": "Emergency Breath Mints",
+      "flavor": "A small investment in not being remembered wrong.",
+      "rules": "+1 strength; another +1 against first impressions.",
+      "tags": [
+        "first_impressions"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "first_impressions"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Emergency Breath Mints",
+        "action": "A small investment in not being remembered wrong.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A small investment in not being remembered wrong.",
+        "motifs": [
+          "first_impressions"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 50
+      }
+    },
+    {
+      "id": "equipment_power_bank_of_emotional_availability",
+      "kind": "equipment",
+      "name": "Power Bank of Emotional Availability",
+      "flavor": "Finally, someone with enough capacity.",
+      "rules": "+1 strength; another +1 against tech.",
+      "tags": [
+        "tech"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "tech"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Power Bank of Emotional Availability",
+        "action": "Finally, someone with enough capacity.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Finally, someone with enough capacity.",
+        "motifs": [
+          "tech"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 100
+      }
+    },
+    {
+      "id": "equipment_perfectly_casual_linen_shirt",
+      "kind": "equipment",
+      "name": "Perfectly Casual Linen Shirt",
+      "flavor": "This effortless look took forty minutes.",
+      "rules": "+2 strength; another +1 against nightlife.",
+      "tags": [
+        "nightlife"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "nightlife"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Perfectly Casual Linen Shirt",
+        "action": "This effortless look took forty minutes.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "This effortless look took forty minutes.",
+        "motifs": [
+          "nightlife"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 200
+      }
+    },
+    {
+      "id": "equipment_conversation_starter_tote",
+      "kind": "equipment",
+      "name": "Conversation Starter Tote",
+      "flavor": "Ask me about the thing I already want to tell you.",
+      "rules": "+1 strength; another +1 against travel.",
+      "tags": [
+        "travel"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "travel"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Conversation Starter Tote",
+        "action": "Ask me about the thing I already want to tell you.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Ask me about the thing I already want to tell you.",
+        "motifs": [
+          "travel"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 100
+      }
+    },
+    {
+      "id": "equipment_therapy_journal_mostly_blank",
+      "kind": "equipment",
+      "name": "Therapy Journal (Mostly Blank)",
+      "flavor": "The intention is doing a lot of work.",
+      "rules": "+1 strength; another +1 against wellness.",
+      "tags": [
+        "wellness"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 1
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "wellness"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Therapy Journal (Mostly Blank)",
+        "action": "The intention is doing a lot of work.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The intention is doing a lot of work.",
+        "motifs": [
+          "wellness"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "cash_cp",
+        "amount": 100
+      }
+    },
+    {
+      "id": "equipment_verified_profile_badge",
+      "kind": "equipment",
+      "name": "Verified Profile Badge",
+      "flavor": "This disaster has been authenticated.",
+      "rules": "+2 strength; another +1 against status.",
+      "tags": [
+        "status"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "status"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Verified Profile Badge",
+        "action": "This disaster has been authenticated.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "This disaster has been authenticated.",
+        "motifs": [
+          "status"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "exposure",
+        "amount": 2
+      }
+    },
+    {
+      "id": "equipment_hardware_wallet_of_red_flags",
+      "kind": "equipment",
+      "name": "Hardware Wallet of Red Flags",
+      "flavor": "Cold storage. Warm delusions.",
+      "rules": "+2 strength; another +1 against money.",
+      "tags": [
+        "money"
+      ],
+      "effects": [
+        {
+          "kind": "power",
+          "amount": 2
+        },
+        {
+          "kind": "power",
+          "amount": 1,
+          "tags": [
+            "money"
+          ]
+        }
+      ],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 3,
+      "art": {
+        "subject": "Hardware Wallet of Red Flags",
+        "action": "Cold storage. Warm delusions.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Cold storage. Warm delusions.",
+        "motifs": [
+          "money"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "price": {
+        "currency": "btc",
+        "amount": 1000
+      }
+    },
+    {
+      "id": "finale_define_the_relationship",
+      "kind": "finale",
+      "name": "Define the Relationship",
+      "flavor": "Four words. Several incompatible definitions.",
+      "rules": "Level 5 required. Beat strength 13 to achieve romance and win.",
+      "tags": [
+        "boundaries",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 1,
+      "art": {
+        "subject": "Define the Relationship",
+        "action": "Four words. Several incompatible definitions.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "Four words. Several incompatible definitions.",
+        "motifs": [
+          "boundaries",
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "strength": 13,
+      "setback": 3,
+      "loot": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "ending": "You made plans that both of you intend to keep. Suspiciously healthy."
+    },
+    {
+      "id": "finale_meet_the_group_chat",
+      "kind": "finale",
+      "name": "Meet the Group Chat",
+      "flavor": "The final interview has seven panelists and a shared album.",
+      "rules": "Level 5 required. Beat strength 13 to achieve romance and win.",
+      "tags": [
+        "status",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 1,
+      "art": {
+        "subject": "Meet the Group Chat",
+        "action": "The final interview has seven panelists and a shared album.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "The final interview has seven panelists and a shared album.",
+        "motifs": [
+          "status",
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "strength": 13,
+      "setback": 3,
+      "loot": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "ending": "The group chat approves. Your partner even texts back."
+    },
+    {
+      "id": "finale_the_not_looking_for_anything_serious_final_boss",
+      "kind": "finale",
+      "name": "The “Not Looking for Anything Serious” Final Boss",
+      "flavor": "A six-month situationship wearing a boss health bar.",
+      "rules": "Level 5 required. Beat strength 13 to achieve romance and win.",
+      "tags": [
+        "first_impressions",
+        "awkward"
+      ],
+      "effects": [],
+      "sources": [],
+      "authorship": "new",
+      "quantity": 1,
+      "art": {
+        "subject": "The “Not Looking for Anything Serious” Final Boss",
+        "action": "A six-month situationship wearing a boss health bar.",
+        "setting": "A rooftop dating mixer in Digital Nomadia",
+        "joke": "A six-month situationship wearing a boss health bar.",
+        "motifs": [
+          "first_impressions",
+          "awkward"
+        ],
+        "palette": [
+          "mint",
+          "lavender",
+          "peach",
+          "cyan",
+          "cream"
+        ],
+        "composition": "One focal subject with a clear silhouette, foreground/background separation, and quiet space around the edges"
+      },
+      "strength": 13,
+      "setback": 3,
+      "loot": 2,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "ending": "You found someone who means what they say. The algorithm is furious."
+    }
+  ],
+  "campaign": {
+    "id": "swipe_right_regret_later",
+    "title": "Swipe Right, Regret Later",
+    "description": "A rooftop mixer. A room full of red flags. Your deeply questionable shot at romance.",
+    "version": "1.1.0",
+    "pools": {
+      "class": [
+        "class_digital_nomad",
+        "class_influencer",
+        "class_crypto_bro",
+        "class_yoga_teacher",
+        "class_life_coach",
+        "class_startup_founder",
+        "class_burnout_survivor",
+        "class_reply_guy"
+      ],
+      "trait": [
+        "trait_genetically_blessed_height",
+        "trait_clean_freak",
+        "trait_super_well_traveled",
+        "trait_hot_athletic_body",
+        "trait_connoisseur_of_fine_things",
+        "trait_big_bank_account",
+        "trait_coffee_shop_warrior",
+        "trait_digital_detox_believer",
+        "trait_perpetual_networker",
+        "trait_yoga_instructor_certificate",
+        "trait_minimalist_owns_macbook_pro",
+        "trait_polyglot_pretender",
+        "trait_actual_polyglot",
+        "trait_never_lost",
+        "trait_obsessed_food_drink_knower",
+        "trait_blogger_vlogger",
+        "trait_chronic_oversharer",
+        "trait_extreme_cheapskate",
+        "trait_trust_fund_kid",
+        "trait_burned_out_ex_corporate",
+        "trait_spiritual_bypass_master",
+        "trait_no_boundaries",
+        "trait_perpetually_jetlagged",
+        "trait_living_off_savings"
+      ],
+      "monster": [
+        "monster_the_ghoster",
+        "monster_the_mansplainer",
+        "monster_the_one_upper",
+        "monster_the_pick_me",
+        "monster_the_clout_chaser",
+        "monster_the_minor_red_flag",
+        "monster_the_situationship",
+        "monster_the_trauma_dumper",
+        "monster_the_energy_vampire",
+        "monster_the_nice_guy",
+        "monster_the_crypto_bro",
+        "monster_the_influencer_boyfriend",
+        "monster_the_algorithm_s_favorite",
+        "monster_the_ex_in_the_group_chat",
+        "monster_the_soft_launch_detective",
+        "monster_the_bill_splitting_tribunal",
+        "monster_the_attachment_style_podcast",
+        "monster_the_last_call_love_bomber"
+      ],
+      "event": [
+        "event_the_icebreaker_circle",
+        "event_paid_in_exposure",
+        "event_complimentary_therapy",
+        "event_the_open_bar",
+        "event_found_a_wallet",
+        "event_the_group_chat_vouches",
+        "event_a_very_small_airdrop",
+        "event_unsolicited_feedback"
+      ],
+      "action": [
+        "action_perfect_small_talk",
+        "action_where_are_you_from",
+        "action_super_like",
+        "action_the_irish_exit",
+        "action_screenshot",
+        "action_ratio",
+        "action_gaslight",
+        "action_safe_space",
+        "action_block_user",
+        "action_mansplain_shield",
+        "action_change_the_subject",
+        "action_humble_brag_beam",
+        "action_double_text_defense",
+        "action_the_slow_fade",
+        "action_read_receipts_off",
+        "action_collaboration_request",
+        "action_personal_rebrand",
+        "action_a_friend_has_receipts",
+        "action_emergency_hype_friend",
+        "action_pocket_pep_talk"
+      ],
+      "equipment": [
+        "equipment_noise_cancelling_headphones_of_isolation",
+        "equipment_hoodie_of_anonymity",
+        "equipment_ring_light_of_plausible_chemistry",
+        "equipment_emergency_breath_mints",
+        "equipment_power_bank_of_emotional_availability",
+        "equipment_perfectly_casual_linen_shirt",
+        "equipment_conversation_starter_tote",
+        "equipment_therapy_journal_mostly_blank",
+        "equipment_verified_profile_badge",
+        "equipment_hardware_wallet_of_red_flags"
+      ],
+      "finale": [
+        "finale_define_the_relationship",
+        "finale_meet_the_group_chat",
+        "finale_the_not_looking_for_anything_serious_final_boss"
+      ]
+    },
+    "difficulty": [
+      {
+        "minLevel": 1,
+        "tier": 1
+      },
+      {
+        "minLevel": 3,
+        "tier": 2
+      },
+      {
+        "minLevel": 5,
+        "tier": 3
+      }
+    ],
+    "rules": {
+      "negotiationMs": 25000,
+      "turnDraw": 1,
+      "selfCareDraw": 1,
+      "socialCapitalFloor": 1,
+      "protectionCost": 1,
+      "minPlayers": 1,
+      "maxPlayers": null,
+      "startChill": 6,
+      "maxChill": 6,
+      "startLevel": 1,
+      "finaleLevel": 5,
+      "maxRounds": 8,
+      "traitSlots": 3,
+      "equipmentSlots": 2,
+      "handLimit": 5,
+      "startingTraits": 2,
+      "startingHand": 3,
+      "turnMs": 90000,
+      "interventionMs": 20000,
+      "recoveryChill": 4,
+      "escapeTarget": 5,
+      "startingWallet": {
+        "cash_cp": 100,
+        "btc": 0,
+        "exposure": 0,
+        "therapy_healedness": 0,
+        "social_capital": 1,
+        "temp_chill": 0
+      },
+      "therapyHeal": 3,
+      "therapyPrice": 50,
+      "selfCareHeal": 3,
+      "marketSize": 3
+    },
+    "endings": {
+      "failed": [
+        "You left with a story, a coupon, and most of your dignity.",
+        "You matched with yourself. Finally, someone who understands your schedule.",
+        "The real romance was the friends you mildly sabotaged along the way."
+      ]
+    }
+  }
+}

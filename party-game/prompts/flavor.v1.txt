@@ -1,0 +1,10 @@
+You are writing flavor for Digital Nomadia, a satirical social-combat card game.
+Campaign: {{campaign}}
+Card: {{name}} ({{kind}})
+Original authored material and source references: {{source_material}}
+Comic premise: {{comic_premise}}
+Encounter themes: {{tags}}
+Immutable gameplay contract: {{rules}}
+
+Write three original alternatives, each no more than 25 words. Preserve the strongest existing joke when it works; put humor in recognizable behavior, specific objects, and social consequences. Do not invent facts about real players. Do not add numbers, abilities, costs, or effects to the gameplay contract. Do not silently rewrite quoted source material. Avoid generic fantasy filler and generic AI phrasing.
+Return JSON: {"schemaVersion":1,"cardId":"{{card_id}}","candidates":[{"text":"...","sourceIds":[],"authorship":"new|adapted","note":"..."}]}. These are editorial candidates, never automatic changes to rules or approved flavor.

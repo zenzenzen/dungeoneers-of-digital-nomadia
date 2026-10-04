@@ -1,0 +1,249 @@
+{
+  "limits": {
+    "context_card_bytes": 6144,
+    "index_bytes": 4096,
+    "large_file_bytes": 1000000,
+    "route_result_bytes": 8192,
+    "routes_bytes": 20000,
+    "task_card_bytes": 6144
+  },
+  "precedence": [
+    "explicit_route_override",
+    "manual_task_profile_token",
+    "task_text",
+    "file_path_signals",
+    "project_manifest_signals",
+    "fallback"
+  ],
+  "profiles": {
+    "change": {
+      "description": "Modify source or docs with bounded scope and local validation.",
+      "exclusions": [
+        "generated/provenance.json unless stale state is suspected",
+        "unmentioned generated artifacts"
+      ],
+      "keywords": [
+        "change",
+        "edit",
+        "implement",
+        "add",
+        "update",
+        "fix",
+        "refactor",
+        "build"
+      ],
+      "manifest_signals": [
+        "node_manifest",
+        "python_manifest",
+        "rust_manifest",
+        "go_manifest"
+      ],
+      "path_globs": [
+        "src/**",
+        "lib/**",
+        "app/**",
+        "packages/**",
+        "components/**"
+      ],
+      "quality_questions": [
+        "What is the smallest write scope that satisfies the task?",
+        "Which command proves the change?",
+        "Does the change introduce a new abstraction with real call sites?"
+      ],
+      "reads": [
+        "INDEX.md",
+        "project.md",
+        "context/architecture.md",
+        "context/conventions.md",
+        "context/decisions.md",
+        "context/commands.md",
+        "tasks/change.md",
+        "generated/map.md"
+      ],
+      "validation": [
+        "python3 -m icm check <project>"
+      ]
+    },
+    "debug": {
+      "description": "Reproduce, isolate, instrument, fix, and regression-test failures.",
+      "exclusions": [
+        "broad docs not needed for reproduction",
+        "generated/provenance.json unless stale state may explain failure"
+      ],
+      "keywords": [
+        "debug",
+        "bug",
+        "fail",
+        "failing",
+        "error",
+        "traceback",
+        "regression",
+        "diagnose",
+        "root cause"
+      ],
+      "manifest_signals": [],
+      "path_globs": [
+        "tests/**",
+        "**/test_*",
+        "**/*_test.*",
+        "**/*.log"
+      ],
+      "quality_questions": [
+        "What exact behavior failed and how can it be reproduced?",
+        "What is the smallest plausible fault surface?",
+        "Which regression check proves the failure is gone?"
+      ],
+      "reads": [
+        "INDEX.md",
+        "project.md",
+        "context/architecture.md",
+        "context/commands.md",
+        "tasks/debug.md",
+        "generated/map.md",
+        "generated/inventory.json"
+      ],
+      "validation": [
+        "python3 -m icm check <project>"
+      ]
+    },
+    "operate": {
+      "description": "Run, release, migrate, recover, or inspect operational state without hiding side effects.",
+      "exclusions": [
+        "write commands until the action is explicitly requested",
+        "secrets and environment files"
+      ],
+      "keywords": [
+        "run",
+        "operate",
+        "deploy",
+        "release",
+        "migrate",
+        "doctor",
+        "install",
+        "setup",
+        "start",
+        "serve"
+      ],
+      "manifest_signals": [
+        "makefile"
+      ],
+      "path_globs": [
+        "Makefile",
+        "package.json",
+        "pyproject.toml",
+        "docker-compose.yml",
+        "Dockerfile",
+        ".github/workflows/**"
+      ],
+      "quality_questions": [
+        "Which commands are read-only and which mutate state?",
+        "What rollback or recovery path exists?",
+        "What evidence shows the operation completed?"
+      ],
+      "reads": [
+        "INDEX.md",
+        "project.md",
+        "context/commands.md",
+        "context/architecture.md",
+        "tasks/operate.md",
+        "generated/map.md",
+        "generated/inventory.json",
+        "generated/provenance.json"
+      ],
+      "validation": [
+        "python3 -m icm check <project>"
+      ]
+    },
+    "review": {
+      "description": "Inspect a diff, contract, or route for defects without applying source changes.",
+      "exclusions": [
+        "unrelated source trees",
+        "large generated outputs unless named by the diff"
+      ],
+      "keywords": [
+        "review",
+        "audit",
+        "check",
+        "verify",
+        "critique",
+        "inspect",
+        "qa"
+      ],
+      "manifest_signals": [],
+      "path_globs": [
+        "*.patch",
+        "*.diff",
+        "docs/adr/**",
+        "spec/**"
+      ],
+      "quality_questions": [
+        "What behavior, contract, or safety risk could regress?",
+        "Are referenced files present and current?",
+        "What test gap remains after review?"
+      ],
+      "reads": [
+        "INDEX.md",
+        "project.md",
+        "context/conventions.md",
+        "context/decisions.md",
+        "context/domain.md",
+        "tasks/review.md",
+        "generated/map.md",
+        "generated/inventory.json",
+        "generated/provenance.json"
+      ],
+      "validation": [
+        "python3 -m icm check <project>"
+      ]
+    },
+    "understand": {
+      "description": "Learn purpose, boundaries, architecture, and domain language before changing anything.",
+      "exclusions": [
+        "generated/inventory.json unless exact file list is needed",
+        "source files outside paths named by the task"
+      ],
+      "keywords": [
+        "understand",
+        "explain",
+        "summarize",
+        "orient",
+        "map",
+        "what is",
+        "where"
+      ],
+      "manifest_signals": [
+        "readme"
+      ],
+      "path_globs": [
+        "README.md",
+        "docs/**",
+        "*.md"
+      ],
+      "quality_questions": [
+        "What problem exists, for whom, and what is in scope?",
+        "Which facts are curated versus generated?",
+        "What is still unknown before proposing work?"
+      ],
+      "reads": [
+        "INDEX.md",
+        "project.md",
+        "context/domain.md",
+        "context/architecture.md",
+        "tasks/understand.md",
+        "generated/map.md"
+      ],
+      "validation": [
+        "python3 -m icm check <project>"
+      ]
+    }
+  },
+  "tie_break_order": [
+    "debug",
+    "review",
+    "change",
+    "operate",
+    "understand"
+  ],
+  "version": "icm.routes/v1",
+  "workspace_version": "icm.workspace/v1"
+}

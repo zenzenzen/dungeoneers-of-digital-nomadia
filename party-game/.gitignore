@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+output/
+test-results/
+playwright-report/
+.env
+.runtime.json
+.DS_Store
+.cache/

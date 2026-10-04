@@ -1,0 +1,6 @@
+# Review the generators and authored inputs first; these outputs are reproducible.
+.icm/generated/** linguist-generated=true
+party-game/content/catalogue.json linguist-generated=true
+party-game/content/launch.json linguist-generated=true
+party-game/content/prompt-packets/** linguist-generated=true
+party-game/package-lock.json linguist-generated=true

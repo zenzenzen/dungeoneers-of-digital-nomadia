@@ -1,0 +1,1176 @@
+{
+  "exclusions": [
+    {
+      "path": ".DS_Store",
+      "reason": "binary_file"
+    },
+    {
+      "path": ".git",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": ".icm",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "brand/ddn_ai_star_logo.svg.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "brand/logo_sizing_preview.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "ddn_palette_swatch.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/.cache/docpipe/.docpipe",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/content/catalogue.json",
+      "reason": "large_file"
+    },
+    {
+      "path": "party-game/data/nomadia.sqlite",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/dist",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/node_modules",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/output/playwright/home-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/home-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-1.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-3.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-6.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-1-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-1-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-3-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-3-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-6-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-6-mobile.png",
+      "reason": "binary_file"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 205,
+      "path": ".claude/launch.json",
+      "sha256": "e5f55c891db8d4fdf2cadb4be1e4046b3ec3685f87ac17e79668a3cb7bf87c01",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 30725,
+      "path": ".cursorrules",
+      "sha256": "7fe647ebfcb88af7c73d21737bc5af1856aa151fdf47163d0dd49664dd651c7e",
+      "suffix": ""
+    },
+    {
+      "bytes": 352,
+      "path": ".gitattributes",
+      "sha256": "cbfcdc5bac46c3b9d8b1a4fa4e62177e1ddd13c84d4af68307fb3627b5d92a98",
+      "suffix": ""
+    },
+    {
+      "bytes": 1311,
+      "path": ".github/workflows/party-game.yml",
+      "sha256": "df98865f2a5695bf9ab4d5766cf4b21700f18893f3e765de75270ae19b4d3cf0",
+      "suffix": ".yml"
+    },
+    {
+      "bytes": 448,
+      "path": ".gitignore",
+      "sha256": "8417c1fedfcc26a6b9869f2ac6fa8666947038c1a2555b4914050e096a278477",
+      "suffix": ""
+    },
+    {
+      "bytes": 11559,
+      "path": "CONTENT_COHERENCE_AUDIT.md",
+      "sha256": "845818bf4f7454b99fade01c33bea878df5eefd3e834d4e7e2a52249a6b034d5",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 12817,
+      "path": "CONTENT_COHERENCE_TOUCH_MANIFEST.md",
+      "sha256": "6ea534e7e5dd3d6799cda3746a49d260455e0dc48a209623d7a6c24c9b28edca",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 3307,
+      "path": "CONTEXT.md",
+      "sha256": "94fa048ae95c3086be944c47da7f360950113e2ea8d3db3d9194bb0bbd461d41",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 10071,
+      "path": "README.md",
+      "sha256": "5da32925d59bf6f536ee0f841126ebc95d03c092f92c785846ef5d8c6f57d3e6",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 23642,
+      "path": "armors/armors.csv",
+      "sha256": "e39904103bdbe24845f95f1488eb15ce0ab7f8b2abf05993c667d67786e68c1e",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 23642,
+      "path": "armors/armors_database_formatted.csv",
+      "sha256": "e39904103bdbe24845f95f1488eb15ce0ab7f8b2abf05993c667d67786e68c1e",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1211,
+      "path": "armors/armors_template.csv",
+      "sha256": "be7ce2aa02180dbc5a7ffe0b8721991c567df225355bd6eb3e56a82c798ffafb",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 70648,
+      "path": "backgrounds/backgrounds.csv",
+      "sha256": "8383f6e9fc8f4f7370dc59217b30a370829ef0fd7f0236137b1c70074f85f6b8",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 739,
+      "path": "backgrounds/backgrounds_template.csv",
+      "sha256": "35e9db22659cf10767dcc9299eee0d7a6b9fda9a294c36128c35cf9c0ac8c72b",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 5037,
+      "path": "brand/ddn_ai_star_logo.svg",
+      "sha256": "c74031b6b7f389c02559b4274336a85f96461f284cb62c9674fc71273553505e",
+      "suffix": ".svg"
+    },
+    {
+      "bytes": 3690,
+      "path": "brand/logo_sizing_standards.md",
+      "sha256": "0c54a2a772b01b54cf68496849f4f41bd28fa39d6b7582753ae7a7ebbd227920",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 34716,
+      "path": "campaign_scope_of_work.md",
+      "sha256": "332832f51edec6c324f0c3a934227bc4303d519bc41c9231d4cd63f2503c7061",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 12657,
+      "path": "campaign_site_buildout_plan.md",
+      "sha256": "44c15e394a160f80273c9b83f18cecd1f51e46d9e2159ed9611157daf64c2634",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 11933,
+      "path": "campaigns/campaigns.csv",
+      "sha256": "65f6714c51684bfa7bb5dc1a634920444e92671aa7fa35cd955e8f595a272b66",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1470,
+      "path": "campaigns/campaigns_template.csv",
+      "sha256": "7478ca4f4302b4a0afbf375a2527e343786adc89fe2c3792c4f089d75d66756f",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 17599,
+      "path": "campaigns/limited_runs/README.md",
+      "sha256": "accb6c50565a2e6f4fee159986ef1f90a6e28da49b70d31eb2a2c8ced5c34d5d",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 1517,
+      "path": "character_sheets/character_sheets.csv",
+      "sha256": "3234001bc5a58d381cccff802d6b29ca73f4dbf563f34c8e238c3241b0395097",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1517,
+      "path": "character_sheets/character_sheets_template.csv",
+      "sha256": "3234001bc5a58d381cccff802d6b29ca73f4dbf563f34c8e238c3241b0395097",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 12540,
+      "path": "classes/classes.csv",
+      "sha256": "e23f008ae4383cfc90701755c6d3919c43661ec6cf47e72e087f6a4b831fbf54",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 891,
+      "path": "classes/classes_template.csv",
+      "sha256": "36805d5d78696766a7f287e9086bffdb5051bee5373aa5fe2d3b88e381942806",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 26779,
+      "path": "design/mobile-flow-paper.html",
+      "sha256": "a3d615e8032460c57fc95e44db5f2e6c42a703d174557590f4a5af1a144d4f4b",
+      "suffix": ".html"
+    },
+    {
+      "bytes": 31919,
+      "path": "design/website-flow.html",
+      "sha256": "413ddd020bce21e9ddc9a0c2abeeb8ad68f4cb6e6a8cfd55a855d9fc3ea6c0ac",
+      "suffix": ".html"
+    },
+    {
+      "bytes": 10829,
+      "path": "encounters/encounters.csv",
+      "sha256": "b68b5a9efcf4b02cbb4cb9ddc3dec5243153fa6d5614ebd302247bf2bf71a92f",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 3722,
+      "path": "encounters/encounters.md",
+      "sha256": "a16518ce6528d78030cf025ffaa34a2c328a5cf13ce337ce61ca0b6ee009787a",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 1725,
+      "path": "encounters/encounters_template.csv",
+      "sha256": "fc7e6913f4c8648484724d0048e5823f4bdac5a53d2bb9b21bf55809067afb79",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1137,
+      "path": "equipment/equipment_template.csv",
+      "sha256": "47a6ce674d02dc08726dc8fe11ff502c97bb82590d5e1289f318c0c46fe842fd",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 17585,
+      "path": "equipment/items.csv",
+      "sha256": "af0ba0150b65db2df18c6ed826ba278711aea55b77795ba708acddea40ca1795",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 4024,
+      "path": "factions/factions.csv",
+      "sha256": "5f4ddf22cfabda8c3c9edca13a513946ccd71a15764c8dd93d29e78fc03f56c4",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 23694,
+      "path": "feats/feats_template.csv",
+      "sha256": "2966798ee550c4967deb52ce9e7a24bd9717efb78835f8a68fafad53c9e7f215",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 6499,
+      "path": "hazards/hazards.csv",
+      "sha256": "539089d1bb9714c5c02221581cac6045101d2fc2de28692ee2aef9807dd97629",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 390,
+      "path": "jobs/jobs_template.csv",
+      "sha256": "c214035deeea42c1efc781be4a981e2aca1cac5fb1835800df54326498a840db",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 49847,
+      "path": "locations/locations.csv",
+      "sha256": "cc9a197a528a796f081d9e3c40f138b05eecc11082d2d7c303eabe7889d99bb4",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 26466,
+      "path": "locations/locations.md",
+      "sha256": "d2bce7f9832a053cf22a3f5360e69d2388776edcc8695a4d4b1b99910ea4c72c",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 1781,
+      "path": "locations/locations_template.csv",
+      "sha256": "c31a91e22614334499610e94fa4f0028d7de2c69729536bb0876d8194e1baebb",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1260,
+      "path": "magic_items/magic_items.csv",
+      "sha256": "726aceae37050ebf18691507266e90ad2c37a6368cc5c2f4693bcc0513236bbe",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1258,
+      "path": "magic_items/magic_items_template.csv",
+      "sha256": "0c7385fab0e4838cb706927afd3353881d743a7d395ea80938968b334636013e",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 566,
+      "path": "miscellaneous_objects/miscellaneous_objects_template.csv",
+      "sha256": "6fd13393bb2e3f6856d44cc45cc859a8d8d098605e46af5ab1d7d250e0c867cc",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 36002,
+      "path": "monsters/monsters.csv",
+      "sha256": "3487011d7a4e4eafac95b5f7a4f5438cacd3911dd369ec6433c3bad7620a0823",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1845,
+      "path": "monsters/monsters_template.csv",
+      "sha256": "72e4593e84c12320f51abcd23dfe2d8787439bea63ccf22f53f2fa52b94937c0",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 37046,
+      "path": "npcs/npcs.csv",
+      "sha256": "f5243a7e9886e3751a3d9064f40fcf89d27179569c51b4f6ec567a79af4d9692",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 698,
+      "path": "npcs/npcs_template.csv",
+      "sha256": "91036e864702f588828459f5f201a2ad8995307a41eca0dc410921111eb49aed",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 176,
+      "path": "party-game/.env.example",
+      "sha256": "bb0888e6876908822137fb0ce9ca73a781ff25ab4ec1f14b87aac13428a7d597",
+      "suffix": ".example"
+    },
+    {
+      "bytes": 104,
+      "path": "party-game/.gitignore",
+      "sha256": "aeae24b07e544b3621301a7c92f834f65411f04661d9b2ebae6d87c8db2c403c",
+      "suffix": ""
+    },
+    {
+      "bytes": 8,
+      "path": "party-game/.node-version",
+      "sha256": "7e8a2fa94951112b894a3dbe3d05efef5e9263741fa49125f0a70f40fedab4cc",
+      "suffix": ""
+    },
+    {
+      "bytes": 973,
+      "path": "party-game/Dockerfile",
+      "sha256": "933d35ea6232ffe2b96b73da409d3c98ae5509d5b9793156e53208c83b2e7687",
+      "suffix": ""
+    },
+    {
+      "bytes": 137,
+      "path": "party-game/Dockerfile.dockerignore",
+      "sha256": "31b4b8c3fff7ae6b4e4be17bfbe356cefb139dea3f2e2dac43d5e2fc99ccacdd",
+      "suffix": ".dockerignore"
+    },
+    {
+      "bytes": 4711,
+      "path": "party-game/README.md",
+      "sha256": "09a3a56fca4e4d0e3e5d490aca1e9490b4a54941f83ba3470850bd4c24376349",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 394,
+      "path": "party-game/compose.yaml",
+      "sha256": "975e13e08d972f1c1d70c6706a8ad56b1328d7a98392a5f77f4d68cc208f8e35",
+      "suffix": ".yaml"
+    },
+    {
+      "bytes": 11258,
+      "path": "party-game/content/art-direction/monsters.v1.json",
+      "sha256": "a2fcd871d7401313a08c66b857e1f7400647574eef3b73186e4b526c482c637a",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2778,
+      "path": "party-game/content/art-pilot/model-schemas.2026-10-04.json",
+      "sha256": "9ec2c95c42228f6b6fa37a7833d5a3aa21705917893a4e6a23041f5a2c88a841",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2101,
+      "path": "party-game/content/art-pilot/plan.v1.json",
+      "sha256": "77e12dfda4019b2afa270238800bcd6775e16c3feb7743b260056e85fd21b197",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 7800,
+      "path": "party-game/content/art-pilot/prepared/manifest.json",
+      "sha256": "4e3f0848d8592be6a180ef78d816480612df8a5828c78942f6dbf30e857a346a",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2216,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal.art.txt",
+      "sha256": "d578c26ca09d1d861eb9c4013d944d4bde3a83abf979ba775fb5edcbd3755fda",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2370,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal__banana-pro.request.json",
+      "sha256": "b6dc67a4796197bbc5ed76081b29c86b1e84bd6bbff33d7ea01d8390a89e4d74",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2446,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal__sunburst.request.json",
+      "sha256": "eba638f973b6a12b39e33702f3d43016732c3323b0cdcc890a817a4bbc19a3ee",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2240,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster.art.txt",
+      "sha256": "6a54ae4c647b99ef61c2066fa5e8f959a60d68de3260bba0ea714e0f14080191",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2394,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster__banana-pro.request.json",
+      "sha256": "067bb716db33e795d9cbaf05393323359e6899445c87b1febe01149e8d0198e4",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2470,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster__sunburst.request.json",
+      "sha256": "38aa73654eff58a74ece7b45b8e3056ffbdfaac63141ddda60548c72ac55ba6f",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2180,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship.art.txt",
+      "sha256": "e2e37a8f45f46b903a52fc4697d5c49a4ad46920ee278b19d19b84d5b3b6b5b4",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2334,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship__banana-pro.request.json",
+      "sha256": "71932b3bd3cce8195a4264b7f70101865e63ad9119dc77a96162b088cba21edc",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2410,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship__sunburst.request.json",
+      "sha256": "fdf44b7592e0788383bcaf13764dfeda775b8d71db22a99c177287c0d1afc1dd",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 432,
+      "path": "party-game/content/art-pilot/prepared/review-template.csv",
+      "sha256": "ac88fe1e9812720bd37cb151bd6eb8d18535f43fb2a69e27dbe714716c3418ba",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1104,
+      "path": "party-game/content/art-pilot/style.v1.txt",
+      "sha256": "ed960612687d97dda46f94daab3d094ed799e7d7726a88c17ef54823d29a2e7f",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 118573,
+      "path": "party-game/content/launch.json",
+      "sha256": "0d39d4fa5963d5d0a5cf85b0896f112d5a68dfb6b1cde36e9ddb4fe5982c1d19",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 598779,
+      "path": "party-game/content/prompt-packets/launch.json",
+      "sha256": "8f513f0e6223186df69989032b90038cb1a119eafa21b1b5dfc0db058b566636",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 3683,
+      "path": "party-game/content/prompt-packets/monsters/index.json",
+      "sha256": "4dd89ad87971daa7b3865dba4f464f64eaace280443c74dd2f187eb1ad3ff144",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1060,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_algorithm_s_favorite.art.txt",
+      "sha256": "7c5cd41aa59a93875bc8d378502fcccb91f3eae21e9a53e072866f27abe81e60",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6281,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_algorithm_s_favorite.brief.json",
+      "sha256": "2d3640bebeb294ba30c6afdc104c721deaf935a6b8ea14782ad3d6fd148a6f06",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1027,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_attachment_style_podcast.art.txt",
+      "sha256": "603a63fc39199d0b999e30dfd628091af19c92651b4f81b9734ee46f4dcd795c",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6180,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_attachment_style_podcast.brief.json",
+      "sha256": "06d51bdbbef672a7f05ce0f1569bf207ff4bbae51aa6ec91621cf2e2a570972b",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1075,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.art.txt",
+      "sha256": "fa4d6083593cf7a53477dbefe99017715cf4b616a5dcba4dfae9b9da0b26b35b",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6354,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.brief.json",
+      "sha256": "57b26fd202b7cfc1e528073a8b448f3cfc239a9c65065bfd8bd246bfd5e19e58",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 989,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_clout_chaser.art.txt",
+      "sha256": "831384bdeed2069887bc24046cf17e26d2da7cd521f42e5189422dc5d6a9a21d",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6508,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_clout_chaser.brief.json",
+      "sha256": "9a6a6b7378b4075e658d13cc42b08a23b49192e4f99267f1c71a60bffa143fd9",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1048,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_crypto_bro.art.txt",
+      "sha256": "26ac08b3854139b017a84d5f4eb0fb9f6db56083ac7551ce43eb7333558d8e29",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6656,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_crypto_bro.brief.json",
+      "sha256": "7cae2b42e870d39a9374a1e17f3e05038fd00fa8216755b57fdf51d30716b639",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1041,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_energy_vampire.art.txt",
+      "sha256": "76bb2dca395a770305b096ebe07825a300a8f5d8e81a62969482e019c92d6522",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6698,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_energy_vampire.brief.json",
+      "sha256": "8b4fb3ba690e69052d0b1de46a08b7d48531633b7de497655ba73bccb995d5ee",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1091,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_ex_in_the_group_chat.art.txt",
+      "sha256": "59f555ec4b7724159bc65db15453053fa941abd1f6578ca9744212bd44d1c05e",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6320,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_ex_in_the_group_chat.brief.json",
+      "sha256": "f234574c48eb96d49634d6b6541adb5da9b3ef05f6dcb7b8a82ed35fae6fa967",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1099,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_ghoster.art.txt",
+      "sha256": "c6c2ea9a79d6d5540a98bd434cec53f949bbe035cc41e535ee0827783c0cd7eb",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6793,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_ghoster.brief.json",
+      "sha256": "af5a28f80d114db511e7e39bc5483242631e147dd6cdfc63d21d8dce072b9740",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1025,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_influencer_boyfriend.art.txt",
+      "sha256": "0144cdceabf9a58efd985d2cd1212eb8c1473089806ba28e9e167610f6eb00d4",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6672,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_influencer_boyfriend.brief.json",
+      "sha256": "27a345fdae4bd0ee4b21ac5d335ea5d39d61c270e66761ce564ddad4210ad352",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1071,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_last_call_love_bomber.art.txt",
+      "sha256": "b0674fb582fc0949d1b24ffb5d0256378a18f42094e57fe61218940eab28dea5",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6324,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_last_call_love_bomber.brief.json",
+      "sha256": "afdcedeb0bbebd33ab5f27bd9ff69dc4296eb6ca37ab3884d219b6726c5ff570",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1059,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_mansplainer.art.txt",
+      "sha256": "41a0eb2616fd4965e7e1d6d4f6191854ace37234efd8dce60a73065cfa7b241b",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6685,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_mansplainer.brief.json",
+      "sha256": "366c201eed2530bc9a733af2dd3c87a28f2173ec91467c28ff1d3641740f292c",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 985,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_minor_red_flag.art.txt",
+      "sha256": "8dd43728c07c8528e48be8c2f02df680f5dbf740cabbd18691d7ae02be7566cd",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6483,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_minor_red_flag.brief.json",
+      "sha256": "99ef4be5baaa2c3311ed754ebc394076ebcc8bed30b06378ac1f73b6b6a3f348",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1041,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_nice_guy.art.txt",
+      "sha256": "a4751d19991af05f24a8fe1de412fc399dc8c096ff6c63d9b5b7cf8c2f96a73e",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6651,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_nice_guy.brief.json",
+      "sha256": "5ce19fbfd73f2945a5e759a0b9f876c83696b224e03f9f644cb72e046dea4333",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1014,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_one_upper.art.txt",
+      "sha256": "f3bcbe1ea9e8f6f75e50a2a5da55f649b892454e822ed7dc2d13370820e2c848",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6518,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_one_upper.brief.json",
+      "sha256": "73b0638c13a3162fa424a4c58dbd5d52221f82292867da071a25a9db2cce052e",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1052,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_pick_me.art.txt",
+      "sha256": "718c3066fa14e71839dd664396d328b022d740936a54e2e30390c935b1404b8c",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6681,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_pick_me.brief.json",
+      "sha256": "97ae59a8505aa5532a09fdbf2b8357da96909fe4cec6434e70f12a8181cc4d08",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1039,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_situationship.art.txt",
+      "sha256": "dae5a9cef69475293acfc28e4866fd9d4ddbbbac15be0374bf53b4934133df7e",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 7261,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_situationship.brief.json",
+      "sha256": "b3b446cccf80c3d0df5250f51527907f268f650e00d6c154a57b5143c8449a06",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 994,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_soft_launch_detective.art.txt",
+      "sha256": "592f953d8298c46c3c1744f8003a973ea1de5606caa8ff5f74c4b47e6f3acaf5",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6048,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_soft_launch_detective.brief.json",
+      "sha256": "0815c4dfd3e0fb6ab1e4b8401ca1b3729505e541d0ecabe7a50fbf6a7dce9f74",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1070,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_trauma_dumper.art.txt",
+      "sha256": "1f8d86789ab89a2f8110663bfa5d05c698f7d352062ccd306995afb28167e4e8",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 6754,
+      "path": "party-game/content/prompt-packets/monsters/monster_the_trauma_dumper.brief.json",
+      "sha256": "bfc9f8aea90b0907c8e38e46f363116bcef607f2c5957febd7d2e7197e58c139",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 696,
+      "path": "party-game/data/server.log",
+      "sha256": "712399a716a266a51f140e2d2dcaa5289a03c3ee7280cb24a701c2a15608528e",
+      "suffix": ".log"
+    },
+    {
+      "bytes": 7445,
+      "path": "party-game/docs/ART_PRODUCTION.md",
+      "sha256": "4ffac35cca24345515250dc383fa53871c6977d12569be3dbab938e8c36fc741",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 4128,
+      "path": "party-game/docs/DEPLOYMENT.md",
+      "sha256": "693f7e8f5984020ded12cabb15d55db67149e31bb28a6c6e078be81c8eb95821",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 3040,
+      "path": "party-game/docs/IMPLEMENTATION.md",
+      "sha256": "a5cb2c94b12703bd2ec4b675f4c190fcbb219f83e9397e4b94ad486c4a48d23a",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 1445,
+      "path": "party-game/docs/PLAYTEST.md",
+      "sha256": "b823f3c5b85f648c36a1ba11fa5fffa391b11f99bbbb4b052050421653b19730",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 5155,
+      "path": "party-game/docs/PROMPT_GUIDE.md",
+      "sha256": "3946359ce3159ff062d89c719e077b8615347a6caab777ba1bf4edc3dbf8459a",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 5483,
+      "path": "party-game/docs/VERIFICATION.md",
+      "sha256": "e8714fd5b66e15d65b8f93a3b967f12d21758b7edfd63ca40373afd6468534d7",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 472,
+      "path": "party-game/index.html",
+      "sha256": "c91f1fdf1b33b5a8ed622b15bd32188370805766281acd0a4894865dbb9e4a3c",
+      "suffix": ".html"
+    },
+    {
+      "bytes": 731,
+      "path": "party-game/output/docker-smoke.json",
+      "sha256": "c398110b6456b02a526eb3b8be1410f9a122fa3b192641fed8fd238f1ef58d16",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 108498,
+      "path": "party-game/package-lock.json",
+      "sha256": "95b6025814e4dd512cad654b3fc49e7cbf9ee9eabc40062cfd66a7e3cfd35895",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 1635,
+      "path": "party-game/package.json",
+      "sha256": "b06a92d2ff362a17093ac6059f8ae44977a8074fd06b4be994b86ba9c2de3a0b",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 527931,
+      "path": "party-game/playwright-report/index.html",
+      "sha256": "5fadc66a63bccb0cccb7ecf698a19d1fd618e2d5d2d07ce44ca80722382a9d20",
+      "suffix": ".html"
+    },
+    {
+      "bytes": 528,
+      "path": "party-game/playwright.config.ts",
+      "sha256": "eb8d3c7805a40ee8e6ff934081b42ffc7f11975040b13fc12b1129d8c31944bd",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 938,
+      "path": "party-game/prompts/flavor.v1.txt",
+      "sha256": "415ef5faabf786c292e06956f98ad6eaf16468b2f61aac3880e044cf787862f6",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 1243,
+      "path": "party-game/prompts/flavor.v2.txt",
+      "sha256": "f5de840118447baaa6453aec1357d90fa07330c511c2c5685fc14a6373479c0c",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 638,
+      "path": "party-game/prompts/visual-clean.v1.txt",
+      "sha256": "1ab6f15b39a1aae6ad7f4b0d80e9d92f9b401e2b6804bdf8c28da5f982cd720b",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 1223,
+      "path": "party-game/prompts/visual.v1.txt",
+      "sha256": "d416729831709f030733513412c9079507bb9554e24b5d7d5213f2d976a72269",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 1346,
+      "path": "party-game/prompts/visual.v2.txt",
+      "sha256": "0a2ab3450e2b5d65c44afd8539c8559b45ec9df42a4fdecbcf23bdbdef6562e0",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 315,
+      "path": "party-game/railway.json",
+      "sha256": "6bc8e358c15d81101b9db8787c7cce094dc641ce21e4f4bb91cdc6d9773a041d",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 6480,
+      "path": "party-game/scripts/catalogue.py",
+      "sha256": "ba8edc3d1730afd4e7b952555c6f4a2e0e5815ba8bd4271a007a632c5aabc5ff",
+      "suffix": ".py"
+    },
+    {
+      "bytes": 822,
+      "path": "party-game/scripts/container.mjs",
+      "sha256": "adcc68b84bb2f071a1a04756328406b9cce32170f19b0af53870fcd3a21d960a",
+      "suffix": ".mjs"
+    },
+    {
+      "bytes": 9513,
+      "path": "party-game/scripts/content-check.ts",
+      "sha256": "692da5a4f5c7c927ad3c83aa77fb28074b445d9a6afc43bb10c550928805c151",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 2685,
+      "path": "party-game/scripts/database.ts",
+      "sha256": "42caa2157a9003dae5e0aeb4ef75f50bc388d4f6dae028f03a6f867c863cbbca",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 3717,
+      "path": "party-game/scripts/export-prompts.ts",
+      "sha256": "924c5a7e7cae0eaa874f2afee0881b974ed10b68aad8eb89b8247ceb9266802d",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 4554,
+      "path": "party-game/scripts/prepare-monster-art.mjs",
+      "sha256": "17ad00466d249119aab708d2c91c84ce1d3e440b99262066dfe80338d33b1c94",
+      "suffix": ".mjs"
+    },
+    {
+      "bytes": 2848,
+      "path": "party-game/scripts/runtime.mjs",
+      "sha256": "bc7d9083bd8d15bc1a0d368062a975e1310d3c55bb06737a1e51109f8ce96665",
+      "suffix": ".mjs"
+    },
+    {
+      "bytes": 19291,
+      "path": "party-game/scripts/seed-content.ts",
+      "sha256": "9d04272fe1b433ea4764c8097e53b164819bc6a079adb8d23690cb00d6641460",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 13311,
+      "path": "party-game/server/app.ts",
+      "sha256": "ac42f0077d72af2cc7c168e9f8d79dcf066280626c68119c2965ba92481834af",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 1879,
+      "path": "party-game/server/contracts.ts",
+      "sha256": "dbc2fca16cf4dc69068e18b0d01d7950f8c572e3ef342691bc4bd2f4dedd728b",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 305,
+      "path": "party-game/server/index.ts",
+      "sha256": "29eaad6fe1e005e69fe228648ad2093c7c3a9ce8085f91f5f66de76be5ced19c",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 4560,
+      "path": "party-game/server/store.ts",
+      "sha256": "aa1b3c92adad1645fee9adf19c0c3a553c5d1b2253a25569ce894099b9d0628e",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 2309,
+      "path": "party-game/src/client/Card.tsx",
+      "sha256": "ccaa552c19b698495e7328a8371359a26ae7b6c8ed6531935684b1f561f1ef28",
+      "suffix": ".tsx"
+    },
+    {
+      "bytes": 1689,
+      "path": "party-game/src/client/collection.ts",
+      "sha256": "c14d3fa9f0a27fcf98affe325acc0143c2f6ba5c1a762d7600619ab4d005fb75",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 61965,
+      "path": "party-game/src/client/main.tsx",
+      "sha256": "ababcc5735d97e7cd55150cdc03537fedc097e650e13a8608cbc90953287ba1e",
+      "suffix": ".tsx"
+    },
+    {
+      "bytes": 43532,
+      "path": "party-game/src/client/styles.css",
+      "sha256": "1b6d66a1045baaf06764b92d02c9b2a44b4641a3ca823f707cad561549d388ae",
+      "suffix": ".css"
+    },
+    {
+      "bytes": 30538,
+      "path": "party-game/src/engine/game.ts",
+      "sha256": "e103dae2607b0d9cec75959f997c669c595690cc4cb8cba444a3d87dc40db79b",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 6577,
+      "path": "party-game/src/shared/types.ts",
+      "sha256": "93117b1cb6514a35ba5e9aaf7285eb544074357d94e539a065584f07fcf0b547",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 45,
+      "path": "party-game/test-results/.last-run.json",
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 10562,
+      "path": "party-game/tests/browser/game.spec.ts",
+      "sha256": "ab4deea59a8a1a704d9acca665d4ce71d26d1b8852636915007626d5f14cf2e2",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 803,
+      "path": "party-game/tests/collection.test.ts",
+      "sha256": "d9fdcfee7af352d673a6aca83bf59511c327044f05625b7d0028798b7a3a36b4",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 2908,
+      "path": "party-game/tests/docker-smoke.ts",
+      "sha256": "72ad8a3e1aa03ba36bc186f810d0a442d71affa2d83051f88bfe10a745385c2a",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 549,
+      "path": "party-game/tests/e2e-server.ts",
+      "sha256": "6393381f2446d9f415c82586f6742dd6e0c7c481a382267f1728285da4099b29",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 16125,
+      "path": "party-game/tests/engine.test.ts",
+      "sha256": "91ff2e73cff601c2e40d6083df9ef9b0abffeb42300801daa75db79102520c79",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 12111,
+      "path": "party-game/tests/server.test.ts",
+      "sha256": "5ff960fa97413ecff1248ab4c0bee05f52f1293c199b27378953b512eb51ca8b",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 418,
+      "path": "party-game/tsconfig.json",
+      "sha256": "4a2919953fc8fc7aea070fe34ccf17889097e91ed59020afcd373652778411b9",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 159,
+      "path": "party-game/vite.config.ts",
+      "sha256": "99fbb8ce7e92c85f103f41fad1ab7a8a8f0fd70393e47a162064c7d4adf002da",
+      "suffix": ".ts"
+    },
+    {
+      "bytes": 22328,
+      "path": "quests/quests.csv",
+      "sha256": "4d352f74c89b38d56bf95a2c84529ce0eab147d8b963cabf12d81d8d8611b1a8",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1459,
+      "path": "quests/quests_template.csv",
+      "sha256": "9bf947eb7b39ec9f75e2a3d041feb470b9ce9db4332e8abd6ca5277a9de15522",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 429,
+      "path": "races/races_template.csv",
+      "sha256": "4ea3caf8aa2cf9f211f4e2ca927587fa8d480412b1d224371511516b85975064",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 8532,
+      "path": "rules/combat_system.md",
+      "sha256": "08bbc2005a0686608e8e4e6f9ed5e106decb6ea4d305d12ddf63d9851e3aeed8",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 4393,
+      "path": "rules/content_schema_standards.md",
+      "sha256": "21d800b4a5d3df06285e611a1390fd971bc13a298e214488464620d1ca9854a4",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 7035,
+      "path": "rules/controlled_vocabulary.md",
+      "sha256": "f098485d09001fd0db0a49c40bb9720f3646bd60ed97aeef77793fa5ac07002f",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 14574,
+      "path": "rules/dm_manual.md",
+      "sha256": "2d185a5766628d82401260d369dcad68ab761315d6dba8352f6e49f7e14f651e",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 3808,
+      "path": "rules/influence_system.md",
+      "sha256": "b4d14fdf9adae426c5d5a384b05a718cf5e28b3db2e949d4990b521174fdf8b5",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 5120,
+      "path": "rules/party_game.md",
+      "sha256": "384edb35ebfd2a9afa7c8127bf808272bb90eac4a17b5c124711f191aefc6695",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 20814,
+      "path": "rules/specialized_game_modes.md",
+      "sha256": "0e09389dd7079af50d1810bc3b4b6128766ad13f42da238169303707adca00ab",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 21879,
+      "path": "rules/status_afflictions.md",
+      "sha256": "292c06be2fae3d36d7944855fa17c755b19646aca7c98f3c76661691dd9cf9e8",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 18896,
+      "path": "skills/skill_aliases.csv",
+      "sha256": "80a59dd6b75152f2e1e0b2f1815a26eaee026b5201d9e46502e0e4e2d2293a9d",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 10304,
+      "path": "skills/skills.csv",
+      "sha256": "7240607e8cbbac107b643553871f15788b14aa47546621dd61efd24d4ffc7f9f",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 786,
+      "path": "skills/skills_template.csv",
+      "sha256": "f760c76cf64c78b57af6902f9822bb12b6f00f7553f7c133b07adaa732baa8a5",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 69104,
+      "path": "spells/spells.csv",
+      "sha256": "9439ba8430fc17b71aa72392cc167f49fffc5adb3b293d443d6ac321c93f7c45",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1889,
+      "path": "spells/spells_template.csv",
+      "sha256": "cb4443fd3ddbb2d01e12d599e3629357941b80e9d297a30bfeea0e8818d5e6dc",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 30038,
+      "path": "technical-design.md",
+      "sha256": "1e493cb28204565888cd491c35877bc09960f8ac4e15175a45abe6ce6e684e72",
+      "suffix": ".md"
+    },
+    {
+      "bytes": 26364,
+      "path": "tools/content_audit.py",
+      "sha256": "708ec28365a1d4b1915fe962415c4e7ab08691f226d9fa6ddb9e5d7b70f2c227",
+      "suffix": ".py"
+    },
+    {
+      "bytes": 12068,
+      "path": "treasure/treasure.csv",
+      "sha256": "28df8fea0a8cf0552f72a5205b6f1ab5ecf8be40417a37c80a52e09425ba0da7",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1468,
+      "path": "treasure/treasure_template.csv",
+      "sha256": "6d0598625f3d66aa04f63e1478b452bf131cea91cb4c6d95b69118fb981efa99",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1320,
+      "path": "weapons/weapons.csv",
+      "sha256": "13c6b2ac45166b62d28c67326e67f133cfed98c8e14f9410e4e19e1f6adc147b",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1320,
+      "path": "weapons/weapons_template.csv",
+      "sha256": "13c6b2ac45166b62d28c67326e67f133cfed98c8e14f9410e4e19e1f6adc147b",
+      "suffix": ".csv"
+    }
+  ],
+  "limits": {
+    "context_card_bytes": 6144,
+    "index_bytes": 4096,
+    "large_file_bytes": 1000000,
+    "route_result_bytes": 8192,
+    "routes_bytes": 20000,
+    "task_card_bytes": 6144
+  },
+  "signals": {
+    "icm_workspace_exists": true,
+    "legacy_onion_workspace_exists": false,
+    "manifest_files": [
+      {
+        "path": "party-game/package.json",
+        "signal": "node_manifest"
+      },
+      {
+        "path": "README.md",
+        "signal": "readme"
+      },
+      {
+        "path": "campaigns/limited_runs/README.md",
+        "signal": "readme"
+      },
+      {
+        "path": "party-game/README.md",
+        "signal": "readme"
+      }
+    ]
+  },
+  "version": "icm.inventory/v1",
+  "workspace_version": "icm.workspace/v1"
+}

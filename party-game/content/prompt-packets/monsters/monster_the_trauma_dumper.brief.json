@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "cardId": "monster_the_trauma_dumper",
+  "name": "The Trauma Dumper",
+  "kind": "monster",
+  "contentVersion": "f911a2b4477a2aaa",
+  "inputs": {
+    "campaign": "Swipe Right, Regret Later",
+    "approvedFlavor": "The appetizer arrived midway through the origin story.",
+    "sources": [
+      {
+        "id": "source_monsters_monster_trauma_dumper",
+        "sourceRefs": [
+          {
+            "path": "monsters/monsters.csv",
+            "sha256": "3487011d7a4e4eafac95b5f7a4f5438cacd3911dd369ec6433c3bad7620a0823",
+            "row": 76
+          }
+        ],
+        "jokes": []
+      }
+    ],
+    "immutableMechanics": {
+      "rules": "Beat strength 7: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.",
+      "effects": [],
+      "strength": 7,
+      "rewards": {
+        "cash_cp": 100
+      },
+      "setback": 2,
+      "loot": 1
+    },
+    "art": {
+      "subject": "An earnest adult guest opening a suitcase stuffed with oversized personal keepsakes",
+      "action": "Pouring the impossible collection onto a tiny appetizer plate while another adult patiently holds a fork",
+      "setting": "A two-person cocktail table at a social mixer",
+      "joke": "The first course cannot support this much backstory",
+      "motifs": [
+        "overfilled suitcase",
+        "childhood trophy without lettering",
+        "tiny appetizer fork"
+      ],
+      "palette": [
+        "mint",
+        "lavender",
+        "peach",
+        "cyan",
+        "cream"
+      ],
+      "composition": "Keepsakes cascade diagonally across the table; attentive faces remain visible; humor comes from scale, not distress"
+    }
+  },
+  "flavor": {
+    "template": "flavor.v2",
+    "prompt": "Write flavor for Digital Nomadia, a satirical social-combat card game.\nCampaign: Swipe Right, Regret Later\nCard: The Trauma Dumper (monster)\nCurrent approved flavor: The appetizer arrived midway through the origin story.\nOriginal material and source references: [{\"id\":\"source_monsters_monster_trauma_dumper\",\"sourceRefs\":[{\"path\":\"monsters/monsters.csv\",\"sha256\":\"3487011d7a4e4eafac95b5f7a4f5438cacd3911dd369ec6433c3bad7620a0823\",\"row\":76}],\"jokes\":[]}]\nEncounter themes: wellness, awkward\nVoice: dry, observant, a little wounded; someone telling a friend how the date went. Let a specific object or awkward behavior carry the joke. Preserve an existing line when it already works.\nImmutable gameplay contract: {\"rules\":\"Beat strength 7: gain 1 level, 100 cash and 1 loot. Failed escape: lose 2 Chill.\",\"effects\":[],\"strength\":7,\"rewards\":{\"cash_cp\":100},\"setback\":2,\"loot\":1}\n\nReturn three alternatives, each no more than 25 words. You may also propose an optional 40–80 word extended vignette for future collection detail; it will not be displayed until an editor approves it. Keep original quotations exact and cite their source IDs. Do not invent facts about real players, new abilities, resource prices, or effects. Do not explain the punchline or replace a good joke just to make it different.\n\nReturn JSON: {\"schemaVersion\":2,\"cardId\":\"monster_the_trauma_dumper\",\"candidates\":[{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\",\"note\":\"...\"}],\"extendedVignette\":{\"text\":\"...\",\"sourceIds\":[],\"authorship\":\"new|adapted\"}}. Every output is an editorial candidate. Approved flavor and gameplay remain unchanged until reviewed separately."
+  },
+  "visual": {
+    "template": "visual.v2",
+    "prompt": "Write an illustration brief for a Digital Nomadia trading card.\nCard: The Trauma Dumper (monster_the_trauma_dumper)\nCampaign: Swipe Right, Regret Later\nSubject: An earnest adult guest opening a suitcase stuffed with oversized personal keepsakes\nVisible action: Pouring the impossible collection onto a tiny appetizer plate while another adult patiently holds a fork\nSetting: A two-person cocktail table at a social mixer\nVisual joke: The first course cannot support this much backstory\nMotifs: overfilled suitcase, childhood trophy without lettering, tiny appetizer fork\nComposition: Keepsakes cascade diagonally across the table; attentive faces remain visible; humor comes from scale, not distress\nPalette: mint, lavender, peach, cyan, cream\n\nUse the detail, staging, and dramatic light of a rich fantasy trading-card illustration. Translate the joke into contemporary social behavior. Use colorful Web 2.0 pastels: mint, lavender, peach, cyan, and warm cream. Keep one clear focal subject and a silhouette readable on a phone. People are fictional adults. Keep the proposed rendering style open for art direction.\n\nThe clean prompt must describe one visible scene. Do not paste the card name as lettering, source metadata, gameplay rules, or this writing assignment into it. Keep card frames, names, statistics, flavor text, and interface elements outside the image. Keep source jokes in the flavor workflow unless they describe something visible.\n\nReturn JSON with these fields: {\"schemaVersion\":2,\"cardId\":\"monster_the_trauma_dumper\",\"brief\":{\"subject\":\"...\",\"action\":\"...\",\"setting\":\"...\",\"visualJoke\":\"...\",\"composition\":\"...\",\"palette\":[]},\"cleanPrompt\":\"...\",\"negativePrompt\":\"text, letters, numbers, captions, logos, watermarks, card frame, rules box, user interface\",\"aspectRatio\":\"4:3\",\"styleStatus\":\"provisional\"}.",
+    "cleanTemplate": "visual-clean.v1",
+    "cleanPrompt": "Create a standalone illustration.\nSubject: An earnest adult guest opening a suitcase stuffed with oversized personal keepsakes\nVisible action: Pouring the impossible collection onto a tiny appetizer plate while another adult patiently holds a fork\nSetting: A two-person cocktail table at a social mixer\nVisual joke: The first course cannot support this much backstory\nMotifs: overfilled suitcase, childhood trophy without lettering, tiny appetizer fork\nComposition: Keepsakes cascade diagonally across the table; attentive faces remain visible; humor comes from scale, not distress\n\nRich fantasy trading-card detail, dramatic yet readable light, expressive body language, and clear foreground/background separation. Colorful Web 2.0 pastel palette: mint, lavender, peach, cyan, cream. Keep the main silhouette readable at phone size and leave quiet breathing room around the edges. Original composition; any people are fictional adults. Landscape 4:3 illustration only. No text, lettering, numbers, captions, logos, watermarks, card frame, rules box, or user interface.",
+    "negativePrompt": "text, lettering, numbers, captions, logos, watermarks, card frame, rules box, user interface",
+    "aspectRatio": "4:3",
+    "styleStatus": "provisional"
+  },
+  "status": "prompt_only"
+}

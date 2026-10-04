@@ -109,8 +109,19 @@ These are the canonical damage types for this setting:
 - **Reputation**: damage to social standing, credibility, or trust
 - **Cringe**: secondhand embarrassment, style collapse, aura corrosion
 - **Necrotic**: draining tedium, dead-eyed burnout, existential rot
+- **Poison**: toxins, bad street food, fumes, substances, and chemical regret
 
 If an old file says `slashing`, `bludgeoning`, or `gold damage`, convert it to one of the above or rewrite it as forced movement, item loss, or cash loss.
+
+### Collision Damage Conversion
+
+Physical contact is not a separate damage taxonomy. When old content describes a collision, shove,
+body check, suitcase impact, scooter clip, or other physical contact, model the hit as **Cringe**
+damage plus a positioning rider such as `Prone (Social)`, `Shove / Reposition`, or forced movement.
+
+Do not introduce `bludgeoning`, `slashing`, `piercing`, `crash`, or `impact` as damage types. The
+physical event is the trigger; the rules effect is social embarrassment, loss of footing, or being
+forced into a worse zone.
 
 ### Standard Maneuvers
 
@@ -150,6 +161,7 @@ Important canonicalizations:
 - `Misinformation` is a named buff that can be removed by `Fact Check`
 - `Receipts Collected` is the setup state for `Cancel`
 - If old content says `paralyzed`, default to `Stunned` unless a stricter rule is written
+- If old content says `sleep`, `asleep`, or sleep-causing `unconscious`, default to `Asleep`
 
 ## Undefined Legacy Terms, Now Defined
 

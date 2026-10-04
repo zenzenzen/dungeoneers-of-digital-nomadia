@@ -1,0 +1,191 @@
+{
+  "curated": [
+    {
+      "path": ".icm/INDEX.md",
+      "sha256": "43bacd94414a647b13ad86625e549ae8ba3ac94451b058adbd2e2ae77665bd85"
+    },
+    {
+      "path": ".icm/context/architecture.md",
+      "sha256": "2f475cc7579d4a9365b254f756b8eaef33857f29c575d77998b357e1d4d1a935"
+    },
+    {
+      "path": ".icm/context/commands.md",
+      "sha256": "bf0354ee2204c21501cf0744ce039b490e7adec4f0283466c48a902db48f25c4"
+    },
+    {
+      "path": ".icm/context/conventions.md",
+      "sha256": "b7c46602ebe5d56c5a35eda57780ec0519bdaac32a7ef82fe200b43588ec2656"
+    },
+    {
+      "path": ".icm/context/decisions.md",
+      "sha256": "7b1188df2479294e55a4ca920fe9d9e77d2f42736a4a24b035a62795f52577b9"
+    },
+    {
+      "path": ".icm/context/domain.md",
+      "sha256": "05824a60ca543f2cb6bc3aef34638e74c987dcbea548d9d5c33d358cd902f4f8"
+    },
+    {
+      "path": ".icm/project.md",
+      "sha256": "84cac591fc8b0b964205424465d8238f17fdc6780cc38f113468df1156681b33"
+    },
+    {
+      "path": ".icm/routes.json",
+      "sha256": "cdd4a077553b2e695232227ab9584d16dbf2b1d5ae7b3c4a660b7282bf5e8acd"
+    },
+    {
+      "path": ".icm/snippets/AGENTS.md",
+      "sha256": "d1aee22cb53eb1d87de297773ff4154111bc84670b024c280ac20ede59985f16"
+    },
+    {
+      "path": ".icm/snippets/CLAUDE.md",
+      "sha256": "eb00cf85dd38ba729d5c5d1723b4bc79a0e7d1ae04cc2350bdbd25abf2201b82"
+    },
+    {
+      "path": ".icm/tasks/change.md",
+      "sha256": "b193cf53dbfa0bf8a600d5313dece5ab8b6cea68cc5ad2fefab6e4cf7c1cf9ab"
+    },
+    {
+      "path": ".icm/tasks/debug.md",
+      "sha256": "3362c47d8d27f291fa1bb588fb0b73d48349c20e37935675d69332fd95789593"
+    },
+    {
+      "path": ".icm/tasks/operate.md",
+      "sha256": "360c141401400c94c42cb863763c8d2956b7f62ca68aadbb097b8c5dffda5c22"
+    },
+    {
+      "path": ".icm/tasks/review.md",
+      "sha256": "38ebb3cdf25a9ec7ee1d13b4a9c26cd14092bc034eccadaf0f70e18bf5e9e47b"
+    },
+    {
+      "path": ".icm/tasks/understand.md",
+      "sha256": "c31e2a55181be5d5a6177b5526ac203a4244355abd5cc27bc106d22f1338fa95"
+    }
+  ],
+  "exclusions": [
+    {
+      "path": ".DS_Store",
+      "reason": "binary_file"
+    },
+    {
+      "path": ".git",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": ".icm",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "brand/ddn_ai_star_logo.svg.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "brand/logo_sizing_preview.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "ddn_palette_swatch.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/.cache/docpipe/.docpipe",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/content/catalogue.json",
+      "reason": "large_file"
+    },
+    {
+      "path": "party-game/data/nomadia.sqlite",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/dist",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/node_modules",
+      "reason": "ignored_directory"
+    },
+    {
+      "path": "party-game/output/playwright/home-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/home-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-1.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-3.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/results-6.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-1-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-1-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-3-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-3-mobile.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-6-desktop.png",
+      "reason": "binary_file"
+    },
+    {
+      "path": "party-game/output/playwright/table-6-mobile.png",
+      "reason": "binary_file"
+    }
+  ],
+  "generated": {
+    "folders/.github/CONTEXT.md": "64c8e03c83126f17e4280c777ab5e96162204f9748f414682ceca18a5a9d2abe",
+    "folders/armors/CONTEXT.md": "cafd742bb82656367c79faea3d1fce3cbcc4b849f46e1bafc42348e1e563c062",
+    "folders/backgrounds/CONTEXT.md": "e8621cdf7ff6b4bf9d5766ec1185ceca8cf63d291066b4909c24c0bc9bace60d",
+    "folders/brand/CONTEXT.md": "10548ab198613667f5fa0bdffd90abaf32d518cc510187a5bbfc3c4bf80a7c78",
+    "folders/campaigns/CONTEXT.md": "78f44f325d9be47550a38ce987d1a60a1cd03d3ccc17a5af77e80da6902ba6f1",
+    "folders/campaigns/limited_runs/CONTEXT.md": "76ab0163d34fc1f06e399d983032462ecb438a8c3376e4fbc97ed4a8c9cfa84f",
+    "folders/character_sheets/CONTEXT.md": "7c26a4579e5c36bc928749fb3892c665db6896fa1889e6d2df18bcac680e74ce",
+    "folders/classes/CONTEXT.md": "eebcb69076e399f19916e2c49083fba6bf55b9ec2049786e7f1340866efba9a9",
+    "folders/design/CONTEXT.md": "8ed07e4c646a92f7ff622e3fee0c18ccbe49669afd3d60913a23055fe2ae5e68",
+    "folders/encounters/CONTEXT.md": "2f2d054256c76a12f454c3cfaf50ff398527776da4f9fe2f00fe7b49c46bc98f",
+    "folders/equipment/CONTEXT.md": "d8e84f5bede63c2be80aa7bef58cceecca5ccea97bb132d922a7cafe95dd1308",
+    "folders/factions/CONTEXT.md": "96800565cfe4321264c61303b6c0e2c5e97c2e00db37b5e1fa2c0d3f1ffbaab7",
+    "folders/feats/CONTEXT.md": "312974aa2a2cc41c56d6468e5273c67d44f131caec866a155e4d2b992775a9f9",
+    "folders/hazards/CONTEXT.md": "9afcb0898f4ed0061d45f1f6c07e86366ad386d72875604c99150f8fd1c28b43",
+    "folders/index.json": "68f601ececad4d13f81154fce14449c9754ee3d7a05a946c11bbd799b2f38013",
+    "folders/jobs/CONTEXT.md": "f9518181e55611f9ae53178d4347e77c90e05af51162042406912a638492d672",
+    "folders/locations/CONTEXT.md": "2fa5a27f8b0837dc8de730b1f0192a1fa87aa83660f7165f3675432afb0c008c",
+    "folders/magic_items/CONTEXT.md": "224788bf0e8f9cb24b080e9b516936495f9153937f9d02c01105bb1ab17f35bf",
+    "folders/miscellaneous_objects/CONTEXT.md": "db4e61830fc8114490df15a231f6b5cc8ed01a1be54008d2224f4d8adc9767e6",
+    "folders/monsters/CONTEXT.md": "e1172fa9e4038b50a04c7182f577e6eeae9a83694c69b13e7f89d449350db063",
+    "folders/npcs/CONTEXT.md": "7872ef7e7f5b95e03fa632ba65ea4f7a5da749a96f7b8221accb69b2e8bb8da8",
+    "folders/party-game/CONTEXT.md": "548520cc29e6985152cf8183d479a125fd7587e9d6126639e52e10debdb8c070",
+    "folders/quests/CONTEXT.md": "25d9b3a2e89a4b25ea71d46fbd8091f9990669041c600ace1e3c3e35e7c6e5e1",
+    "folders/races/CONTEXT.md": "bdafd97c17982e7795b337db1da310b8d068a9dcd5cf3056a404b97003e78983",
+    "folders/rules/CONTEXT.md": "c85e9d069dbee8073ab6d3a429b68be60e0fe701462ec1d188001f06a68e57f2",
+    "folders/skills/CONTEXT.md": "d03aa5c1e4f2b18de6ad03804764eae5525b7e60f4cda3cad4011d15f0a16737",
+    "folders/spells/CONTEXT.md": "caf14bd67b8edf4b806b08d1fba69c813b792bd256300fc2f7642f4ba890e586",
+    "folders/tools/CONTEXT.md": "3312dbb1cf0fb146a85d3af627c7c6324b10efc6d0208b7f1076a4be41f566f5",
+    "folders/treasure/CONTEXT.md": "1607a0ae66b3d5beb4aed5f8f90028d28f876ae367e294485823483e9a425055",
+    "folders/weapons/CONTEXT.md": "2f143f4a132aace44344982e4a3713705cb9b9d16d2512f3703cbb4641c93c07",
+    "inventory.json": "f32e20e05f7334dc337fa2346764324fc1617b7aa0ab0815c820ba79736cc3e8",
+    "map.md": "e9e9f6794fc56d21e70de355099608ad4d95110c8cfebd9d04bb1e489b75bc33"
+  },
+  "input_fingerprint": "f32e20e05f7334dc337fa2346764324fc1617b7aa0ab0815c820ba79736cc3e8",
+  "version": "icm.provenance/v1",
+  "workspace_version": "icm.workspace/v1"
+}

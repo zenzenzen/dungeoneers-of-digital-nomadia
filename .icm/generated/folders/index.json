@@ -1,0 +1,331 @@
+{
+  "candidate_count": 29,
+  "entries": [
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/.github/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 0,
+      "folder": ".github",
+      "indexed_files": 1,
+      "sha256": "64c8e03c83126f17e4280c777ab5e96162204f9748f414682ceca18a5a9d2abe"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/armors/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 3,
+      "folder": "armors",
+      "indexed_files": 3,
+      "sha256": "cafd742bb82656367c79faea3d1fce3cbcc4b849f46e1bafc42348e1e563c062"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/backgrounds/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "backgrounds",
+      "indexed_files": 2,
+      "sha256": "e8621cdf7ff6b4bf9d5766ec1185ceca8cf63d291066b4909c24c0bc9bace60d"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/brand/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "brand",
+      "indexed_files": 2,
+      "sha256": "10548ab198613667f5fa0bdffd90abaf32d518cc510187a5bbfc3c4bf80a7c78"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/campaigns/CONTEXT.md",
+      "direct_child_folders": 1,
+      "direct_files": 2,
+      "folder": "campaigns",
+      "indexed_files": 3,
+      "sha256": "78f44f325d9be47550a38ce987d1a60a1cd03d3ccc17a5af77e80da6902ba6f1"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/character_sheets/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "character_sheets",
+      "indexed_files": 2,
+      "sha256": "7c26a4579e5c36bc928749fb3892c665db6896fa1889e6d2df18bcac680e74ce"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/classes/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "classes",
+      "indexed_files": 2,
+      "sha256": "eebcb69076e399f19916e2c49083fba6bf55b9ec2049786e7f1340866efba9a9"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/design/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "design",
+      "indexed_files": 2,
+      "sha256": "8ed07e4c646a92f7ff622e3fee0c18ccbe49669afd3d60913a23055fe2ae5e68"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/encounters/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 3,
+      "folder": "encounters",
+      "indexed_files": 3,
+      "sha256": "2f2d054256c76a12f454c3cfaf50ff398527776da4f9fe2f00fe7b49c46bc98f"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/equipment/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "equipment",
+      "indexed_files": 2,
+      "sha256": "d8e84f5bede63c2be80aa7bef58cceecca5ccea97bb132d922a7cafe95dd1308"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/factions/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "factions",
+      "indexed_files": 1,
+      "sha256": "96800565cfe4321264c61303b6c0e2c5e97c2e00db37b5e1fa2c0d3f1ffbaab7"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/feats/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "feats",
+      "indexed_files": 1,
+      "sha256": "312974aa2a2cc41c56d6468e5273c67d44f131caec866a155e4d2b992775a9f9"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/hazards/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "hazards",
+      "indexed_files": 1,
+      "sha256": "9afcb0898f4ed0061d45f1f6c07e86366ad386d72875604c99150f8fd1c28b43"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/jobs/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "jobs",
+      "indexed_files": 1,
+      "sha256": "f9518181e55611f9ae53178d4347e77c90e05af51162042406912a638492d672"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/locations/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 3,
+      "folder": "locations",
+      "indexed_files": 3,
+      "sha256": "2fa5a27f8b0837dc8de730b1f0192a1fa87aa83660f7165f3675432afb0c008c"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/magic_items/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "magic_items",
+      "indexed_files": 2,
+      "sha256": "224788bf0e8f9cb24b080e9b516936495f9153937f9d02c01105bb1ab17f35bf"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/miscellaneous_objects/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "miscellaneous_objects",
+      "indexed_files": 1,
+      "sha256": "db4e61830fc8114490df15a231f6b5cc8ed01a1be54008d2224f4d8adc9767e6"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/monsters/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "monsters",
+      "indexed_files": 2,
+      "sha256": "e1172fa9e4038b50a04c7182f577e6eeae9a83694c69b13e7f89d449350db063"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/npcs/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "npcs",
+      "indexed_files": 2,
+      "sha256": "7872ef7e7f5b95e03fa632ba65ea4f7a5da749a96f7b8221accb69b2e8bb8da8"
+    },
+    {
+      "boundary_reasons": [
+        "boundary_marker",
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/party-game/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 14,
+      "folder": "party-game",
+      "indexed_files": 107,
+      "sha256": "548520cc29e6985152cf8183d479a125fd7587e9d6126639e52e10debdb8c070"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/quests/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "quests",
+      "indexed_files": 2,
+      "sha256": "25d9b3a2e89a4b25ea71d46fbd8091f9990669041c600ace1e3c3e35e7c6e5e1"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/races/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "races",
+      "indexed_files": 1,
+      "sha256": "bdafd97c17982e7795b337db1da310b8d068a9dcd5cf3056a404b97003e78983"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/rules/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 8,
+      "folder": "rules",
+      "indexed_files": 8,
+      "sha256": "c85e9d069dbee8073ab6d3a429b68be60e0fe701462ec1d188001f06a68e57f2"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/skills/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 3,
+      "folder": "skills",
+      "indexed_files": 3,
+      "sha256": "d03aa5c1e4f2b18de6ad03804764eae5525b7e60f4cda3cad4011d15f0a16737"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/spells/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "spells",
+      "indexed_files": 2,
+      "sha256": "caf14bd67b8edf4b806b08d1fba69c813b792bd256300fc2f7642f4ba890e586"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/tools/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "tools",
+      "indexed_files": 1,
+      "sha256": "3312dbb1cf0fb146a85d3af627c7c6324b10efc6d0208b7f1076a4be41f566f5"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/treasure/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "treasure",
+      "indexed_files": 2,
+      "sha256": "1607a0ae66b3d5beb4aed5f8f90028d28f876ae367e294485823483e9a425055"
+    },
+    {
+      "boundary_reasons": [
+        "top_level"
+      ],
+      "card": ".icm/generated/folders/weapons/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 2,
+      "folder": "weapons",
+      "indexed_files": 2,
+      "sha256": "2f143f4a132aace44344982e4a3713705cb9b9d16d2512f3703cbb4641c93c07"
+    },
+    {
+      "boundary_reasons": [
+        "boundary_marker"
+      ],
+      "card": ".icm/generated/folders/campaigns/limited_runs/CONTEXT.md",
+      "direct_child_folders": 0,
+      "direct_files": 1,
+      "folder": "campaigns/limited_runs",
+      "indexed_files": 1,
+      "sha256": "76ab0163d34fc1f06e399d983032462ecb438a8c3376e4fbc97ed4a8c9cfa84f"
+    }
+  ],
+  "folder_card_limit": 1024,
+  "input_fingerprint": "f32e20e05f7334dc337fa2346764324fc1617b7aa0ab0815c820ba79736cc3e8",
+  "omitted_candidate_count": 0,
+  "truncated": false,
+  "version": "icm.folder-index/v1",
+  "workspace_version": "icm.workspace/v1"
+}

@@ -53,7 +53,30 @@ TEMPLATE_ONLY_FILES = [
 DEFAULT_DB_FIELDS = {"id", "name", "version", "is_active"}
 REQUIRED_DB_FIELDS_BY_FILE = {
     "skills/skill_aliases.csv": {"alias", "skill_id", "source", "confidence", "notes"},
-    "armors/armors.csv": {"name", "type", "rarity", "cr_bonus", "cost"},
+    "armors/armors.csv": {
+        "id",
+        "name",
+        "category",
+        "subtype",
+        "rarity",
+        "cr_bonus",
+        "cost_cp",
+        "effects_json",
+        "version",
+        "is_active",
+    },
+    "armors/armors_database_formatted.csv": {
+        "id",
+        "name",
+        "category",
+        "subtype",
+        "rarity",
+        "cr_bonus",
+        "cost_cp",
+        "effects_json",
+        "version",
+        "is_active",
+    },
 }
 GENERIC_FANTASY_KEYWORDS = {
     "dragon",
@@ -79,6 +102,92 @@ NUMERIC_COLUMNS = {
 }
 DECIMAL_COLUMNS = {
     "monsters/monsters.csv": ("challenge_rating",),
+}
+
+# ---------------------------------------------------------------------------
+# Controlled-vocabulary linter
+#
+# Source of truth:
+#   - rules/combat_system.md       (damage types, chassis field names)
+#   - rules/status_afflictions.md  (condition names, buffs)
+#   - rules/content_schema_standards.md (currency/resource IDs)
+#
+# Canon decisions baked in (2026-05, see MEMORY):
+#   - Physical-collision damage (bludgeoning/slashing) -> Cringe + forced movement
+#   - "Asleep" is a canon condition (sleep sources point at it)
+# ---------------------------------------------------------------------------
+
+CANON_DAMAGE_TYPES = {"psychic", "sonic", "reputation", "cringe", "necrotic", "poison"}
+
+# Unambiguous forbidden physical damage words -> always an error.
+FORBIDDEN_DAMAGE_RE = re.compile(r"\b(slashing|bludgeoning|piercing|radiant|thunder)\b", re.IGNORECASE)
+
+# Elemental words that are only suspicious in a mechanical column.
+# ("force" is excluded: it is almost always the verb "force a save"; real
+#  "Wall of Force" is caught by the D&D-import check instead.)
+SUSPECT_ELEMENT_RE = re.compile(r"\b(fire|cold|lightning|acid)\b", re.IGNORECASE)
+
+# Drifted condition shorthand -> canonical name from status_afflictions.md.
+CONDITION_DRIFT = [
+    (re.compile(r"\bCharm\b(?!ed)", re.IGNORECASE), "Charmed"),
+    (re.compile(r"\bStun\b(?!ned|ning)", re.IGNORECASE), "Stunned"),
+    (re.compile(r"\bConfusion\b", re.IGNORECASE), "Confused"),
+    (re.compile(r"\bFrighten\b(?!ed|ing)", re.IGNORECASE), "Frightened"),
+    (re.compile(r"\bBlindness\b", re.IGNORECASE), "Blinded"),
+    (re.compile(r"\bParaly(?:ze[sd]?|sis)\b", re.IGNORECASE), "Stunned (canon: paralyzed becomes Stunned)"),
+    (re.compile(r"\bSleep\b", re.IGNORECASE), "Asleep"),
+    (re.compile(r"\bfatigue\b", re.IGNORECASE), "Exhaustion"),
+]
+
+# Off-brand raw D&D mechanics that were never converted to setting voice.
+DND_IMPORT_RE = re.compile(
+    r"\b(Dominate Person|Counterspell|Dispel Magic|Cloudkill|Wall of Force|"
+    r"Banishment|Power Word Kill|Detect Evil|True Seeing|Ethereal Jaunt|Alter Self)\b",
+    re.IGNORECASE,
+)
+
+# Currency tokens outside the canon (cp / btc are canonical).
+CURRENCY_RE = re.compile(r"(?<![A-Za-z])(\d+\s?)?(gp|GP|sp|gold pieces?|gold)\b")
+
+# Non-existent stat referenced as if real.
+SANITY_RE = re.compile(r"\bSanity\b")
+
+# Chassis renamed AC->Cringe Resistance and HP->Chill; flag the legacy terms.
+INLINE_AC_HP_RE = re.compile(r"\b(AC\s*[+\-]|[+\-]\s*\d+\s*AC\b|\bHP\b|armor class|hit points)\b", re.IGNORECASE)
+
+# Which text columns carry mechanics for each file (None = scan every column).
+VOCAB_TARGETS: dict[str, list[str] | None] = {
+    "spells/spells.csv": [
+        "damage_type",
+        "condition_ids",
+        "rules_text",
+        "description",
+    ],
+    "monsters/monsters.csv": ["abilities", "actions", "reactions", "traits", "loot", "flavor_text", "tags"],
+    "armors/armors.csv": ["effects_json", "flavor_text", "rules_text", "cost_cp", "cost_btc", "tags"],
+    "armors/armors_database_formatted.csv": [
+        "effects_json",
+        "flavor_text",
+        "rules_text",
+        "cost_cp",
+        "cost_btc",
+        "tags",
+    ],
+    "equipment/items.csv": ["effects_json", "flavor_text", "rules_text", "tags"],
+    "weapons/weapons.csv": ["properties", "flavor_text", "rules_text"],
+    "magic_items/magic_items.csv": ["flavor_text", "rules_text", "status_ref"],
+    "quests/quests.csv": ["objective", "reward", "reward_type", "notes", "flash_hook"],
+    "campaigns/campaigns.csv": ["theme", "main_plot", "current_arc", "status", "notes"],
+    "npcs/npcs.csv": ["alignment", "role", "notes"],
+    "treasure/treasure.csv": None,
+    "hazards/hazards.csv": None,
+    "encounters/encounters.csv": None,
+}
+
+# Columns that carry inline AC/HP chassis drift (mechanical text only).
+CHASSIS_TEXT_TARGETS = {
+    "monsters/monsters.csv": ("abilities", "actions", "reactions", "traits"),
+    "campaigns/campaigns.csv": ("theme", "main_plot", "current_arc", "status", "notes"),
 }
 
 
@@ -380,7 +489,109 @@ def _contains_keyword(sample_text: str, keyword: str) -> bool:
     return re.search(rf"\b{re.escape(keyword)}\b", sample_text) is not None
 
 
+def audit_damage_type_column(path: Path) -> list[Issue]:
+    """Any structured `damage_type` column must hold a canon damage type."""
+    issues: list[Issue] = []
+    if not path.exists():
+        return issues
+    rows = read_csv_dicts(path)
+    for index, row in enumerate(rows, start=2):
+        if "damage_type" not in row:
+            return issues  # column absent in this file
+        value = (row.get("damage_type") or "").strip().lower()
+        if value and value not in CANON_DAMAGE_TYPES:
+            issues.append(
+                Issue(
+                    "ERROR",
+                    f"{rel(path)}:{index}",
+                    f"damage_type {value!r} is not canon (allowed: {', '.join(sorted(CANON_DAMAGE_TYPES))})",
+                )
+            )
+    return issues
+
+
+def audit_chassis_headers(path: Path) -> list[Issue]:
+    """Monsters must use the renamed chassis fields, not D&D AC/HP."""
+    issues: list[Issue] = []
+    rows = read_csv_rows(path)
+    if not rows:
+        return issues
+    header = set(rows[0])
+    if "armor_class" in header:
+        issues.append(Issue("ERROR", rel(path), "column 'armor_class' should be 'cringe_resistance' (combat chassis rename)"))
+    if "hit_points" in header:
+        issues.append(Issue("ERROR", rel(path), "column 'hit_points' should be 'chill' (combat chassis rename)"))
+    return issues
+
+
+def _scan_cell(location: str, column: str, text: str, *, mechanical: bool, inline_chassis: bool) -> list[Issue]:
+    issues: list[Issue] = []
+    if not text:
+        return issues
+
+    for match in FORBIDDEN_DAMAGE_RE.finditer(text):
+        issues.append(Issue("ERROR", location, f"{column}: forbidden damage type {match.group(0)!r} (map collisions to Cringe + forced movement)"))
+
+    for cond_re, canonical in CONDITION_DRIFT:
+        if cond_re.search(text):
+            issues.append(Issue("WARN", location, f"{column}: condition shorthand drift -> use {canonical!r}"))
+
+    if CURRENCY_RE.search(text):
+        issues.append(Issue("ERROR", location, f"{column}: non-canon currency (use cash_cp / cost_btc, not gp/sp/gold)"))
+
+    if SANITY_RE.search(text):
+        issues.append(Issue("ERROR", location, f"{column}: references 'Sanity' which is not a stat (the ego/health track is Chill)"))
+
+    for match in DND_IMPORT_RE.finditer(text):
+        issues.append(Issue("INFO", location, f"{column}: raw D&D term {match.group(0)!r} not converted to setting voice"))
+
+    if mechanical:
+        for match in SUSPECT_ELEMENT_RE.finditer(text):
+            issues.append(Issue("WARN", location, f"{column}: possible non-canon element {match.group(0)!r} (no such damage type)"))
+
+    if inline_chassis and INLINE_AC_HP_RE.search(text):
+        issues.append(Issue("WARN", location, f"{column}: inline AC/HP reference (use Cringe Resistance / Chill)"))
+
+    return issues
+
+
+def audit_controlled_vocabulary() -> list[Issue]:
+    issues: list[Issue] = []
+    for rel_path, columns in VOCAB_TARGETS.items():
+        path = ROOT / rel_path
+        if not path.exists():
+            continue
+
+        issues.extend(audit_damage_type_column(path))
+        if rel_path == "monsters/monsters.csv":
+            issues.extend(audit_chassis_headers(path))
+
+        mechanical = rel_path in {
+            "monsters/monsters.csv",
+            "weapons/weapons.csv",
+            "equipment/items.csv",
+            "magic_items/magic_items.csv",
+        }
+        chassis_cols = CHASSIS_TEXT_TARGETS.get(rel_path, ())
+
+        rows = read_csv_dicts(path)
+        for index, row in enumerate(rows, start=2):
+            scan_cols = list(row.keys()) if columns is None else [c for c in columns if c in row]
+            for col in scan_cols:
+                issues.extend(
+                    _scan_cell(
+                        f"{rel_path}:{index}",
+                        col,
+                        (row.get(col) or "").strip(),
+                        mechanical=mechanical,
+                        inline_chassis=col in chassis_cols,
+                    )
+                )
+    return issues
+
+
 def main() -> int:
+    strict = "--strict" in sys.argv
     issues: list[Issue] = []
 
     for rel_path in ACTUAL_DATA_FILES:
@@ -451,14 +662,21 @@ def main() -> int:
 
     issues.extend(audit_template_coverage())
 
+    vocab_issues = audit_controlled_vocabulary()
+
     print(f"Content Audit: {ROOT.name}")
     print()
-    if issues:
-        print(format_issues(issues))
-    else:
-        print("No issues found.")
+    print("== STRUCTURE & REFERENCES ==")
+    print(format_issues(issues) if issues else "No issues found.")
+    print()
+    print("== CONTROLLED VOCABULARY (interaction-system alignment) ==")
+    print(format_issues(vocab_issues) if vocab_issues else "No issues found.")
 
-    return 1 if any(issue.severity == "ERROR" for issue in issues) else 0
+    structural_fail = any(issue.severity == "ERROR" for issue in issues)
+    # Vocabulary errors only gate the build under --strict, so the linter can be
+    # introduced before the back-catalogue is migrated.
+    vocab_fail = strict and any(issue.severity in {"ERROR", "WARN"} for issue in vocab_issues)
+    return 1 if (structural_fail or vocab_fail) else 0
 
 
 if __name__ == "__main__":
