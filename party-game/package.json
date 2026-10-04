@@ -10,6 +10,8 @@
     "catalogue": "python3 scripts/catalogue.py",
     "content:check": "tsx scripts/content-check.ts",
     "prompts": "tsx scripts/export-prompts.ts",
+    "art:prepare": "node scripts/prepare-monster-art.mjs",
+    "art:check": "node scripts/prepare-monster-art.mjs --check",
     "dev": "npm run build && tsx watch server/index.ts",
     "build": "tsc --noEmit && vite build",
     "start": "tsx server/index.ts",

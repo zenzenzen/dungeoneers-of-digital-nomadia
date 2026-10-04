@@ -172,3 +172,7 @@ Approved additive pivot tracked in `party-game/docs/IMPLEMENTATION.md`. New scop
 ## Launch PR packaging — 2026-10-04
 
 User authorization: publish the full current overhaul as a new GitHub pull request. Include the previously present content-coherence changes, design/brand assets, independent party-game application, and legacy app/package removals. Exclude OS files, credentials, databases, installed dependencies, and disposable runtime/test output. Refresh the root README and CONTEXT.md for the active party mode; add repository ignore rules and CI validation without restoring the retired monorepo. Preserve existing source jokes and prices. Verify the staged package from a clean exported tree before pushing.
+
+## Initial monster artwork preparation — 2026-10-04
+
+Research current image models and prepare a six-image comparison using three existing monsters. Write scope: `party-game/content/art-pilot/**`, `party-game/scripts/prepare-monster-art.mjs`, `party-game/package.json`, `party-game/docs/ART_PRODUCTION.md`, prompt-guide navigation, and ICM context/commands. Preserve the approved content bundle and original prompt packets. Validation: model parameters against captured provider schemas, exact prompt/source hashes, six prepared requests, content check, and ICM refresh/check. No generation, uploads, or artwork publication belongs to this preparation step.

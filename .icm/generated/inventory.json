@@ -127,9 +127,9 @@
       "suffix": ".md"
     },
     {
-      "bytes": 12156,
+      "bytes": 12817,
       "path": "CONTENT_COHERENCE_TOUCH_MANIFEST.md",
-      "sha256": "04d889b31b62e9fa7651b5f65a56142788833c81963f4378ccb3346378dbaa3d",
+      "sha256": "6ea534e7e5dd3d6799cda3746a49d260455e0dc48a209623d7a6c24c9b28edca",
       "suffix": ".md"
     },
     {
@@ -415,6 +415,90 @@
       "suffix": ".json"
     },
     {
+      "bytes": 2778,
+      "path": "party-game/content/art-pilot/model-schemas.2026-10-04.json",
+      "sha256": "9ec2c95c42228f6b6fa37a7833d5a3aa21705917893a4e6a23041f5a2c88a841",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2101,
+      "path": "party-game/content/art-pilot/plan.v1.json",
+      "sha256": "77e12dfda4019b2afa270238800bcd6775e16c3feb7743b260056e85fd21b197",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 7800,
+      "path": "party-game/content/art-pilot/prepared/manifest.json",
+      "sha256": "4e3f0848d8592be6a180ef78d816480612df8a5828c78942f6dbf30e857a346a",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2216,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal.art.txt",
+      "sha256": "d578c26ca09d1d861eb9c4013d944d4bde3a83abf979ba775fb5edcbd3755fda",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2370,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal__banana-pro.request.json",
+      "sha256": "b6dc67a4796197bbc5ed76081b29c86b1e84bd6bbff33d7ea01d8390a89e4d74",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2446,
+      "path": "party-game/content/art-pilot/prepared/monster_the_bill_splitting_tribunal__sunburst.request.json",
+      "sha256": "eba638f973b6a12b39e33702f3d43016732c3323b0cdcc890a817a4bbc19a3ee",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2240,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster.art.txt",
+      "sha256": "6a54ae4c647b99ef61c2066fa5e8f959a60d68de3260bba0ea714e0f14080191",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2394,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster__banana-pro.request.json",
+      "sha256": "067bb716db33e795d9cbaf05393323359e6899445c87b1febe01149e8d0198e4",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2470,
+      "path": "party-game/content/art-pilot/prepared/monster_the_ghoster__sunburst.request.json",
+      "sha256": "38aa73654eff58a74ece7b45b8e3056ffbdfaac63141ddda60548c72ac55ba6f",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2180,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship.art.txt",
+      "sha256": "e2e37a8f45f46b903a52fc4697d5c49a4ad46920ee278b19d19b84d5b3b6b5b4",
+      "suffix": ".txt"
+    },
+    {
+      "bytes": 2334,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship__banana-pro.request.json",
+      "sha256": "71932b3bd3cce8195a4264b7f70101865e63ad9119dc77a96162b088cba21edc",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 2410,
+      "path": "party-game/content/art-pilot/prepared/monster_the_situationship__sunburst.request.json",
+      "sha256": "fdf44b7592e0788383bcaf13764dfeda775b8d71db22a99c177287c0d1afc1dd",
+      "suffix": ".json"
+    },
+    {
+      "bytes": 432,
+      "path": "party-game/content/art-pilot/prepared/review-template.csv",
+      "sha256": "ac88fe1e9812720bd37cb151bd6eb8d18535f43fb2a69e27dbe714716c3418ba",
+      "suffix": ".csv"
+    },
+    {
+      "bytes": 1104,
+      "path": "party-game/content/art-pilot/style.v1.txt",
+      "sha256": "ed960612687d97dda46f94daab3d094ed799e7d7726a88c17ef54823d29a2e7f",
+      "suffix": ".txt"
+    },
+    {
       "bytes": 118573,
       "path": "party-game/content/launch.json",
       "sha256": "0d39d4fa5963d5d0a5cf85b0896f112d5a68dfb6b1cde36e9ddb4fe5982c1d19",
@@ -655,6 +739,12 @@
       "suffix": ".log"
     },
     {
+      "bytes": 7445,
+      "path": "party-game/docs/ART_PRODUCTION.md",
+      "sha256": "4ffac35cca24345515250dc383fa53871c6977d12569be3dbab938e8c36fc741",
+      "suffix": ".md"
+    },
+    {
       "bytes": 4128,
       "path": "party-game/docs/DEPLOYMENT.md",
       "sha256": "693f7e8f5984020ded12cabb15d55db67149e31bb28a6c6e078be81c8eb95821",
@@ -673,9 +763,9 @@
       "suffix": ".md"
     },
     {
-      "bytes": 4914,
+      "bytes": 5155,
       "path": "party-game/docs/PROMPT_GUIDE.md",
-      "sha256": "6ed9de7fc79db97b12be6de616e16627e6ed5b59708bad253ff3d89a467f5646",
+      "sha256": "3946359ce3159ff062d89c719e077b8615347a6caab777ba1bf4edc3dbf8459a",
       "suffix": ".md"
     },
     {
@@ -703,9 +793,9 @@
       "suffix": ".json"
     },
     {
-      "bytes": 1511,
+      "bytes": 1635,
       "path": "party-game/package.json",
-      "sha256": "7cadb5d17a4433895dca48332c2f5e60860f100b815e90688d02690adf8ecffe",
+      "sha256": "b06a92d2ff362a17093ac6059f8ae44977a8074fd06b4be994b86ba9c2de3a0b",
       "suffix": ".json"
     },
     {
@@ -785,6 +875,12 @@
       "path": "party-game/scripts/export-prompts.ts",
       "sha256": "924c5a7e7cae0eaa874f2afee0881b974ed10b68aad8eb89b8247ceb9266802d",
       "suffix": ".ts"
+    },
+    {
+      "bytes": 4554,
+      "path": "party-game/scripts/prepare-monster-art.mjs",
+      "sha256": "17ad00466d249119aab708d2c91c84ce1d3e440b99262066dfe80338d33b1c94",
+      "suffix": ".mjs"
     },
     {
       "bytes": 2848,

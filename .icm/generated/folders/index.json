@@ -219,8 +219,8 @@
       "direct_child_folders": 0,
       "direct_files": 14,
       "folder": "party-game",
-      "indexed_files": 91,
-      "sha256": "35e06baf66ed8363329bd797281a9a647f99341f1154d0689b34daaa42a8caab"
+      "indexed_files": 107,
+      "sha256": "548520cc29e6985152cf8183d479a125fd7587e9d6126639e52e10debdb8c070"
     },
     {
       "boundary_reasons": [
@@ -323,7 +323,7 @@
     }
   ],
   "folder_card_limit": 1024,
-  "input_fingerprint": "0f74d1497eed98b2c39c2ed4b4eb25ab5973ccef9c48c87364c0204d17013caa",
+  "input_fingerprint": "f32e20e05f7334dc337fa2346764324fc1617b7aa0ab0815c820ba79736cc3e8",
   "omitted_candidate_count": 0,
   "truncated": false,
   "version": "icm.folder-index/v1",

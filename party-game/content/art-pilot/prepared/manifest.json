@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "monster-art-pilot-v1",
+  "status": "prepared",
+  "contentVersion": "f911a2b4477a2aaa",
+  "planSha256": "77e12dfda4019b2afa270238800bcd6775e16c3feb7743b260056e85fd21b197",
+  "styleSha256": "ed960612687d97dda46f94daab3d094ed799e7d7726a88c17ef54823d29a2e7f",
+  "schemaSha256": "9ec2c95c42228f6b6fa37a7833d5a3aa21705917893a4e6a23041f5a2c88a841",
+  "requestTool": "higgsfield_generate_image",
+  "referenceImages": [],
+  "requests": [
+    {
+      "id": "monster_the_ghoster__sunburst",
+      "cardId": "monster_the_ghoster",
+      "name": "The Ghoster",
+      "model": "GPT Image 2.5 Sunburst",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_ghoster.art.txt",
+      "sourcePromptSha256": "c6c2ea9a79d6d5540a98bd434cec53f949bbe035cc41e535ee0827783c0cd7eb",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_ghoster.brief.json",
+      "sourceBriefSha256": "af5a28f80d114db511e7e39bc5483242631e147dd6cdfc63d21d8dce072b9740",
+      "promptFile": "content/art-pilot/prepared/monster_the_ghoster.art.txt",
+      "promptSha256": "6a54ae4c647b99ef61c2066fa5e8f959a60d68de3260bba0ea714e0f14080191",
+      "requestFile": "content/art-pilot/prepared/monster_the_ghoster__sunburst.request.json",
+      "requestSha256": "38aa73654eff58a74ece7b45b8e3056ffbdfaac63141ddda60548c72ac55ba6f",
+      "sceneChecks": [
+        "Translucency is intentional and distinct from broken anatomy",
+        "Abandoned shoes and drink explain the disappearance",
+        "Waiting guest remains readable at card size"
+      ],
+      "providerJobId": null,
+      "result": null
+    },
+    {
+      "id": "monster_the_ghoster__banana-pro",
+      "cardId": "monster_the_ghoster",
+      "name": "The Ghoster",
+      "model": "Nano Banana Pro",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_ghoster.art.txt",
+      "sourcePromptSha256": "c6c2ea9a79d6d5540a98bd434cec53f949bbe035cc41e535ee0827783c0cd7eb",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_ghoster.brief.json",
+      "sourceBriefSha256": "af5a28f80d114db511e7e39bc5483242631e147dd6cdfc63d21d8dce072b9740",
+      "promptFile": "content/art-pilot/prepared/monster_the_ghoster.art.txt",
+      "promptSha256": "6a54ae4c647b99ef61c2066fa5e8f959a60d68de3260bba0ea714e0f14080191",
+      "requestFile": "content/art-pilot/prepared/monster_the_ghoster__banana-pro.request.json",
+      "requestSha256": "067bb716db33e795d9cbaf05393323359e6899445c87b1febe01149e8d0198e4",
+      "sceneChecks": [
+        "Translucency is intentional and distinct from broken anatomy",
+        "Abandoned shoes and drink explain the disappearance",
+        "Waiting guest remains readable at card size"
+      ],
+      "providerJobId": null,
+      "result": null
+    },
+    {
+      "id": "monster_the_situationship__sunburst",
+      "cardId": "monster_the_situationship",
+      "name": "The Situationship",
+      "model": "GPT Image 2.5 Sunburst",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_situationship.art.txt",
+      "sourcePromptSha256": "dae5a9cef69475293acfc28e4866fd9d4ddbbbac15be0374bf53b4934133df7e",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_situationship.brief.json",
+      "sourceBriefSha256": "b3b446cccf80c3d0df5250f51527907f268f650e00d6c154a57b5143c8449a06",
+      "promptFile": "content/art-pilot/prepared/monster_the_situationship.art.txt",
+      "promptSha256": "e2e37a8f45f46b903a52fc4697d5c49a4ad46920ee278b19d19b84d5b3b6b5b4",
+      "requestFile": "content/art-pilot/prepared/monster_the_situationship__sunburst.request.json",
+      "requestSha256": "fdf44b7592e0788383bcaf13764dfeda775b8d71db22a99c177287c0d1afc1dd",
+      "sceneChecks": [
+        "Two adults each hold one end of the same velvet rope",
+        "Tangle reads as relationship uncertainty",
+        "Neither adult is cast as the villain"
+      ],
+      "providerJobId": null,
+      "result": null
+    },
+    {
+      "id": "monster_the_situationship__banana-pro",
+      "cardId": "monster_the_situationship",
+      "name": "The Situationship",
+      "model": "Nano Banana Pro",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_situationship.art.txt",
+      "sourcePromptSha256": "dae5a9cef69475293acfc28e4866fd9d4ddbbbac15be0374bf53b4934133df7e",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_situationship.brief.json",
+      "sourceBriefSha256": "b3b446cccf80c3d0df5250f51527907f268f650e00d6c154a57b5143c8449a06",
+      "promptFile": "content/art-pilot/prepared/monster_the_situationship.art.txt",
+      "promptSha256": "e2e37a8f45f46b903a52fc4697d5c49a4ad46920ee278b19d19b84d5b3b6b5b4",
+      "requestFile": "content/art-pilot/prepared/monster_the_situationship__banana-pro.request.json",
+      "requestSha256": "71932b3bd3cce8195a4264b7f70101865e63ad9119dc77a96162b088cba21edc",
+      "sceneChecks": [
+        "Two adults each hold one end of the same velvet rope",
+        "Tangle reads as relationship uncertainty",
+        "Neither adult is cast as the villain"
+      ],
+      "providerJobId": null,
+      "result": null
+    },
+    {
+      "id": "monster_the_bill_splitting_tribunal__sunburst",
+      "cardId": "monster_the_bill_splitting_tribunal",
+      "name": "The Bill-Splitting Tribunal",
+      "model": "GPT Image 2.5 Sunburst",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.art.txt",
+      "sourcePromptSha256": "fa4d6083593cf7a53477dbefe99017715cf4b616a5dcba4dfae9b9da0b26b35b",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.brief.json",
+      "sourceBriefSha256": "57b26fd202b7cfc1e528073a8b448f3cfc239a9c65065bfd8bd246bfd5e19e58",
+      "promptFile": "content/art-pilot/prepared/monster_the_bill_splitting_tribunal.art.txt",
+      "promptSha256": "d578c26ca09d1d861eb9c4013d944d4bde3a83abf979ba775fb5edcbd3755fda",
+      "requestFile": "content/art-pilot/prepared/monster_the_bill_splitting_tribunal__sunburst.request.json",
+      "requestSha256": "eba638f973b6a12b39e33702f3d43016732c3323b0cdcc890a817a4bbc19a3ee",
+      "sceneChecks": [
+        "Cocktail table reads as a mock courtroom",
+        "Umbrellas and scales remain visible in the foreground",
+        "Multiple people have distinct plausible hands and gestures"
+      ],
+      "providerJobId": null,
+      "result": null
+    },
+    {
+      "id": "monster_the_bill_splitting_tribunal__banana-pro",
+      "cardId": "monster_the_bill_splitting_tribunal",
+      "name": "The Bill-Splitting Tribunal",
+      "model": "Nano Banana Pro",
+      "status": "prepared",
+      "sourcePrompt": "content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.art.txt",
+      "sourcePromptSha256": "fa4d6083593cf7a53477dbefe99017715cf4b616a5dcba4dfae9b9da0b26b35b",
+      "sourceBrief": "content/prompt-packets/monsters/monster_the_bill_splitting_tribunal.brief.json",
+      "sourceBriefSha256": "57b26fd202b7cfc1e528073a8b448f3cfc239a9c65065bfd8bd246bfd5e19e58",
+      "promptFile": "content/art-pilot/prepared/monster_the_bill_splitting_tribunal.art.txt",
+      "promptSha256": "d578c26ca09d1d861eb9c4013d944d4bde3a83abf979ba775fb5edcbd3755fda",
+      "requestFile": "content/art-pilot/prepared/monster_the_bill_splitting_tribunal__banana-pro.request.json",
+      "requestSha256": "b6dc67a4796197bbc5ed76081b29c86b1e84bd6bbff33d7ea01d8390a89e4d74",
+      "sceneChecks": [
+        "Cocktail table reads as a mock courtroom",
+        "Umbrellas and scales remain visible in the foreground",
+        "Multiple people have distinct plausible hands and gestures"
+      ],
+      "providerJobId": null,
+      "result": null
+    }
+  ]
+}

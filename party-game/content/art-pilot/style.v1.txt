@@ -1,0 +1,5 @@
+Paint an original satirical fantasy trading-card illustration in opaque gouache and fine digital brushwork. Give an ordinary adult social mishap the staging and light of an epic confrontation. Keep contemporary clothing and everyday objects recognizable. Faces and hands are expressive, with believable anatomy and slightly exaggerated acting. The embarrassment should feel familiar, never cruel.
+
+Use mint #BCEAD5, lavender #CDBCF6, peach #FFC4AC, cyan #A9E5F2, and warm cream #FFF5DC. Deep plum #34263F supplies shadow and silhouette contrast. These colors guide the painting; do not draw palette swatches. Build the scene from broad readable shapes, then add material detail around the focal gesture. Avoid a uniform pastel haze, glossy plastic skin, flat icon art, and generic fantasy armor.
+
+Keep the essential faces, hands, and joke-bearing objects inside the central 80 percent of the canvas. Background detail stays quiet. The joke must remain visible in a 200-pixel-wide preview. Finish as one opaque landscape illustration, with no surrounding card, collage, lettering, captions, logos, or UI.

@@ -2,7 +2,7 @@
 
 Generated from observable project facts. Do not edit by hand.
 
-- Files indexed: 159
+- Files indexed: 175
 - Exclusions recorded: 22
 - Top-level entries: 39
 

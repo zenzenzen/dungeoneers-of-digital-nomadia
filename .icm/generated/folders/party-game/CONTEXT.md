@@ -4,10 +4,10 @@ Generated from observable project facts. Do not edit by hand.
 
 - Source folder: `party-game`
 - Boundary reasons: boundary_marker, top_level
-- Indexed files under folder: 91
+- Indexed files under folder: 107
 - Direct child folders: 11
 - Direct files in folder: 14
-- Folder fingerprint: `b254440934bdac47`
+- Folder fingerprint: `3202cce375d16591`
 
 ## Boundary Markers
 

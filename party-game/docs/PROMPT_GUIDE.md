@@ -1,5 +1,7 @@
 # Flavor and monster artwork
 
+The [first artwork production plan](ART_PRODUCTION.md) selects current image models and prepares a six-image comparison from three monsters. It includes clean requests, shared art direction, and review criteria. Generation has not started.
+
 Every card keeps its flavor, rules, executable effects, provenance, and art direction in separate fields. The rendered card gives flavor its own paragraph beneath the rules. That paragraph wraps and grows with the text. The source catalogue also retains original joke excerpts and full source variants, so a short card line does not replace the longer source material.
 
 Aim for one good line, usually under 25 words, on the card face. Keep longer stories as editorial candidates until there is a suitable collection detail view. The flavor template can propose a 40–80 word vignette; that output is not automatically saved as approved card copy.
